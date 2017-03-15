@@ -1,20 +1,20 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-03-14T22:47:02
+# Project created by QtCreator 2017-3-14T09:34:59
 #
 #-------------------------------------------------
+QT  +=core gui
 
-QT       += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-QT       -= gui
+TARGET = LQFramKit
+TEMPLATE = app
 
-TARGET = LQCustomGroupBox
-TEMPLATE = lib
+DEFINES +=DEBUG_OUT
 
-DEFINES += LQCUSTOMGROUPBOX_LIBRARY
 
-include ($$PWD/lqcustomgroupbox_src.pri)
-INCLUDEPATH +=$$PWD/inc
+SOURCES += \
+    main.cpp
 
 win32{
     CONFIG  += debug_and_release
@@ -29,7 +29,11 @@ win32{
     OBJECTS_DIR = $$target_path/obj
 }
 
-unix {
-    target.path = /usr/lib
-    INSTALLS += target
+win32:{
+    LIBS += -L../bin/ -lLQCustomGroupBox
 }
+
+DEPENDPATH += ../bin
+
+# import dll file
+include (../LQCustomGroupBox/lqcustomgroupbox_inc.pri)

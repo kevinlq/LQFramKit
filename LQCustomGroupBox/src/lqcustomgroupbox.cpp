@@ -8,5 +8,4 @@ LQCustomGroupBox::LQCustomGroupBox(QWidget *parent)
 
 LQCustomGroupBox::~LQCustomGroupBox()
 {
-
 }

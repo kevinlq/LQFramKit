@@ -1,3 +1,4 @@
 TEMPLATE = subdirs
 SUBDIRS    +=\
-    LQCustomGroupBox
+    LQCustomGroupBox \
+    Example
