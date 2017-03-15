@@ -11,6 +11,9 @@ class LQCUSTOMGROUPBOXSHARED_EXPORT LQCustomGroupBox :public QGroupBox
 public:
     LQCustomGroupBox(QWidget *parent = 0);
     ~LQCustomGroupBox();
+
+private:
+    void init();
 };
 
 #endif // LQCUSTOMGROUPBOX_H
