@@ -44,6 +44,22 @@
      </item>
      <item>
       <widget class="QSlider" name="horizontalSlider">
+       <property name="styleSheet">
+        <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 20px; /* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+    margin: 2px 0;
+}
+
+QSlider::handle:horizontal {
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(60, 162, 160, 255), stop:0.531579 rgba(0, 58, 185, 255), stop:0.973684 rgba(54, 129, 160, 255));
+    border: 1px solid #5c5c5c;
+    width: 18px;
+    margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+    border-radius: 3px;
+}</string>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
