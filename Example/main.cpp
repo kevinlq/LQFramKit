@@ -1,10 +1,16 @@
 #include <QApplication>
 
+#include "lqexamplewidget.h"
+
 int main(int argc, char *argv[])
 {
     QApplication app(argc,argv);
 
+    LQExampleWidget widget;
+    widget.show();
 
-    return 0;
+    int ret = app.exec();
+
+    return ret;
 }
 

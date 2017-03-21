@@ -14,7 +14,10 @@ DEFINES +=DEBUG_OUT
 
 
 SOURCES += \
-    main.cpp
+    main.cpp \
+    lqexamplewidget.cpp \
+    demometer.cpp \
+    demogauge.cpp
 
 win32{
     CONFIG  += debug_and_release
@@ -30,10 +33,25 @@ win32{
 }
 
 win32:{
-    LIBS += -L../bin/ -lLQCustomGroupBox
+    LIBS += -L../bin/ -lLQCustomGroupBox    \
+    -lLQMeter   \
+    -lLQGauge
+
 }
 
 DEPENDPATH += ../bin
 
 # import dll file
 include (../LQCustomGroupBox/lqcustomgroupbox_inc.pri)
+include (../LQGauge/lqgauge_inc.pri)
+include (../LQMeter/lqmeter_inc.pri)
+
+FORMS += \
+    lqexamplewidget.ui \
+    demometer.ui \
+    demogauge.ui
+
+HEADERS += \
+    lqexamplewidget.h \
+    demometer.h \
+    demogauge.h
