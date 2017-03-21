@@ -3,6 +3,7 @@ SUBDIRS    +=\
     LQCustomGroupBox \
     LQGauge \
     LQMeter \
-    Example
+    Example \
+    LQLedIndicator
 
 CONFIG  +=ordered
