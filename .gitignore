@@ -6,4 +6,7 @@ buile_/
 *.Debug
 *.Release
 *Makefile
+*.o
+*moc_
+*ui_
 
