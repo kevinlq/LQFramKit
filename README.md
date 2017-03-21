@@ -21,6 +21,7 @@ OS:windows7 64b
 * 汽车仪表1
  控件来源:https://www.linux-apps.com/browse/cat/280/page/2/ord/latest/
  最终效果
+
 ![仪表盘](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/gauge.png)
 
 * 汽车仪表2
