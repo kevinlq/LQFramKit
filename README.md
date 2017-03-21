@@ -19,4 +19,6 @@ OS:windows7 64b
 
 ## 测试用例
 * 汽车仪表
+![仪表盘][1]
 
+  [1]: http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/gauge.png
