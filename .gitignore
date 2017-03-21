@@ -1,12 +1,12 @@
 #pro.user
 LQFramKit.pro.user
 /LQCustomGroupBox.pro.user
-bin/
-buile_/
+bin/*
+build_/*
 *.Debug
 *.Release
 *Makefile
 *.o
-*moc_
-*ui_
+*moc_*.cpp
+*ui_*.h
 
