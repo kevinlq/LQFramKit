@@ -1,6 +1,5 @@
 #pro.user
 LQFramKit.pro.user
-/LQCustomGroupBox.pro.user
 bin/*
 build_/*
 *.Debug

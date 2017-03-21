@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExampleWidget</class>
+ <widget class="QWidget" name="ExampleWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>406</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>561</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>仪表盘控件</string>
+    </attribute>
+    <widget class="QMeter" name="Meter_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>10</y>
+       <width>171</width>
+       <height>161</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGauge" name="qgauge_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>191</x>
+       <y>10</y>
+       <width>171</width>
+       <height>161</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>200</y>
+       <width>321</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>显示界面空间</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>图表类控件</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>辅助工具</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QMeter</class>
+   <extends>QWidget</extends>
+   <header>qmeter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QGauge</class>
+   <extends>QWidget</extends>
+   <header>qgauge.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

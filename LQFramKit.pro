@@ -1,9 +1,10 @@
 TEMPLATE = subdirs
-SUBDIRS    +=\
-    LQCustomGroupBox \
-    LQGauge \
-    LQMeter \
-    Example \
-    LQLedIndicator
+
+SUBDIRS += \
+    LQInstrumentation \
+    LQFormWidget \
+    LQChart \
+    LQAuxiliaryTools    \
+    Exmaple
 
 CONFIG  +=ordered
