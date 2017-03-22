@@ -1,43 +1,37 @@
-rmdir /S /Q %~dp0..\AISApp\Makefile.Debug
-rmdir /S /Q %~dp0..\AISApp\Makefile.Release
-rmdir /S /Q %~dp0..\AISApp\Makefile
-rmdir /S /Q %~dp0..\LQAisParser\Makefile.Debug
-rmdir /S /Q %~dp0..\LQAisParser\Makefile.Release
-rmdir /S /Q %~dp0..\LQAisParser\Makefile
-rmdir /S /Q %~dp0..\LQAisInputModule\Makefile.Debug
-rmdir /S /Q %~dp0..\LQAisInputModule\Makefile.Release
-rmdir /S /Q %~dp0..\LQAisInputModule\Makefile
-rmdir /S /Q %~dp0..\LQBaiduMapLoadModule\Makefile.Debug
-rmdir /S /Q %~dp0..\LQBaiduMapLoadModule\Makefile.Release
-rmdir /S /Q %~dp0..\LQBaiduMapLoadModule\Makefile
-rmdir /S /Q %~dp0..\LQDatabaseModule\Makefile.Debug
-rmdir /S /Q %~dp0..\LQDatabaseModule\Makefile.Release
-rmdir /S /Q %~dp0..\LQDatabaseModule\Makefile
-rmdir /S /Q %~dp0..\LQModleAnalysModule\Makefile.Debug
-rmdir /S /Q %~dp0..\LQModleAnalysModule\Makefile.Release
-rmdir /S /Q %~dp0..\LQModleAnalysModule\Makefile
+rmdir /S /Q %~dp0..\Exmaple\Makefile.Debug
+rmdir /S /Q %~dp0..\Exmaple\Makefile.Release
+rmdir /S /Q %~dp0..\Exmaple\Makefile
+rmdir /S /Q %~dp0..\LQAuxiliaryTools\Makefile.Debug
+rmdir /S /Q %~dp0..\LQAuxiliaryTools\Makefile.Release
+rmdir /S /Q %~dp0..\LQAuxiliaryTools\Makefile
+rmdir /S /Q %~dp0..\LQChart\Makefile.Debug
+rmdir /S /Q %~dp0..\LQChart\Makefile.Release
+rmdir /S /Q %~dp0..\LQChart\Makefile
+rmdir /S /Q %~dp0..\LQFormWidget\Makefile.Debug
+rmdir /S /Q %~dp0..\LQFormWidget\Makefile.Release
+rmdir /S /Q %~dp0..\LQFormWidget\Makefile
+rmdir /S /Q %~dp0..\LQInstrumentation\Makefile.Debug
+rmdir /S /Q %~dp0..\LQInstrumentation\Makefile.Release
+rmdir /S /Q %~dp0..\LQInstrumentation\Makefile
 rmdir /S /Q %~dp0..\build_
-rmdir /S /Q %~dp0..\AISApp\Debug
-rmdir /S /Q %~dp0..\AISApp\Release
-rmdir /S /Q %~dp0..\LQAisParser\Debug
-rmdir /S /Q %~dp0..\LQAisParser\Release
-rmdir /S /Q %~dp0..\LQAisInputModule\Debug
-rmdir /S /Q %~dp0..\LQAisInputModule\Release
-rmdir /S /Q %~dp0..\LQBaiduMapLoadModule\Debug
-rmdir /S /Q %~dp0..\LQBaiduMapLoadModule\Release
-rmdir /S /Q %~dp0..\LQDatabaseModule\Debug
-rmdir /S /Q %~dp0..\LQDatabaseModule\Release
-rmdir /S /Q %~dp0..\LQModleAnalysModule\Debug
-rmdir /S /Q %~dp0..\LQModleAnalysModule\Release
+rmdir /S /Q %~dp0..\Exmaple\Debug
+rmdir /S /Q %~dp0..\Exmaple\Release
+rmdir /S /Q %~dp0..\LQAuxiliaryTools\Debug
+rmdir /S /Q %~dp0..\LQAuxiliaryTools\Release
+rmdir /S /Q %~dp0..\LQChart\Debug
+rmdir /S /Q %~dp0..\LQChart\Release
+rmdir /S /Q %~dp0..\LQFormWidget\Debug
+rmdir /S /Q %~dp0..\LQFormWidget\Release
+rmdir /S /Q %~dp0..\LQInstrumentation\Debug
+rmdir /S /Q %~dp0..\LQInstrumentation\Release
 del /Q %~dp0..\bin\*.exe
 del /Q %~dp0..\bin\*.a
 del /Q %~dp0..\bin\*.dll
 del /Q %~dp0..\Makefile*
-del /Q %~dp0..\AISApp\Makefile*
-del /Q %~dp0..\AISApp\*.Debug
-del /Q %~dp0..\AISApp\*.Release
-del /Q %~dp0..\LQAisParser\Makefile*
-del /Q %~dp0..\LQAisInputModule\Makefile*
-del /Q %~dp0..\LQBaiduMapLoadModule\Makefile*
-del /Q %~dp0..\LQDatabaseModule\Makefile*
-del /Q %~dp0..\LQModleAnalysModule\Makefile*
+del /Q %~dp0..\Exmaple\Makefile*
+del /Q %~dp0..\Exmaple\*.Debug
+del /Q %~dp0..\Exmaple\*.Release
+del /Q %~dp0..\LQAuxiliaryTools\Makefile*
+del /Q %~dp0..\LQChart\Makefile*
+del /Q %~dp0..\LQFormWidget\Makefile*
+del /Q %~dp0..\LQInstrumentation\Makefile*

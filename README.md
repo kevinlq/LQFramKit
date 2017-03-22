@@ -22,7 +22,7 @@ OS:windows7 64b
  控件来源:https://www.linux-apps.com/browse/cat/280/page/2/ord/latest/  
  最终效果  
 ![仪表盘](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/gauge.png)
-![动态效果图][http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/gauge.gif]  
+<img src="[http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/gauge.gif" alt="Flash animation" />
 
 由于录制关系，动态图显示某些颜色不正常。  
 * 汽车仪表2  
