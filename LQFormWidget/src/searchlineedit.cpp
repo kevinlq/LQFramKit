@@ -78,7 +78,7 @@ void SearchLineEdit::focusInEvent(QFocusEvent *event)
     this->clear();
     this->setPlaceholderText("");
     setStyleSheet("height:24px;border:1px ;border-radius:6px;"
-                  "background-color:#F0EFEF");
+                  "background-color:#FFFFFF");
     m_tbnSearch->setStyleSheet("QToolButton{border-image:url(:/image/search_dark.png);"
                                "background:transparent;}");
 
