@@ -5,12 +5,17 @@
 #include <QVBoxLayout>
 #include <QSlider>
 
+/*仪器仪表测试demo*/
 #include "demo_qgauge.h"
 #include "demo_qmeter.h"
 #include "demo_compasswidget.h"
 #include "demo_attitudemeter.h"
 
+/*显示界面类测试demo*/
 #include "demo_lineedit.h"
+
+/*辅助工具测试demo*/
+#include "demo_perfmon.h"
 
 ExampleWidget::ExampleWidget(QWidget *parent) :
     QWidget(parent),
@@ -49,7 +54,7 @@ void ExampleWidget::on_pushButton_clicked()
     comWidget->show();
 
     QTimer::singleShot(10000,comWidget,SLOT(deleteLater()));
-    ui->textEdit->append("指南针界面已经启动，10秒后将关闭!\r\n");
+    ui->textEdit->append("指南针界面已经启动，10秒后将关闭!");
 }
 
 void ExampleWidget::on_pushButton_2_clicked()
@@ -57,8 +62,8 @@ void ExampleWidget::on_pushButton_2_clicked()
     Demo_qmeter *meter = new Demo_qmeter("仪表盘1demo");
     meter->show();
 
-    QTimer::singleShot(10000,meter,SLOT(deleteLater()));
-    ui->textEdit->append("仪表盘1已经启动，10秒后将关闭!\r\n");
+    QTimer::singleShot(20000,meter,SLOT(deleteLater()));
+    ui->textEdit->append("仪表盘1已经启动，20秒后将关闭!");
 }
 
 void ExampleWidget::on_pushButton_3_clicked()
@@ -67,7 +72,7 @@ void ExampleWidget::on_pushButton_3_clicked()
     gauge->show();
 
     QTimer::singleShot(10000,gauge,SLOT(deleteLater()));
-    ui->textEdit->append("仪表盘2已经启动，10秒后将关闭!\r\n");
+    ui->textEdit->append("仪表盘2已经启动，10秒后将关闭!");
 }
 
 void ExampleWidget::on_pushButton_4_clicked()
@@ -78,7 +83,7 @@ void ExampleWidget::on_pushButton_4_clicked()
             this,SLOT(slotTestSearchLineEdit(QString)));
 
     QTimer::singleShot(10000,search,SLOT(deleteLater()));
-    ui->textEdit->append("自定义搜索框已经启动，10秒后将关闭!\r\n");
+    ui->textEdit->append("自定义搜索框已经启动，10秒后将关闭!");
 }
 
 void ExampleWidget::on_pushButton_5_clicked()
@@ -87,5 +92,14 @@ void ExampleWidget::on_pushButton_5_clicked()
     attitudeMeter->show();
 
     QTimer::singleShot(10000,attitudeMeter,SLOT(deleteLater()));
-    ui->textEdit->append("姿势仪表已经启动，10秒后将关闭!\r\n");
+    ui->textEdit->append("姿势仪表已经启动，10秒后将关闭!");
+}
+
+void ExampleWidget::on_pushButton_6_clicked()
+{
+    Demo_PerfMon *perfmon = new Demo_PerfMon("性能监测demo");
+    perfmon->show ();
+
+    QTimer::singleShot (30000,perfmon,SLOT(deleteLater()));
+    ui->textEdit->append ("性能监测界面已经启动，30秒之后将关闭!");
 }

@@ -6,6 +6,7 @@
 #辅助工具类集合(常见的工具，比如二维码、验证码、串口通信、TCP/UDP通信……)
 
 QT       -= gui
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = LQAuxiliaryTools
 TEMPLATE = lib

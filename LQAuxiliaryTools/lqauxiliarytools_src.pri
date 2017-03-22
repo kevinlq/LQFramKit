@@ -1,6 +1,6 @@
 HEADERS += \
-    $$PWD/inc/lqauxiliarytools.h \
-    $$PWD/inc/lqauxiliarytools_global.h
+    $$PWD/inc/lqauxiliarytools_global.h \
+    $$PWD/inc/perfmon.h
 
 SOURCES += \
-    $$PWD/src/lqauxiliarytools.cpp
+    $$PWD/src/perfmon.cpp
