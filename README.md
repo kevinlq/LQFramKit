@@ -18,26 +18,26 @@ OS:windows7 64b
 ## 使用本工程
 
 ## 测试用例
-1 汽车仪表1
+1. 汽车仪表1  
  控件来源:https://www.linux-apps.com/browse/cat/280/page/2/ord/latest/  
  最终效果  
 ![仪表盘](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/gauge.png)
 <img src="[http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/gauge.gif" alt="Flash animation" />
 
 由于录制关系，动态图显示某些颜色不正常。  
-2 汽车仪表2  
+2. 汽车仪表2    
  控件来源:https://www.linux-apps.com/browse/cat/280/page/2/ord/latest/  
  最终效果  
 ![仪表盘](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/meter.png)  
 <img src="[http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/meter.gif" alt="Flash animation" />
 
-3.姿势仪表
+3.姿势仪表  
 姿势仪表是展示当前水平以及垂直方向的程度，使用滑块来进行模拟控制，可以很明显的看到，当滑动相应的滑块过程中，姿势发生了相应的变化。
 ![姿势仪表](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/attitudemeter.png)
-4.自定义搜索框
+4.自定义搜索框  
 自定义搜素框是继承自QLineEdit，然后对其进行了布局，使得button可以显示出来，最后处理了相关的事件，看起来更加符合常规。更加详细的用法可以看工程中对应的demo。
 ![自定义搜索框](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/search.png)
-4.性能监控
-性能监测工具可以模拟windows系统自带的性能检测效果，目前显示的波纹采用定时器进行模拟，具体实际使用过程中可以传入相应的数据值。demo中有详细的介绍。
-![性能检测](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/perfmon.png)
+5.性能监测  
+性能监测工具可以模拟windows系统自带的性能监测效果，目前显示的波纹采用定时器进行模拟，具体实际使用过程中可以传入相应的数据值。demo中有详细的介绍。
+![性能监测](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/perfmon.png)
 
