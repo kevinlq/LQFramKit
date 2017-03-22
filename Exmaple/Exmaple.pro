@@ -31,13 +31,19 @@ win32{
 }
 win32:{
     LIBS += -L../bin/ -lLQInstrumentation\
-    -lLQFormWidget
+    -lLQFormWidget\
+    -lLQAuxiliaryTools\
+    -lLQChart
 }
 DEPENDPATH += ../bin
 
 # import dll file
 include(../LQInstrumentation/lqinstrumentation_inc.pri)
 include(../LQFormWidget/lqformwidget_inc.pri)
+
+#import demo fle
+include($$PWD/demo/demo.pri)
+INCLUDEPATH +=$$PWD/demo
 
 FORMS += \
     examplewidget.ui

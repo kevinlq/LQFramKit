@@ -14,6 +14,7 @@ rmdir /S /Q %~dp0..\LQInstrumentation\Makefile.Debug
 rmdir /S /Q %~dp0..\LQInstrumentation\Makefile.Release
 rmdir /S /Q %~dp0..\LQInstrumentation\Makefile
 rmdir /S /Q %~dp0..\build_
+rmdir /S /Q %~dp0..\bin
 rmdir /S /Q %~dp0..\Exmaple\Debug
 rmdir /S /Q %~dp0..\Exmaple\Release
 rmdir /S /Q %~dp0..\LQAuxiliaryTools\Debug

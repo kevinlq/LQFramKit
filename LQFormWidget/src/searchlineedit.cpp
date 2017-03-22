@@ -102,7 +102,7 @@ void SearchLineEdit::slotSendSearchContent()
     else
         str = this->text();
 #ifdef DEBUG_OUT
-    qDebug()<<"search content:"<<str;
+//    qDebug()<<"search content:"<<str;
 #endif
     emit signalSearchContent(str);
 }

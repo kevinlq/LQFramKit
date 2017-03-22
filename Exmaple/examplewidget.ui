@@ -25,81 +25,74 @@
         <attribute name="title">
          <string>仪表盘控件</string>
         </attribute>
-        <widget class="QWidget" name="">
+        <widget class="QPushButton" name="pushButton">
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>-10</y>
-           <width>501</width>
-           <height>291</height>
+           <y>9</y>
+           <width>91</width>
+           <height>23</height>
           </rect>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_3">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout">
-            <item>
-             <widget class="QMeter" name="Meter_widget" native="true">
-              <property name="minimumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QGauge" name="qgauge_widget" native="true">
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <widget class="QSlider" name="horizontalSlider">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <property name="text">
+          <string>指南针</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>8</y>
+           <width>91</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>汽车仪表盘1</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>10</y>
+           <width>91</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>汽车仪表盘2</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>10</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>姿势仪表</string>
+         </property>
         </widget>
        </widget>
        <widget class="QWidget" name="tab_2">
         <attribute name="title">
          <string>显示界面空间</string>
         </attribute>
-        <widget class="QLabel" name="label">
+        <widget class="QPushButton" name="pushButton_4">
          <property name="geometry">
           <rect>
-           <x>11</x>
-           <y>11</y>
-           <width>72</width>
-           <height>16</height>
+           <x>10</x>
+           <y>10</y>
+           <width>91</width>
+           <height>23</height>
           </rect>
          </property>
          <property name="text">
           <string>自定义搜索框</string>
-         </property>
-        </widget>
-        <widget class="SearchLineEdit" name="lineEdit">
-         <property name="geometry">
-          <rect>
-           <x>95</x>
-           <y>11</y>
-           <width>133</width>
-           <height>20</height>
-          </rect>
          </property>
         </widget>
        </widget>
@@ -129,25 +122,6 @@
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>QMeter</class>
-   <extends>QWidget</extends>
-   <header>qmeter.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>QGauge</class>
-   <extends>QWidget</extends>
-   <header>qgauge.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>SearchLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>searchlineedit.h</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
