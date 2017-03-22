@@ -30,12 +30,14 @@ win32{
     OBJECTS_DIR = $$target_path/obj
 }
 win32:{
-    LIBS += -L../bin/ -lLQInstrumentation
+    LIBS += -L../bin/ -lLQInstrumentation\
+    -lLQFormWidget
 }
 DEPENDPATH += ../bin
 
 # import dll file
-include (../LQInstrumentation/lqinstrumentation_inc.pri)
+include(../LQInstrumentation/lqinstrumentation_inc.pri)
+include(../LQFormWidget/lqformwidget_inc.pri)
 
 FORMS += \
     examplewidget.ui

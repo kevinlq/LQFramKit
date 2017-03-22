@@ -6,79 +6,128 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>590</width>
-    <height>406</height>
+    <width>656</width>
+    <height>578</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QTabWidget" name="tabWidget">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>561</width>
-     <height>371</height>
-    </rect>
-   </property>
-   <property name="currentIndex">
-    <number>0</number>
-   </property>
-   <widget class="QWidget" name="tab">
-    <attribute name="title">
-     <string>仪表盘控件</string>
-    </attribute>
-    <widget class="QMeter" name="Meter_widget" native="true">
-     <property name="geometry">
-      <rect>
-       <x>4</x>
-       <y>10</y>
-       <width>171</width>
-       <height>161</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QGauge" name="qgauge_widget" native="true">
-     <property name="geometry">
-      <rect>
-       <x>191</x>
-       <y>10</y>
-       <width>171</width>
-       <height>161</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QSlider" name="horizontalSlider">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>200</y>
-       <width>321</width>
-       <height>19</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="tab_2">
-    <attribute name="title">
-     <string>显示界面空间</string>
-    </attribute>
-   </widget>
-   <widget class="QWidget" name="tab_3">
-    <attribute name="title">
-     <string>图表类控件</string>
-    </attribute>
-   </widget>
-   <widget class="QWidget" name="tab_4">
-    <attribute name="title">
-     <string>辅助工具</string>
-    </attribute>
-   </widget>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>仪表盘控件</string>
+        </attribute>
+        <widget class="QWidget" name="">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>-10</y>
+           <width>501</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QMeter" name="Meter_widget" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGauge" name="qgauge_widget" native="true">
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>显示界面空间</string>
+        </attribute>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>11</x>
+           <y>11</y>
+           <width>72</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>自定义搜索框</string>
+         </property>
+        </widget>
+        <widget class="SearchLineEdit" name="lineEdit">
+         <property name="geometry">
+          <rect>
+           <x>95</x>
+           <y>11</y>
+           <width>133</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>图表类控件</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>辅助工具</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <customwidgets>
   <customwidget>
@@ -92,6 +141,11 @@
    <extends>QWidget</extends>
    <header>qgauge.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SearchLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>searchlineedit.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

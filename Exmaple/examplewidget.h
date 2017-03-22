@@ -1,4 +1,4 @@
-#ifndef EXAMPLEWIDGET_H
+﻿#ifndef EXAMPLEWIDGET_H
 #define EXAMPLEWIDGET_H
 
 #include <QWidget>
@@ -16,6 +16,7 @@ public:
     ~ExampleWidget();
 
 private slots:
+    void slotTestSearchLineEdit(const QString &text);
 
 private:
     Ui::ExampleWidget *ui;
