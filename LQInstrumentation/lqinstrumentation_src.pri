@@ -7,7 +7,8 @@ HEADERS += \
     $$PWD/inc/compasswidget.h \
     $$PWD/inc/attitudemeter.h \
     $$PWD/inc/speedgaugewidget.h \
-    $$PWD/inc/airspeedgaugewidget.h
+    $$PWD/inc/airspeedgaugewidget.h \
+    $$PWD/inc/QRoundProgressBar.h
 
 SOURCES += \
 #    $$PWD/src/lqinstrumentation.cpp \
@@ -19,4 +20,5 @@ SOURCES += \
     $$PWD/src/compasswidget.cpp \
     $$PWD/src/attitudemeter.cpp \
     $$PWD/src/speedgaugewidget.cpp \
-    $$PWD/src/airspeedgaugewidget.cpp
+    $$PWD/src/airspeedgaugewidget.cpp \
+    $$PWD/src/QRoundProgressBar.cpp

@@ -58,6 +58,12 @@ OS:windows7 64b
 
 ![速度仪表2](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/speed2.png)
 
+6. 圆形进度条
+
+>圆形进度条继承QWidget，有7种样式可供选择，demo中详细的记录了各种样式效果。
+
+![圆形进度条](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/roundPorgressbar.png)
+
 ### 界面显示类测试
 
  1. 自定义搜索框
@@ -85,3 +91,4 @@ OS:windows7 64b
 * V 0.0.0.1 添加了汽车仪表盘控件，有2中风格，具体效果在自带的demo中可以运行看到；
 * V 0.0.0.2 添加了自定义搜索框、性能监控、姿势仪表控件；
 * V 0.0.0.3 添加了2个速度仪表控件;
+* V 0.0.0.4 添加了圆形进度条控件，并编写对应的demo进行演示;

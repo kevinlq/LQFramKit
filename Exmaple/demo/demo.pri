@@ -6,7 +6,9 @@ FORMS += \
     $$PWD/demo_attitudemeter.ui \
     $$PWD/demo_perfmon.ui \
     $$PWD/demo_speedgauge.ui \
-    $$PWD/demo_airspeedwidget.ui
+    $$PWD/demo_airspeedwidget.ui \
+    $$PWD/demo_imagebrowser.ui \
+    $$PWD/demo_roundprogressbar.ui
 
 HEADERS += \
     $$PWD/demo_qgauge.h \
@@ -16,7 +18,9 @@ HEADERS += \
     $$PWD/demo_attitudemeter.h \
     $$PWD/demo_perfmon.h \
     $$PWD/demo_speedgauge.h \
-    $$PWD/demo_airspeedwidget.h
+    $$PWD/demo_airspeedwidget.h \
+    $$PWD/demo_imagebrowser.h \
+    $$PWD/demo_roundprogressbar.h
 
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
@@ -26,4 +30,6 @@ SOURCES += \
     $$PWD/demo_attitudemeter.cpp \
     $$PWD/demo_perfmon.cpp \
     $$PWD/demo_speedgauge.cpp \
-    $$PWD/demo_airspeedwidget.cpp
+    $$PWD/demo_airspeedwidget.cpp \
+    $$PWD/demo_imagebrowser.cpp \
+    $$PWD/demo_roundprogressbar.cpp

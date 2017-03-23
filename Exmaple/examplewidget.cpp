@@ -12,12 +12,14 @@
 #include "demo_attitudemeter.h"
 #include "demo_speedgauge.h"
 #include "demo_airspeedwidget.h"
+#include "demo_roundprogressbar.h"  //圆形进度条
 
 /*显示界面类测试demo*/
-#include "demo_lineedit.h"
+#include "demo_lineedit.h"          //个性化搜索框
 
 /*辅助工具测试demo*/
-#include "demo_perfmon.h"
+#include "demo_perfmon.h"           //性能监测
+#include "demo_imagebrowser.h"      //图片旋转缩放
 
 ExampleWidget::ExampleWidget(QWidget *parent) :
     QWidget(parent),
@@ -41,6 +43,7 @@ void ExampleWidget::slotTestSearchLineEdit(const QString &text)
 void ExampleWidget::init()
 {
     this->setFocusPolicy(Qt::ClickFocus);
+    this->setWindowTitle("控件测试集合");
 
     initConnect ();
 }
@@ -121,4 +124,22 @@ void ExampleWidget::on_pushButton_8_clicked()
 
     QTimer::singleShot(15000,airspeed,SLOT(deleteLater()));
     ui->textEdit->append ("速度仪表2已经启动，15秒之后将关闭!");
+}
+
+void ExampleWidget::on_pushButton_9_clicked()
+{
+    Demo_ImageBrowser *image = new Demo_ImageBrowser("图片旋转缩放demo");
+    image->show();
+
+    QTimer::singleShot(20000,image,SLOT(deleteLater()));
+    ui->textEdit->append("图片旋转缩放已经启动，20秒之后将关闭!");
+}
+
+void ExampleWidget::on_pushButton_10_clicked()
+{
+    Demo_RoundProgressBar *round = new Demo_RoundProgressBar("圆形进度条demo");
+    round->show();
+
+    QTimer::singleShot(15000,round,SLOT(deleteLater()));
+    ui->textEdit->append("圆形进度条已经启动，15秒后将关闭!");
 }
