@@ -36,3 +36,5 @@ del /Q %~dp0..\LQAuxiliaryTools\Makefile*
 del /Q %~dp0..\LQChart\Makefile*
 del /Q %~dp0..\LQFormWidget\Makefile*
 del /Q %~dp0..\LQInstrumentation\Makefile*
+del /Q %~dp0..\LQInstrumentation\*.Debug
+del /Q %~dp0..\LQInstrumentation\*.Release
