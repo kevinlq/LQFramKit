@@ -13,7 +13,7 @@ QQ      :2313828706
 Oschina :http://git.oschina.net/kevinlq0912   
 GitHub  :https://github.com/kevinlq  
 
-## 环境说明：
+## 环境说明
 
 >本人测试环境  
 Qt:5.4.2 Mingw  
