@@ -47,6 +47,7 @@ OS:windows7 64b
 
 4. 速度仪表1
 
+控件来源:https://github.com/Berrima/Qt-custom-gauge-widget   
 最终效果如下所示：
 
 ![速度仪表1](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/speed1.png)
@@ -55,7 +56,7 @@ OS:windows7 64b
 
 最终效果如下所示： 
 
-![速度仪表1](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/speed2.png)
+![速度仪表2](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/speed2.png)
 
 ### 界面显示类测试
 
