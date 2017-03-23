@@ -40,6 +40,11 @@ private slots:
 
     void on_pushButton_11_clicked();
 
+    void on_pushButton_12_clicked();
+
+protected:
+    virtual void closeEvent(QCloseEvent *event);
+
 private:
     Ui::ExampleWidget *ui;
 

@@ -17,6 +17,7 @@
 
 /*显示界面类测试demo*/
 #include "demo_lineedit.h"          //个性化搜索框
+#include "demo_customcombox.h"      //自定义ComBox
 
 /*辅助工具测试demo*/
 #include "demo_perfmon.h"           //性能监测
@@ -152,4 +153,20 @@ void ExampleWidget::on_pushButton_11_clicked()
 
     QTimer::singleShot(15000,color,SLOT(deleteLater()));
     ui->textEdit->append("多彩进度条已经启动，15秒后将关闭!");
+}
+
+void ExampleWidget::on_pushButton_12_clicked()
+{
+    Demo_CustomComBox *combox = new Demo_CustomComBox("自定义ComBoxdemo");
+    combox->show();
+
+    QTimer::singleShot(10000,combox,SLOT(deleteLater()));
+    ui->textEdit->append("自定义ComBox已经启动,10秒后将关闭!");
+}
+
+void ExampleWidget::closeEvent(QCloseEvent *event)
+{
+    Q_UNUSED(event);
+
+    qApp->exit(0);
 }

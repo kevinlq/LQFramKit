@@ -19,7 +19,7 @@
      <item>
       <widget class="QTabWidget" name="tabWidget">
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <widget class="QWidget" name="tab">
         <attribute name="title">
@@ -161,18 +161,46 @@
         <attribute name="title">
          <string>显示界面空间</string>
         </attribute>
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QWidget" name="horizontalLayoutWidget_4">
          <property name="geometry">
           <rect>
-           <x>10</x>
-           <y>10</y>
-           <width>91</width>
-           <height>23</height>
+           <x>0</x>
+           <y>0</y>
+           <width>174</width>
+           <height>61</height>
           </rect>
          </property>
-         <property name="text">
-          <string>自定义搜索框</string>
-         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>自定义搜索框</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_12">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>自定义QComBox</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </widget>
        <widget class="QWidget" name="tab_3">

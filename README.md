@@ -89,6 +89,12 @@ OS:windows7 64b
 
 ![自定义搜索框](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/search.png)
 
+#### 2.自定义ComBox
+
+>自定义ComBox继承自QCombBox，实现了一些特殊用法，源码中写的比较高明，有待于更进一步去学习。
+
+![自定义ComBox](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/customComBox.png)
+
 ### 辅助工具类测试
 >辅助工具类包含了常见的一些小工具，比如二维码生成、验证码生成、进制转换、数据通信(串口(232,485)、网络、CAN等)
  
