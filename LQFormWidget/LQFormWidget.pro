@@ -26,6 +26,7 @@ win32{
     DESTDIR =../bin
     MOC_DIR = $$target_path/moc
     RCC_DIR = $$target_path/rcc
+    UI_DIR =  $$target_path/ui
     OBJECTS_DIR = $$target_path/obj
 }
 
@@ -39,6 +40,7 @@ unix {
     DESTDIR =../bin
     MOC_DIR = $$target_path/moc
     RCC_DIR = $$target_path/rcc
+    UI_DIR =  $$target_path/ui
     OBJECTS_DIR = $$target_path/obj
 }
 
