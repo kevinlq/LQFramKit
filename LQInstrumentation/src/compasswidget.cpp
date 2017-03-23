@@ -2,6 +2,7 @@
 
 #include <QVBoxLayout>
 
+#include "qcgaugewidget.h"
 
 CompassWidget::CompassWidget(QWidget *parent)
     : QWidget(parent)

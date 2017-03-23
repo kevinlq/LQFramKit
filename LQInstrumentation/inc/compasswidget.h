@@ -4,8 +4,9 @@
 #include <QWidget>
 
 #include "lqinstrumentation_global.h"
-#include "qcgaugewidget.h"
 
+class QcGaugeWidget;
+class QcNeedleItem;
 class QVBoxLayout;
 
 class LQINSTRUMENTATIONSHARED_EXPORT CompassWidget : public QWidget

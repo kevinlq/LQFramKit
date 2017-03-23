@@ -40,4 +40,12 @@ OS:windows7 64b
 5.性能监测  
 性能监测工具可以模拟windows系统自带的性能监测效果，目前显示的波纹采用定时器进行模拟，具体实际使用过程中可以传入相应的数据值。demo中有详细的介绍。
 ![性能监测](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/perfmon.png)
+6. 速度仪表1
 
+最终效果如下所示：
+![速度仪表1](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/speed1.png)
+
+7. 速度仪表2
+
+最终效果如下所示：
+![速度仪表1](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/speed2.png)

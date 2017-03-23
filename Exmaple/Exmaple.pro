@@ -40,7 +40,8 @@ DEPENDPATH += ../bin
 # import dll file
 include(../LQInstrumentation/lqinstrumentation_inc.pri)
 include(../LQFormWidget/lqformwidget_inc.pri)
-include (../LQAuxiliaryTools/lqauxiliarytools_inc.pri)
+include(../LQAuxiliaryTools/lqauxiliarytools_inc.pri)
+include(../LQChart/lqchart_inc.pri)
 
 #import demo fle
 include($$PWD/demo/demo.pri)

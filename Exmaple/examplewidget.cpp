@@ -10,6 +10,8 @@
 #include "demo_qmeter.h"
 #include "demo_compasswidget.h"
 #include "demo_attitudemeter.h"
+#include "demo_speedgauge.h"
+#include "demo_airspeedwidget.h"
 
 /*显示界面类测试demo*/
 #include "demo_lineedit.h"
@@ -46,7 +48,6 @@ void ExampleWidget::init()
 void ExampleWidget::initConnect()
 {
 }
-
 
 void ExampleWidget::on_pushButton_clicked()
 {
@@ -102,4 +103,22 @@ void ExampleWidget::on_pushButton_6_clicked()
 
     QTimer::singleShot (30000,perfmon,SLOT(deleteLater()));
     ui->textEdit->append ("性能监测界面已经启动，30秒之后将关闭!");
+}
+
+void ExampleWidget::on_pushButton_7_clicked()
+{
+    Demo_SpeedGauge *speed = new Demo_SpeedGauge("速度仪表1demo");
+    speed->show();
+
+    QTimer::singleShot (20000,speed,SLOT(deleteLater()));
+    ui->textEdit->append ("速度仪表1已经启动，20秒之后将关闭!");
+}
+
+void ExampleWidget::on_pushButton_8_clicked()
+{
+    Demo_AirSpeedWidget *airspeed = new Demo_AirSpeedWidget("速度仪表2demo");
+    airspeed->show();
+
+    QTimer::singleShot(15000,airspeed,SLOT(deleteLater()));
+    ui->textEdit->append ("速度仪表2已经启动，15秒之后将关闭!");
 }
