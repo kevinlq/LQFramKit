@@ -12,10 +12,11 @@ Oschina :http://git.oschina.net/kevinlq0912
 GitHub  :https://github.com/kevinlq  
 
 ## 环境说明：
->本人测试环境
-Qt:5.4.2 Mingw
-OS:windows7 64b
-其他环境测试完成后一并标注。
+
+>本人测试环境  
+Qt:5.4.2 Mingw  
+OS:windows7 64b  
+其他环境测试完成后一并标注    
 
 ## 工程说明
 
