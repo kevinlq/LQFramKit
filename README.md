@@ -1,5 +1,6 @@
 # Qt整理的基础控件说明
-[MENU]
+
+[TOP]
 
 >个人整理Qt开发中常用的基础控件，加以整合以便在后期的项目中直接使用。基础控件中包含了网络收集来的控件和自己编写的控件，来自网络的控件都标明了出处。
 若有冒犯请及时联系我，予以删除。
@@ -33,7 +34,7 @@ OS:windows7 64b
 >测试用例中针对不同的控件进行了说明，也有对应的demo作为展示。
 ### 仪表相关控件测试
 
- 1. 汽车仪表1
+#### 1. 汽车仪表1
 
  控件来源:https://www.linux-apps.com/browse/cat/280/page/2/ord/latest/  
  最终效果:  
@@ -42,38 +43,38 @@ OS:windows7 64b
 <img src="[http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/gauge.gif" alt="Flash animation" />
 
 由于录制关系，动态图显示某些颜色不正常。  
-2. 汽车仪表2    
+#### 2. 汽车仪表2    
  控件来源:https://www.linux-apps.com/browse/cat/280/page/2/ord/latest/  
  最终效果  
 ![仪表盘](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/meter.png)  
 <img src="[http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/meter.gif" alt="Flash animation" />
 
-3. 姿势仪表  
+#### 3. 姿势仪表  
 
 >姿势仪表是展示当前水平以及垂直方向的程度，使用滑块来进行模拟控制，可以很明显的看到，当滑动相应的滑块过程中，姿势发生了相应的变化。
 
 ![姿势仪表](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/attitudemeter.png)
 
-4. 速度仪表1
+#### 4. 速度仪表1
 
 控件来源:https://github.com/Berrima/Qt-custom-gauge-widget   
 最终效果如下所示：
 
 ![速度仪表1](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/speed1.png)
 
-5. 速度仪表2
+#### 5. 速度仪表2
 
 最终效果如下所示： 
 
 ![速度仪表2](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/speed2.png)
 
-6. 圆形进度条
+#### 6. 圆形进度条
 
 >圆形进度条继承QWidget，有7种样式可供选择，demo中详细的记录了各种样式效果。
 
 ![圆形进度条](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/roundPorgressbar.png)
 
-7. 多彩进度条
+#### 7. 多彩进度条
 
 >多彩进度条继承在QWidget,采用QPainter进行了绘制实现的。
 
@@ -81,7 +82,7 @@ OS:windows7 64b
 
 ### 界面显示类测试
 
- 1. 自定义搜索框
+####  1. 自定义搜索框
 
 >自定义搜素框是继承自QLineEdit，然后对其进行了布局，使得button可以显示出来，最后处理了相关的事件，看起来更加符合常规。更加详细的用法可以看工程中对应的demo。
 
@@ -90,7 +91,7 @@ OS:windows7 64b
 ### 辅助工具类测试
 >辅助工具类包含了常见的一些小工具，比如二维码生成、验证码生成、进制转换、数据通信(串口(232,485)、网络、CAN等)
  
-1. 性能测试工具
+#### 1. 性能测试工具
  
 >性能监测工具可以模拟windows系统自带的性能监测效果，目前显示的波纹采用定时器进行模拟，具体实际使用过程中可以传入相应的数据值。demo中有详细的介绍。
 

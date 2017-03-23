@@ -1,6 +1,9 @@
 ﻿#include "colorprogressbar.h"
 #include <QPainter>
 #include <QDebug>
+/**
+  *多彩进度条的实现
+*/
 
 ColorProgressBar::ColorProgressBar(QWidget *parent)
     : QWidget(parent),
@@ -19,6 +22,11 @@ ColorProgressBar::~ColorProgressBar()
 {
 }
 
+/**
+ * @brief setBarBackGroundColor 设置背景色
+ * @param color 颜色值
+ * @return void
+ */
 void ColorProgressBar::setBarBackGroundColor(QColor color)
 {
     if(color != m_barBackGroundColor)
