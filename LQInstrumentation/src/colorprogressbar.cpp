@@ -45,6 +45,11 @@ void ColorProgressBar::setBarSplitLineColor(QColor color)
     }
 }
 
+/**
+ * @brief setBarColor 设置进度条颜色
+ * @param color 颜色值
+ * @return void
+ */
 void ColorProgressBar::setBarColor(QColor color)
 {
     if(color != m_barColor)
@@ -54,6 +59,11 @@ void ColorProgressBar::setBarColor(QColor color)
     }
 }
 
+/**
+ * @brief setDecimal 设置刻度
+ * @param decimal 刻度值
+ * @return void
+ */
 void ColorProgressBar::setDecimal(int decimal)
 {
     if(decimal != m_decimal)
