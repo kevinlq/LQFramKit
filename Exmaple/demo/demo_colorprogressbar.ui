@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Demo_ColorProgressBar</class>
+ <widget class="QDialog" name="Demo_ColorProgressBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>173</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="ColorProgressBar" name="widget" native="true"/>
+   </item>
+   <item>
+    <widget class="ColorProgressBar" name="widget_2" native="true"/>
+   </item>
+   <item>
+    <widget class="ColorProgressBar" name="widget_3" native="true"/>
+   </item>
+   <item>
+    <widget class="QSlider" name="horizontalSlider_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ColorProgressBar</class>
+   <extends>QWidget</extends>
+   <header>colorprogressbar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

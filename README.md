@@ -73,6 +73,12 @@ OS:windows7 64b
 
 ![圆形进度条](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/roundPorgressbar.png)
 
+7. 多彩进度条
+
+>多彩进度条继承在QWidget,采用QPainter进行了绘制实现的。
+
+![多彩进度条](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/ColorProgress.png)
+
 ### 界面显示类测试
 
  1. 自定义搜索框

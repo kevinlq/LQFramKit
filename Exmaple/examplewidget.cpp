@@ -13,6 +13,7 @@
 #include "demo_speedgauge.h"
 #include "demo_airspeedwidget.h"
 #include "demo_roundprogressbar.h"  //圆形进度条
+#include "demo_colorprogressbar.h"  //多彩进入条
 
 /*显示界面类测试demo*/
 #include "demo_lineedit.h"          //个性化搜索框
@@ -142,4 +143,13 @@ void ExampleWidget::on_pushButton_10_clicked()
 
     QTimer::singleShot(15000,round,SLOT(deleteLater()));
     ui->textEdit->append("圆形进度条已经启动，15秒后将关闭!");
+}
+
+void ExampleWidget::on_pushButton_11_clicked()
+{
+    Demo_ColorProgressBar *color = new Demo_ColorProgressBar("多彩进度条demo");
+    color->show();
+
+    QTimer::singleShot(15000,color,SLOT(deleteLater()));
+    ui->textEdit->append("多彩进度条已经启动，15秒后将关闭!");
 }

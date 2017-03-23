@@ -8,7 +8,8 @@ FORMS += \
     $$PWD/demo_speedgauge.ui \
     $$PWD/demo_airspeedwidget.ui \
     $$PWD/demo_imagebrowser.ui \
-    $$PWD/demo_roundprogressbar.ui
+    $$PWD/demo_roundprogressbar.ui \
+    $$PWD/demo_colorprogressbar.ui
 
 HEADERS += \
     $$PWD/demo_qgauge.h \
@@ -20,7 +21,8 @@ HEADERS += \
     $$PWD/demo_speedgauge.h \
     $$PWD/demo_airspeedwidget.h \
     $$PWD/demo_imagebrowser.h \
-    $$PWD/demo_roundprogressbar.h
+    $$PWD/demo_roundprogressbar.h \
+    $$PWD/demo_colorprogressbar.h
 
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
@@ -32,4 +34,5 @@ SOURCES += \
     $$PWD/demo_speedgauge.cpp \
     $$PWD/demo_airspeedwidget.cpp \
     $$PWD/demo_imagebrowser.cpp \
-    $$PWD/demo_roundprogressbar.cpp
+    $$PWD/demo_roundprogressbar.cpp \
+    $$PWD/demo_colorprogressbar.cpp

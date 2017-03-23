@@ -8,7 +8,8 @@ HEADERS += \
     $$PWD/inc/attitudemeter.h \
     $$PWD/inc/speedgaugewidget.h \
     $$PWD/inc/airspeedgaugewidget.h \
-    $$PWD/inc/QRoundProgressBar.h
+    $$PWD/inc/QRoundProgressBar.h \
+    $$PWD/inc/colorprogressbar.h
 
 SOURCES += \
 #    $$PWD/src/lqinstrumentation.cpp \
@@ -21,4 +22,5 @@ SOURCES += \
     $$PWD/src/attitudemeter.cpp \
     $$PWD/src/speedgaugewidget.cpp \
     $$PWD/src/airspeedgaugewidget.cpp \
-    $$PWD/src/QRoundProgressBar.cpp
+    $$PWD/src/QRoundProgressBar.cpp \
+    $$PWD/src/colorprogressbar.cpp
