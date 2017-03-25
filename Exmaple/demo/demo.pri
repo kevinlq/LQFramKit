@@ -10,7 +10,8 @@ FORMS += \
     $$PWD/demo_imagebrowser.ui \
     $$PWD/demo_roundprogressbar.ui \
     $$PWD/demo_colorprogressbar.ui \
-    $$PWD/demo_customcombox.ui
+    $$PWD/demo_customcombox.ui \
+    $$PWD/demo_splashscreen.ui
 
 HEADERS += \
     $$PWD/demo_qgauge.h \
@@ -24,7 +25,8 @@ HEADERS += \
     $$PWD/demo_imagebrowser.h \
     $$PWD/demo_roundprogressbar.h \
     $$PWD/demo_colorprogressbar.h \
-    $$PWD/demo_customcombox.h
+    $$PWD/demo_customcombox.h \
+    $$PWD/demo_splashscreen.h
 
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
@@ -38,4 +40,7 @@ SOURCES += \
     $$PWD/demo_imagebrowser.cpp \
     $$PWD/demo_roundprogressbar.cpp \
     $$PWD/demo_colorprogressbar.cpp \
-    $$PWD/demo_customcombox.cpp
+    $$PWD/demo_customcombox.cpp \
+    $$PWD/demo_splashscreen.cpp
+
+RESOURCES +=

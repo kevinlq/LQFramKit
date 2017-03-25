@@ -25,6 +25,8 @@ public:
 
     void setShowBarSplitLine(bool show);
 
+    void setTextColor(QColor color);
+
 
 public slots:
     void setValue(double value);
@@ -46,6 +48,7 @@ private:
     double m_min,m_max,m_value;
     QColor m_barBackGroundColor;    //背景颜色
     QColor m_barSplitLineColor;     //背景分割线颜色
+    QColor m_textColor;             //文字颜色
     int m_barSplitLineDelta;        //背景分割线间距
     bool m_showBarSplitLine;        //是否显示背景分割线
     QColor m_barColor;

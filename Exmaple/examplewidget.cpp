@@ -18,6 +18,8 @@
 /*显示界面类测试demo*/
 #include "demo_lineedit.h"          //个性化搜索框
 #include "demo_customcombox.h"      //自定义ComBox
+#include "demo_splashscreen.h"      //启动界面
+#include "nbaseswitchbutton.h"      //switch切换开关
 
 /*辅助工具测试demo*/
 #include "demo_perfmon.h"           //性能监测
@@ -46,6 +48,8 @@ void ExampleWidget::init()
 {
     this->setFocusPolicy(Qt::ClickFocus);
     this->setWindowTitle("控件测试集合");
+
+    ui->tabWidget->setCurrentIndex(0);
 
     initConnect ();
 }
@@ -169,4 +173,22 @@ void ExampleWidget::closeEvent(QCloseEvent *event)
     Q_UNUSED(event);
 
     qApp->exit(0);
+}
+
+void ExampleWidget::on_pushButton_13_clicked()
+{
+    Demo_SplashScreen *splash = new Demo_SplashScreen("启动界面demo");
+    splash->showWidget();
+
+    QTimer::singleShot(20000,splash,SLOT(deleteLater()));
+    ui->textEdit->append("启动界面已经启动，20秒后将关闭!");
+}
+
+void ExampleWidget::on_pushButton_14_clicked()
+{
+    NBaseSwitchButton *switchBtn = new NBaseSwitchButton;
+    switchBtn->show ();
+
+    QTimer::singleShot (8000,switchBtn,SLOT(deleteLater()));
+    ui->textEdit->append ("switch切换开关已经启动，8秒后即将关闭!");
 }

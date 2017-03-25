@@ -53,3 +53,6 @@ FORMS += \
 
 HEADERS += \
     examplewidget.h
+
+RESOURCES += \
+    ExampleImage.qrc

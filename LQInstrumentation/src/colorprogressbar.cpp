@@ -11,6 +11,7 @@ ColorProgressBar::ColorProgressBar(QWidget *parent)
       m_max(100),
       m_value(0),
       m_barBackGroundColor(Qt::white),
+      m_textColor(QColor(37,125,218)),
       m_barColor(QColor(255, 107, 107)),
       m_decimal(0),
       m_xRadius(5),
@@ -60,8 +61,8 @@ void ColorProgressBar::setBarColor(QColor color)
 }
 
 /**
- * @brief setDecimal 设置刻度
- * @param decimal 刻度值
+ * @brief setDecimal 设置小数位数
+ * @param decimal 小数点位数
  * @return void
  */
 void ColorProgressBar::setDecimal(int decimal)
@@ -83,11 +84,29 @@ void ColorProgressBar::setBarSplitLineDelta(int delta)
     }
 }
 
+/**
+ * @brief setShowBarSplitLine 设置是否显示背景分割线
+ * @param show 是否显示
+ * @return void
+ */
 void ColorProgressBar::setShowBarSplitLine(bool show)
 {
     if(show != m_showBarSplitLine)
     {
         m_showBarSplitLine = show;
+        update();
+    }
+}
+
+/**
+ * @brief setTextColor 设置文字颜色
+ * @param color 具体颜色RGB值
+ * @return void
+ */
+void ColorProgressBar::setTextColor(QColor color)
+{
+    if (color != m_textColor){
+        m_textColor = color;
         update();
     }
 }
@@ -161,7 +180,8 @@ void ColorProgressBar::drawText(QPainter &p, const QRectF &textRect)
 {
     p.save();
     //画值
-    p.setPen(palette().text().color());
+    //    p.setPen(palette().text().color());
+    p.setPen(m_textColor);
     double percent = (m_value - m_min) / (m_max - m_min) * 100.0;
     QString valueStr = QString("%1%").arg(QString::number(percent, 'f', m_decimal));
     p.drawText(textRect, Qt::AlignCenter, valueStr);
