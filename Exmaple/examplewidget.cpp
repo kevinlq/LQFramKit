@@ -20,6 +20,7 @@
 #include "demo_customcombox.h"      //自定义ComBox
 #include "demo_splashscreen.h"      //启动界面
 #include "nbaseswitchbutton.h"      //switch切换开关
+#include"demo_messagebox.h"         //自定义消息框
 
 /*辅助工具测试demo*/
 #include "demo_perfmon.h"           //性能监测
@@ -191,4 +192,13 @@ void ExampleWidget::on_pushButton_14_clicked()
 
     QTimer::singleShot (8000,switchBtn,SLOT(deleteLater()));
     ui->textEdit->append ("switch切换开关已经启动，8秒后即将关闭!");
+}
+
+void ExampleWidget::on_pushButton_15_clicked()
+{
+    Demo_MessageBox *msg = new Demo_MessageBox("自定义消息框demo");
+    msg->show ();
+
+    QTimer::singleShot (18000,msg,SLOT(deleteLater()));
+    ui->textEdit->append ("消息框测试界面已经启动，18秒后将关闭");
 }

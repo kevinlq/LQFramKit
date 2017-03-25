@@ -106,6 +106,10 @@ OS:windows7 64b
 
 ![自定义switch切换按钮动界面](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/switch.png)
 
+#### 5. 自定义消息框
+>自定义消息框继承自QDialog,通过布局实现了一个简单的消息框，所以的样式由样式表进行控制。效果如下所示:
+
+![自定义消息框](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/screen/messagebox.png)
 
 ### 辅助工具类测试
 >辅助工具类包含了常见的一些小工具，比如二维码生成、验证码生成、进制转换、数据通信(串口(232,485)、网络、CAN等)
@@ -130,3 +134,4 @@ OS:windows7 64b
 * V 0.0.0.5 添加了启动界面，修复了资源文件添加的bug,多个工程中如果添加的资源文件名称相同，出现了无法调用问题，比如都新建了一个image的资源文件，调用过程中发现一直提醒找不到该文件。   
 在网上找到了一篇文章：http://www.cnblogs.com/lzjsky/archive/2012/08/20/2647471.html  分析了比较详细，说明了资源文件的前因后果。
 * V 0.0.0.6 添加了switch切换按钮，并进行了测试；
+* V 0.0.0.7 添加了自定义消息框界面，编写相关demo测试;
