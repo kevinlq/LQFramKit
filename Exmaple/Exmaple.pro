@@ -30,6 +30,7 @@ win32{
     UI_DIR =  $$target_path/ui
     OBJECTS_DIR = $$target_path/obj
 }
+
 win32:{
     LIBS += -L../bin/ -lLQInstrumentation\
     -lLQFormWidget\

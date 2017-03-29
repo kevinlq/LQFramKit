@@ -14,7 +14,8 @@ DEFINES += LQFORMWIDGET_LIBRARY
 DEFINES +=DEBUG_OUT
 
 include ($$PWD/lqformwidget_src.pri)
-INCLUDEPATH +=$$PWD/inc
+INCLUDEPATH +=$$PWD/inc \
+              $$PWD/messageWidget
 
 win32{
     CONFIG  += debug_and_release

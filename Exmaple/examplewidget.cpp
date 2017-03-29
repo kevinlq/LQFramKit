@@ -21,6 +21,7 @@
 #include "demo_splashscreen.h"      //启动界面
 #include "nbaseswitchbutton.h"      //switch切换开关
 #include"demo_messagebox.h"         //自定义消息框
+#include "demo_rightdownmessagebox.h"//右下角消息弹窗
 
 /*辅助工具测试demo*/
 #include "demo_perfmon.h"           //性能监测
@@ -201,4 +202,13 @@ void ExampleWidget::on_pushButton_15_clicked()
 
     QTimer::singleShot (18000,msg,SLOT(deleteLater()));
     ui->textEdit->append ("消息框测试界面已经启动，18秒后将关闭");
+}
+
+void ExampleWidget::on_pushButton_16_clicked()
+{
+    Demo_RightDownMessageBox *msg = new Demo_RightDownMessageBox("右下角消息弹窗demo");
+    msg->show ();
+
+    QTimer::singleShot (15000,msg,SLOT(deleteLater()));
+    ui->textEdit->append ("右下角消息弹窗已经启动，15秒后将关闭");
 }
