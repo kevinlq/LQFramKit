@@ -41,7 +41,8 @@ OS:windows7 64b
  最终效果:  
 
 ![仪表盘](/screen/gauge.png)
-<img src="[/screen/gauge.gif" alt="Flash animation" />
+
+![动态效果图](/screen/gauge.gif)
 
 由于录制关系，动态图显示某些颜色不正常。  
 #### 2. 汽车仪表2    
