@@ -49,7 +49,8 @@ OS:windows7 64b
  控件来源:https://www.linux-apps.com/browse/cat/280/page/2/ord/latest/  
  最终效果  
 ![仪表盘](/screen/meter.png)  
-<img src="[/screen/meter.gif" alt="Flash animation" />
+
+![动态图](/screen/meter.gif)  
 
 #### 3. 姿势仪表  
 
