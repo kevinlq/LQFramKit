@@ -24,7 +24,7 @@ OS:windows7 64b
 
 本工程将各个控件进行了分类，每类控件都各自封装成对应的库，可以方便调用，各个控件的头文件和源文件分别存放，方便了后期直接调用dll以及头文件，工程大致框架如下所示:
 
-![工程框架说明](http://git.oschina.net/kevinlq0912/LQFramKit/raw/master/doc/project_frame.png)
+![工程框架说明](/doc/project_frame.png)
 
 ## 如何编译本工程
 * 打开本项目源码，打开工程文件`LQFramKit.pro`,去掉影子编译选项，直接点击编译并运行即可，最终生成的可执行文件以及对应的库文件都在`bin`文件中，具体可以编译完成后查看。
