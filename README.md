@@ -111,7 +111,7 @@ DISABLE_LIBRARY_FEATURES
 ![自定义启动界面](/screen/Splashscreen.png)
 
 #### 4. 超炫启动界面
->继承在QWidget,在paintEvent事件中进行不断旋转背景图片实现，具体其他效果可以替换其他不同的图片而实现
+>继承自QWidget,在paintEvent事件中进行不断旋转背景图片实现，具体其他效果可以替换其他不同的图片而实现
 
 ![超炫启动界面](/screen/start.png)
 
@@ -138,6 +138,7 @@ DISABLE_LIBRARY_FEATURES
 >二维码识别采用第三发库来实现
 
 ![二维码识别](/screen/qzxing.png)
+测试时使用自己支付宝付款码进行了测试
 
 ### 图表控件类测试
 >图表控件类包含了常见的图表，比如各种统计图(条形图、扇形图、折线图、饼图等等)
