@@ -138,6 +138,7 @@ DISABLE_LIBRARY_FEATURES
 >二维码识别采用第三发库来实现
 
 ![二维码识别](/screen/qzxing.png)
+
 测试时使用自己支付宝付款码进行了测试
 
 ### 图表控件类测试
