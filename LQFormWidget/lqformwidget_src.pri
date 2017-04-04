@@ -7,7 +7,8 @@ HEADERS += \
     $$PWD/inc/nbaseswitchbutton.h \
     $$PWD/inc/msgboxbase.h \
     $$PWD/inc/messageWidget/messagetitle.h \
-    $$PWD/inc/messageWidget/messagewidget.h
+    $$PWD/inc/messageWidget/messagewidget.h \
+    $$PWD/inc/lqstartwidget.h
 
 SOURCES += \
     $$PWD/src/lqformwidget.cpp \
@@ -17,4 +18,5 @@ SOURCES += \
     $$PWD/src/nbaseswitchbutton.cpp \
     $$PWD/src/msgboxbase.cpp \
     $$PWD/src/messageWidget/messagetitle.cpp \
-    $$PWD/src/messageWidget/messagewidget.cpp
+    $$PWD/src/messageWidget/messagewidget.cpp \
+    $$PWD/src/lqstartwidget.cpp

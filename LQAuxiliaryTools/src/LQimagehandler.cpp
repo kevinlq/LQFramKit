@@ -1,4 +1,5 @@
-﻿#include "imagehandler.h"
+﻿#include "LQimagehandler.h"
+
 #include <QApplication>
 #include <QDesktopWidget>
 #include <QMatrix>
@@ -7,7 +8,7 @@
 #include <QDebug>
 
 
-ImageHandler::ImageHandler(QWidget *parent) : QWidget(parent)
+LQImageHandler::LQImageHandler(QWidget *parent) : QWidget(parent)
   ,m_scale(0.0)
   ,m_percentage(0.0)
   ,m_originX(0.0), m_originY(0.0)
@@ -15,18 +16,18 @@ ImageHandler::ImageHandler(QWidget *parent) : QWidget(parent)
 {
 }
 
-ImageHandler::~ImageHandler()
+LQImageHandler::~LQImageHandler()
 {
 }
 
-void ImageHandler::setPixmap(const QPixmap &pixmap)
+void LQImageHandler::setPixmap(const QPixmap &pixmap)
 {
     m_pixmap = pixmap;
 
     showSuitableSize();
 }
 
-void ImageHandler::ariseScale(int rate)
+void LQImageHandler::ariseScale(int rate)
 {
     double old_percentage = m_percentage;
     double step = static_cast<double>(rate)/100.0*5*old_percentage; //步进值
@@ -61,7 +62,7 @@ bool ImageHandler::isInPixmap(QPoint pos)
 }
 #endif
 
-void ImageHandler::showOriginalSize()
+void LQImageHandler::showOriginalSize()
 {
     double old_percentage = m_percentage;
     m_percentage = 1.0;
@@ -71,7 +72,7 @@ void ImageHandler::showOriginalSize()
     emit percentageChanged( m_percentage );
 }
 
-void ImageHandler::showSuitableSize()
+void LQImageHandler::showSuitableSize()
 {
     double pixwidth = static_cast<double>(m_pixmap.width());
     double pixheight = static_cast<double>(m_pixmap.height());
@@ -104,17 +105,17 @@ void ImageHandler::showSuitableSize()
     emit percentageChanged( m_percentage );
 }
 
-void ImageHandler::zoomIn()
+void LQImageHandler::zoomIn()
 {
     ariseScale(1);
 }
 
-void ImageHandler::zoomOut()
+void LQImageHandler::zoomOut()
 {
     ariseScale(-1);
 }
 
-void ImageHandler::clockwise90()
+void LQImageHandler::clockwise90()
 {
     QMatrix matrix;
     matrix.rotate(90);
@@ -123,7 +124,7 @@ void ImageHandler::clockwise90()
     showSuitableSize();
 }
 
-void ImageHandler::anticlockwise90()
+void LQImageHandler::anticlockwise90()
 {
     QMatrix matrix;
     matrix.rotate(-90);
@@ -132,7 +133,7 @@ void ImageHandler::anticlockwise90()
     showSuitableSize();
 }
 
-void ImageHandler::paintEvent(QPaintEvent *event)
+void LQImageHandler::paintEvent(QPaintEvent *event)
 {
     Q_UNUSED(event);
 
@@ -168,7 +169,7 @@ void ImageHandler::paintEvent(QPaintEvent *event)
     painter.restore();
 }
 
-void ImageHandler::wheelEvent(QWheelEvent *event)
+void LQImageHandler::wheelEvent(QWheelEvent *event)
 {
     int numDegrees = event->delta() / 8;//滚动的角度，*8就是鼠标滚动的距离
     int numSteps = numDegrees / 15;//滚动的步数，*15就是鼠标滚动的角度
@@ -179,7 +180,7 @@ void ImageHandler::wheelEvent(QWheelEvent *event)
     }
 }
 
-void ImageHandler::mousePressEvent(QMouseEvent *event)
+void LQImageHandler::mousePressEvent(QMouseEvent *event)
 {
     if( event->button() == Qt::LeftButton  )
     {
@@ -195,7 +196,7 @@ void ImageHandler::mousePressEvent(QMouseEvent *event)
     }
 }
 
-void ImageHandler::mouseReleaseEvent(QMouseEvent *event)
+void LQImageHandler::mouseReleaseEvent(QMouseEvent *event)
 {
     Q_UNUSED(event);
     if( event->button() == Qt::LeftButton )
@@ -209,7 +210,7 @@ void ImageHandler::mouseReleaseEvent(QMouseEvent *event)
     }
 }
 
-void ImageHandler::mouseMoveEvent(QMouseEvent *event)
+void LQImageHandler::mouseMoveEvent(QMouseEvent *event)
 {
     //鼠标相对于屏幕的位置
     QPoint move_pos = event->pos();

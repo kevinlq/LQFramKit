@@ -57,3 +57,4 @@ HEADERS += \
 
 RESOURCES += \
     ExampleImage.qrc
+

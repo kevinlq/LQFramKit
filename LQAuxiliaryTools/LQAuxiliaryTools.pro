@@ -7,6 +7,8 @@
 
 QT       -= gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_VERSION, 4.7): QT += declarative
+greaterThan(QT_VERSION, 5.0): QT += quick
 
 TARGET = LQAuxiliaryTools
 TEMPLATE = lib
@@ -14,7 +16,12 @@ TEMPLATE = lib
 DEFINES += LQAUXILIARYTOOLS_LIBRARY
 
 include ($$PWD/lqauxiliarytools_src.pri)
+
 INCLUDEPATH +=$$PWD/inc
+
+# 引入第三方源码
+include($$PWD/3rdparty/3rdparty.pri)
+INCLUDEPATH += $$PWD/3rdparty
 
 win32{
     CONFIG  += debug_and_release

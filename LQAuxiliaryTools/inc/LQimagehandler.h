@@ -1,5 +1,5 @@
-﻿#ifndef IMAGEBROWSER_IMAGEHANDLER_H
-#define IMAGEBROWSER_IMAGEHANDLER_H
+﻿#ifndef LQIMAGEBROWSER_IMAGEHANDLER_H
+#define LQIMAGEBROWSER_IMAGEHANDLER_H
 
 #include <QWidget>
 #include <QPixmap>
@@ -11,12 +11,12 @@
 #include "lqauxiliarytools_global.h"
 
 
-class LQAUXILIARYTOOLSSHARED_EXPORT ImageHandler : public QWidget
+class LQAUXILIARYTOOLSSHARED_EXPORT LQImageHandler : public QWidget
 {
     Q_OBJECT
 public:
-    explicit ImageHandler(QWidget *parent = 0);
-    ~ImageHandler();
+    explicit LQImageHandler(QWidget *parent = 0);
+    ~LQImageHandler();
 
     void setPixmap(const QPixmap &pixmap);
 
@@ -48,7 +48,7 @@ private:
     QPixmap m_pixmap;
 
     //缩放
-    double m_scale;             //缩放比例
+    double m_scale;               //缩放比例
     double m_percentage;          //缩放百分比
 
     //移动
@@ -62,4 +62,4 @@ private:
     int m_suitableHeight;
 };
 
-#endif // IMAGEBROWSER_IMAGEHANDLER_H
+#endif // LQIMAGEBROWSER_IMAGEHANDLER_H

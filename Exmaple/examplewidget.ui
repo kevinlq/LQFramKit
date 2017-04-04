@@ -300,6 +300,13 @@
             </widget>
            </item>
            <item>
+            <widget class="QPushButton" name="pushButton_19">
+             <property name="text">
+              <string>启动动画</string>
+             </property>
+            </widget>
+           </item>
+           <item>
             <spacer name="horizontalSpacer_2">
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
@@ -351,6 +358,26 @@
              </property>
              <property name="text">
               <string>性能监控</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_17">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>二维码识别</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_18">
+             <property name="text">
+              <string>二维码生成</string>
              </property>
             </widget>
            </item>

@@ -4,6 +4,7 @@
 #include <QTimer>
 #include <QVBoxLayout>
 #include <QSlider>
+#include <QFile>
 
 /*仪器仪表测试demo*/
 #include "demo_qgauge.h"
@@ -12,20 +13,23 @@
 #include "demo_attitudemeter.h"
 #include "demo_speedgauge.h"
 #include "demo_airspeedwidget.h"
-#include "demo_roundprogressbar.h"  //圆形进度条
-#include "demo_colorprogressbar.h"  //多彩进入条
+#include "demo_roundprogressbar.h"      //圆形进度条
+#include "demo_colorprogressbar.h"      //多彩进入条
 
 /*显示界面类测试demo*/
-#include "demo_lineedit.h"          //个性化搜索框
-#include "demo_customcombox.h"      //自定义ComBox
-#include "demo_splashscreen.h"      //启动界面
-#include "nbaseswitchbutton.h"      //switch切换开关
-#include"demo_messagebox.h"         //自定义消息框
-#include "demo_rightdownmessagebox.h"//右下角消息弹窗
+#include "demo_lineedit.h"              //个性化搜索框
+#include "demo_customcombox.h"          //自定义ComBox
+#include "demo_splashscreen.h"          //启动界面
+#include "demo_startwidget.h"           //个性化启动界面
+
+#include "nbaseswitchbutton.h"          //switch切换开关
+#include"demo_messagebox.h"             //自定义消息框
+#include "demo_rightdownmessagebox.h"   //右下角消息弹窗
 
 /*辅助工具测试demo*/
-#include "demo_perfmon.h"           //性能监测
-#include "demo_imagebrowser.h"      //图片旋转缩放
+#include "demo_perfmon.h"               //性能监测
+#include "demo_imagebrowser.h"          //图片旋转缩放
+#include "demo_zxing.h"                 //二维码测试
 
 ExampleWidget::ExampleWidget(QWidget *parent) :
     QWidget(parent),
@@ -48,8 +52,15 @@ void ExampleWidget::slotTestSearchLineEdit(const QString &text)
 
 void ExampleWidget::init()
 {
+//    this->setWindowFlags(Qt::FramelessWindowHint);
     this->setFocusPolicy(Qt::ClickFocus);
     this->setWindowTitle("控件测试集合");
+
+    //加载控件样式
+    QFile file(":/image/css/style_demo.css");
+    file.open(QFile::ReadOnly);
+    QString qss = QString(file.readAll());
+    setStyleSheet(qss);
 
     ui->tabWidget->setCurrentIndex(0);
 
@@ -63,6 +74,7 @@ void ExampleWidget::initConnect()
 void ExampleWidget::on_pushButton_clicked()
 {
     Demo_compassWidget *comWidget = new Demo_compassWidget("指南针demo");
+    comWidget->setWindowModality(Qt::ApplicationModal);
     comWidget->show();
 
     QTimer::singleShot(10000,comWidget,SLOT(deleteLater()));
@@ -72,6 +84,7 @@ void ExampleWidget::on_pushButton_clicked()
 void ExampleWidget::on_pushButton_2_clicked()
 {
     Demo_qmeter *meter = new Demo_qmeter("仪表盘1demo");
+    meter->setWindowModality(Qt::ApplicationModal);
     meter->show();
 
     QTimer::singleShot(20000,meter,SLOT(deleteLater()));
@@ -81,6 +94,7 @@ void ExampleWidget::on_pushButton_2_clicked()
 void ExampleWidget::on_pushButton_3_clicked()
 {
     Demo_qgauge *gauge = new Demo_qgauge("仪表盘2demo");
+    gauge->setWindowModality(Qt::ApplicationModal);
     gauge->show();
 
     QTimer::singleShot(10000,gauge,SLOT(deleteLater()));
@@ -90,6 +104,7 @@ void ExampleWidget::on_pushButton_3_clicked()
 void ExampleWidget::on_pushButton_4_clicked()
 {
     Demo_lineEdit *search = new Demo_lineEdit("搜索框demo");
+    search->setWindowModality(Qt::ApplicationModal);
     search->show();
     connect(search,SIGNAL(signalSearchContent(QString)),
             this,SLOT(slotTestSearchLineEdit(QString)));
@@ -101,6 +116,7 @@ void ExampleWidget::on_pushButton_4_clicked()
 void ExampleWidget::on_pushButton_5_clicked()
 {
     Demo_AttitudeMeter *attitudeMeter = new Demo_AttitudeMeter("姿势仪表demo");
+    attitudeMeter->setWindowModality(Qt::ApplicationModal);
     attitudeMeter->show();
 
     QTimer::singleShot(10000,attitudeMeter,SLOT(deleteLater()));
@@ -110,6 +126,7 @@ void ExampleWidget::on_pushButton_5_clicked()
 void ExampleWidget::on_pushButton_6_clicked()
 {
     Demo_PerfMon *perfmon = new Demo_PerfMon("性能监测demo");
+    perfmon->setWindowModality(Qt::ApplicationModal);
     perfmon->show ();
 
     QTimer::singleShot (30000,perfmon,SLOT(deleteLater()));
@@ -119,6 +136,7 @@ void ExampleWidget::on_pushButton_6_clicked()
 void ExampleWidget::on_pushButton_7_clicked()
 {
     Demo_SpeedGauge *speed = new Demo_SpeedGauge("速度仪表1demo");
+    speed->setWindowModality(Qt::ApplicationModal);
     speed->show();
 
     QTimer::singleShot (20000,speed,SLOT(deleteLater()));
@@ -128,6 +146,7 @@ void ExampleWidget::on_pushButton_7_clicked()
 void ExampleWidget::on_pushButton_8_clicked()
 {
     Demo_AirSpeedWidget *airspeed = new Demo_AirSpeedWidget("速度仪表2demo");
+    airspeed->setWindowModality(Qt::ApplicationModal);
     airspeed->show();
 
     QTimer::singleShot(15000,airspeed,SLOT(deleteLater()));
@@ -137,6 +156,7 @@ void ExampleWidget::on_pushButton_8_clicked()
 void ExampleWidget::on_pushButton_9_clicked()
 {
     Demo_ImageBrowser *image = new Demo_ImageBrowser("图片旋转缩放demo");
+    image->setWindowModality(Qt::ApplicationModal);
     image->show();
 
     QTimer::singleShot(20000,image,SLOT(deleteLater()));
@@ -146,6 +166,7 @@ void ExampleWidget::on_pushButton_9_clicked()
 void ExampleWidget::on_pushButton_10_clicked()
 {
     Demo_RoundProgressBar *round = new Demo_RoundProgressBar("圆形进度条demo");
+    round->setWindowModality(Qt::ApplicationModal);
     round->show();
 
     QTimer::singleShot(15000,round,SLOT(deleteLater()));
@@ -155,6 +176,7 @@ void ExampleWidget::on_pushButton_10_clicked()
 void ExampleWidget::on_pushButton_11_clicked()
 {
     Demo_ColorProgressBar *color = new Demo_ColorProgressBar("多彩进度条demo");
+    color->setWindowModality(Qt::ApplicationModal);
     color->show();
 
     QTimer::singleShot(15000,color,SLOT(deleteLater()));
@@ -164,6 +186,7 @@ void ExampleWidget::on_pushButton_11_clicked()
 void ExampleWidget::on_pushButton_12_clicked()
 {
     Demo_CustomComBox *combox = new Demo_CustomComBox("自定义ComBoxdemo");
+    combox->setWindowModality(Qt::ApplicationModal);
     combox->show();
 
     QTimer::singleShot(10000,combox,SLOT(deleteLater()));
@@ -185,10 +208,10 @@ void ExampleWidget::on_pushButton_13_clicked()
     QTimer::singleShot(20000,splash,SLOT(deleteLater()));
     ui->textEdit->append("启动界面已经启动，20秒后将关闭!");
 }
-
 void ExampleWidget::on_pushButton_14_clicked()
 {
     NBaseSwitchButton *switchBtn = new NBaseSwitchButton;
+    switchBtn->setWindowModality(Qt::ApplicationModal);
     switchBtn->show ();
 
     QTimer::singleShot (8000,switchBtn,SLOT(deleteLater()));
@@ -198,6 +221,7 @@ void ExampleWidget::on_pushButton_14_clicked()
 void ExampleWidget::on_pushButton_15_clicked()
 {
     Demo_MessageBox *msg = new Demo_MessageBox("自定义消息框demo");
+    msg->setWindowModality(Qt::ApplicationModal);
     msg->show ();
 
     QTimer::singleShot (18000,msg,SLOT(deleteLater()));
@@ -207,8 +231,35 @@ void ExampleWidget::on_pushButton_15_clicked()
 void ExampleWidget::on_pushButton_16_clicked()
 {
     Demo_RightDownMessageBox *msg = new Demo_RightDownMessageBox("右下角消息弹窗demo");
+    msg->setWindowModality(Qt::ApplicationModal);
     msg->show ();
 
     QTimer::singleShot (15000,msg,SLOT(deleteLater()));
     ui->textEdit->append ("右下角消息弹窗已经启动，15秒后将关闭");
+}
+
+
+void ExampleWidget::on_pushButton_17_clicked()
+{
+    Demo_Zxing *zxing = new Demo_Zxing("二维码识别测试demo");
+    zxing->setWindowModality (Qt::ApplicationModal);
+    zxing->show ();
+
+    QTimer::singleShot (20000,zxing,SLOT(deleteLater()));
+    ui->textEdit->append ("二维码识别测试界面已经运行");
+}
+
+void ExampleWidget::on_pushButton_18_clicked()
+{
+    //
+}
+
+void ExampleWidget::on_pushButton_19_clicked()
+{
+    Demo_StartWidget *start = new Demo_StartWidget("超炫启动界面demo");
+    start->setWindowModality (Qt::ApplicationModal);
+    connect (start,SIGNAL(signalShow()),start,SLOT(show()));
+
+    QTimer::singleShot (20000,start,SLOT(deleteLater()));
+    ui->textEdit->append ("超炫启动界面已经加载，20秒后将关闭");
 }

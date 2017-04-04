@@ -13,7 +13,9 @@ FORMS += \
     $$PWD/demo_customcombox.ui \
     $$PWD/demo_splashscreen.ui \
     $$PWD/demo_messagebox.ui \
-    $$PWD/demo_rightdownmessagebox.ui
+    $$PWD/demo_rightdownmessagebox.ui \
+    $$PWD/demo_zxing.ui \
+    $$PWD/demo_startwidget.ui
 
 HEADERS += \
     $$PWD/demo_qgauge.h \
@@ -30,7 +32,9 @@ HEADERS += \
     $$PWD/demo_customcombox.h \
     $$PWD/demo_splashscreen.h \
     $$PWD/demo_messagebox.h \
-    $$PWD/demo_rightdownmessagebox.h
+    $$PWD/demo_rightdownmessagebox.h \
+    $$PWD/demo_zxing.h \
+    $$PWD/demo_startwidget.h
 
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
@@ -47,6 +51,8 @@ SOURCES += \
     $$PWD/demo_customcombox.cpp \
     $$PWD/demo_splashscreen.cpp \
     $$PWD/demo_messagebox.cpp \
-    $$PWD/demo_rightdownmessagebox.cpp
+    $$PWD/demo_rightdownmessagebox.cpp \
+    $$PWD/demo_zxing.cpp \
+    $$PWD/demo_startwidget.cpp
 
 RESOURCES +=
