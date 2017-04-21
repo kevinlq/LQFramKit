@@ -49,6 +49,7 @@ include(../LQChart/lqchart_inc.pri)
 include($$PWD/demo/demo.pri)
 INCLUDEPATH +=$$PWD/demo
 
+
 FORMS += \
     examplewidget.ui
 

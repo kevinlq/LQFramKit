@@ -7,7 +7,7 @@
 
 QT       -= gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-greaterThan(QT_VERSION, 4.7): QT += declarative
+#greaterThan(QT_VERSION, 4.7): QT += declarative
 greaterThan(QT_VERSION, 5.0): QT += quick
 
 TARGET = LQAuxiliaryTools

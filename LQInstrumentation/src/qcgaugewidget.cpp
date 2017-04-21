@@ -216,11 +216,11 @@ QRectF QcItem::resetRect()
 QPointF QcItem::getPoint(float deg,const QRectF &tmpRect)
 {
     float r = getRadius(tmpRect);
-    float xx=cos(qDegreesToRadians(deg))*r;
-    float yy=sin(qDegreesToRadians(deg))*r;
+    float xx = cos(qDegreesToRadians(deg))*r;
+    float yy = sin(qDegreesToRadians(deg))*r;
     QPointF pt;
-    xx=tmpRect.center().x()-xx;
-    yy=tmpRect.center().y()-yy;
+    xx = tmpRect.center().x()-xx;
+    yy = tmpRect.center().y()-yy;
     pt.setX(xx);
     pt.setY(yy);
     return pt;

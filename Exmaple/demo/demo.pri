@@ -15,7 +15,8 @@ FORMS += \
     $$PWD/demo_messagebox.ui \
     $$PWD/demo_rightdownmessagebox.ui \
     $$PWD/demo_zxing.ui \
-    $$PWD/demo_startwidget.ui
+    $$PWD/demo_startwidget.ui \
+    $$PWD/demo_drawprogressbar.ui
 
 HEADERS += \
     $$PWD/demo_qgauge.h \
@@ -34,7 +35,8 @@ HEADERS += \
     $$PWD/demo_messagebox.h \
     $$PWD/demo_rightdownmessagebox.h \
     $$PWD/demo_zxing.h \
-    $$PWD/demo_startwidget.h
+    $$PWD/demo_startwidget.h \
+    $$PWD/demo_drawprogressbar.h
 
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
@@ -53,6 +55,5 @@ SOURCES += \
     $$PWD/demo_messagebox.cpp \
     $$PWD/demo_rightdownmessagebox.cpp \
     $$PWD/demo_zxing.cpp \
-    $$PWD/demo_startwidget.cpp
-
-RESOURCES +=
+    $$PWD/demo_startwidget.cpp \
+    $$PWD/demo_drawprogressbar.cpp

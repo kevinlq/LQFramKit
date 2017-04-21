@@ -125,6 +125,14 @@ DISABLE_LIBRARY_FEATURES
 
 ![自定义消息框](/screen/messagebox.png)
 
+#### 6. 导航进度条
+> 导航进度条继承QWidget,通过QPainter进行绘制。
+* 使用方法
+使用时只需要继承该 类即可，或者选择控件提升的办法
+
+![导航进度条](/screen/drawprogressbar.png)
+
+
 ### 辅助工具类测试
 >辅助工具类包含了常见的一些小工具，比如二维码生成、验证码生成、进制转换、数据通信(串口(232,485)、网络、CAN等)
  

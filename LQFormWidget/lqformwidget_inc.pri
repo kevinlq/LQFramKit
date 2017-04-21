@@ -1,2 +1,3 @@
 INCLUDEPATH +=\
-    $$PWD/inc
+    $$PWD/inc \
+    $$PWD/inc/drawprogressbar

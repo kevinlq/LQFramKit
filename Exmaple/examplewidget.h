@@ -56,6 +56,8 @@ private slots:
 
     void on_pushButton_19_clicked();
 
+    void on_pushButton_20_clicked();
+
 protected:
     virtual void closeEvent(QCloseEvent *event);
 

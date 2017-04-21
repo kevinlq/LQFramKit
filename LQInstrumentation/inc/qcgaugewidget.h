@@ -33,7 +33,8 @@
 #include <QPainter>
 #include <QObject>
 #include <QRectF>
-#include <QtMath>
+//#include <QtMath>
+#include <qmath.h>
 
 
 
