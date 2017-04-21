@@ -132,7 +132,8 @@ DISABLE_LIBRARY_FEATURES
 [http://www.qtcn.org/bbs/read-htm-tid-62954.html](http://www.qtcn.org/bbs/read-htm-tid-62954.html)
 
 * 使用方法
-使用时只需要继承该 类即可，或者选择控件提升的办法
+使用时只需要继承该 类即可，或者选择控件提升的办法  
+要显示不同的进度只需要调用setValue()方法即可
 
 ![导航进度条](/screen/drawprogressbar.png)
 
