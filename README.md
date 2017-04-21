@@ -127,6 +127,10 @@ DISABLE_LIBRARY_FEATURES
 
 #### 6. 导航进度条
 > 导航进度条继承QWidget,通过QPainter进行绘制。
+
+* 来源
+[http://www.qtcn.org/bbs/read-htm-tid-62954.html](http://www.qtcn.org/bbs/read-htm-tid-62954.html)
+
 * 使用方法
 使用时只需要继承该 类即可，或者选择控件提升的办法
 
@@ -165,3 +169,4 @@ DISABLE_LIBRARY_FEATURES
 * V 0.0.0.7 添加了自定义消息框界面，编写相关demo测试;
 * V 0.0.0.8 添加了二维码检测功能空间(后面计划添加二维码生成功能空间)；
 * V 0.0.0.9 添加超酷启动界面控件demo;
+* V 0.0.1.0 添加了导航进度条控件以及demo;
