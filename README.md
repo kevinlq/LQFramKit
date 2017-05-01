@@ -137,6 +137,18 @@ DISABLE_LIBRARY_FEATURES
 
 ![导航进度条](/screen/drawprogressbar.png)
 
+#### 7. 尺子
+
+* 来源 [http://www.qtcn.org/bbs/read-htm-tid-61601.html](http://www.qtcn.org/bbs/read-htm-tid-61601.html)
+
+* 使用方法
+
+继承crule类即可，或者选择界面提升方法也行。
+
+原作者实现了基本的功能，后期可以添加尺子360°旋转，更加人性化一些
+
+![尺子](/screen/ruler.png)
+
 
 ### 辅助工具类测试
 >辅助工具类包含了常见的一些小工具，比如二维码生成、验证码生成、进制转换、数据通信(串口(232,485)、网络、CAN等)
