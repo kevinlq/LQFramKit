@@ -25,6 +25,7 @@
 #include "demo_messagebox.h"            //自定义消息框
 #include "demo_rightdownmessagebox.h"   //右下角消息弹窗
 #include "demo_drawprogressbar.h"       //导航进度条
+#include "demo_ruler.h"                 //尺子
 
 /*辅助工具测试demo*/
 #include "demo_perfmon.h"               //性能监测
@@ -266,10 +267,20 @@ void ExampleWidget::on_pushButton_19_clicked()
 
 void ExampleWidget::on_pushButton_20_clicked()
 {
-    Demo_DrawProgressbar *draw = new Demo_DrawProgressbar("导航进度条");
+    Demo_DrawProgressbar *draw = new Demo_DrawProgressbar("导航进度条demo");
     draw->setWindowModality (Qt::ApplicationModal);
     draw->show ();
 
     QTimer::singleShot (15000,draw,SLOT(deleteLater()));
     ui->textEdit->append ("进度导航条窗体已经加载，15秒后将关闭");
+}
+
+void ExampleWidget::on_pushButton_21_clicked()
+{
+    Demo_Ruler *ruler = new Demo_Ruler("尺子demo");
+    ruler->setWindowModality (Qt::ApplicationModal);
+    ruler->show ();
+
+    QTimer::singleShot (15000,ruler,SLOT(deleteLater()));
+    ui->textEdit->append ("尺子界面已经启动，15秒之后将关闭!");
 }
