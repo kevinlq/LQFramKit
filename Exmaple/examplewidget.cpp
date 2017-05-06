@@ -26,6 +26,7 @@
 #include "demo_rightdownmessagebox.h"   //右下角消息弹窗
 #include "demo_drawprogressbar.h"       //导航进度条
 #include "demo_ruler.h"                 //尺子
+#include "demo_ipaddresswidget.h"       //IP地址输入框
 
 /*辅助工具测试demo*/
 #include "demo_perfmon.h"               //性能监测
@@ -283,4 +284,13 @@ void ExampleWidget::on_pushButton_21_clicked()
 
     QTimer::singleShot (15000,ruler,SLOT(deleteLater()));
     ui->textEdit->append ("尺子界面已经启动，15秒之后将关闭!");
+}
+
+void ExampleWidget::on_pushButton_22_clicked()
+{
+    Demo_IpAddressWidget *ipAddress = new Demo_IpAddressWidget("IP地址输入框demo");
+    ipAddress->show ();
+
+    QTimer::singleShot (20000,ipAddress,SLOT(deleteLater()));
+    ui->textEdit->append ("IP地址输入框已经启动，20秒之后将关闭");
 }

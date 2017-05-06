@@ -9,7 +9,8 @@ HEADERS += \
     $$PWD/inc/messageWidget/messagetitle.h \
     $$PWD/inc/messageWidget/messagewidget.h \
     $$PWD/inc/lqstartwidget.h \
-    $$PWD/inc/drawprogressbar/drawprogressbar.h
+    $$PWD/inc/drawprogressbar/drawprogressbar.h \
+    $$PWD/inc/ipaddresswidget.h
 
 SOURCES += \
     $$PWD/src/lqformwidget.cpp \
@@ -21,4 +22,5 @@ SOURCES += \
     $$PWD/src/messageWidget/messagetitle.cpp \
     $$PWD/src/messageWidget/messagewidget.cpp \
     $$PWD/src/lqstartwidget.cpp \
-    $$PWD/src/drawprogressbar/drawprogressbar.cpp
+    $$PWD/src/drawprogressbar/drawprogressbar.cpp \
+    $$PWD/src/ipaddresswidget.cpp

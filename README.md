@@ -149,6 +149,35 @@ DISABLE_LIBRARY_FEATURES
 
 ![尺子](/screen/ruler.png)
 
+#### 8. IP地址输入框
+
+* 来源
+
+本空间来源于这篇博客  
+[小豪之家](http://blog.csdn.net/small_qch/article/details/7068234)
+
+在原作者基础上主要优化和增加了如下功能：
+1. 添加了使用点号自动跳到下个输入框；
+2. 添加了使用键盘方向键控制焦点切换；
+
+输入功能基本仿照一般的网络调试助手IP地址输入框功能
+
+![某某网络调试助手](/screen/nettool.png)
+
+* 使用方法
+
+选择继承或者提升IpAddressWidget类 均可以实现对应的效果
+
+![IP地址输入框](/screen/ipAddress.png)
+
+获取输入框的IP地址:
+
+```
+    /**
+      @brief getIpAddress() 获取IP地址
+    */
+    QString getIpAddress ();
+```
 
 ### 辅助工具类测试
 >辅助工具类包含了常见的一些小工具，比如二维码生成、验证码生成、进制转换、数据通信(串口(232,485)、网络、CAN等)
@@ -184,3 +213,4 @@ DISABLE_LIBRARY_FEATURES
 * V 0.0.0.9 添加超酷启动界面控件demo;
 * V 0.0.1.0 添加了导航进度条控件以及demo;
 * V 0.0.1.1 添加了尺子工具及其demo;
+* V 0.0.1.2 添加了IP地址输入框空间极其demo;

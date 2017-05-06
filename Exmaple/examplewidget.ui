@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>656</width>
+    <width>697</width>
     <height>578</height>
    </rect>
   </property>
@@ -285,6 +285,19 @@
              </property>
              <property name="text">
               <string>尺子</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_22">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>IP地址输入框</string>
              </property>
             </widget>
            </item>
