@@ -1,6 +1,6 @@
 # Qt整理的基础控件说明
 
-[TOP]
+[MENU]
 
 ## 前序
 >个人整理Qt开发中常用的基础控件，加以整合以便在后期的项目中直接使用。基础控件中包含了网络收集来的控件和自己编写的控件，来自网络的控件都标明了出处。
@@ -176,7 +176,7 @@ DISABLE_LIBRARY_FEATURES
     /**
       @brief getIpAddress() 获取IP地址
     */
-    QString getIpAddress ();
+    QString getIpAddress () const;
 ```
 
 ### 辅助工具类测试
