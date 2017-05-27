@@ -179,6 +179,14 @@ DISABLE_LIBRARY_FEATURES
     QString getIpAddress () const;
 ```
 
+#### 9. 弹窗提醒工具
+
+* 来源 https://git.oschina.net/cassfrontend/qt-notify
+
+![](/screen/msgNotify.png)
+
+
+
 ### 辅助工具类测试
 >辅助工具类包含了常见的一些小工具，比如二维码生成、验证码生成、进制转换、数据通信(串口(232,485)、网络、CAN等)
  

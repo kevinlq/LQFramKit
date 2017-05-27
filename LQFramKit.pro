@@ -7,4 +7,5 @@ SUBDIRS += \
     LQAuxiliaryTools    \
     Exmaple
 
+
 CONFIG  +=ordered

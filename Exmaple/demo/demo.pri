@@ -18,7 +18,8 @@ FORMS += \
     $$PWD/demo_startwidget.ui \
     $$PWD/demo_drawprogressbar.ui \
     $$PWD/demo_ruler.ui \
-    $$PWD/demo_ipaddresswidget.ui
+    $$PWD/demo_ipaddresswidget.ui \
+    $$PWD/demo_msgnotify.ui
 
 HEADERS += \
     $$PWD/demo_qgauge.h \
@@ -40,7 +41,8 @@ HEADERS += \
     $$PWD/demo_startwidget.h \
     $$PWD/demo_drawprogressbar.h \
     $$PWD/demo_ruler.h \
-    $$PWD/demo_ipaddresswidget.h
+    $$PWD/demo_ipaddresswidget.h \
+    $$PWD/demo_msgnotify.h
 
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
@@ -62,4 +64,5 @@ SOURCES += \
     $$PWD/demo_startwidget.cpp \
     $$PWD/demo_drawprogressbar.cpp \
     $$PWD/demo_ruler.cpp \
-    $$PWD/demo_ipaddresswidget.cpp
+    $$PWD/demo_ipaddresswidget.cpp \
+    $$PWD/demo_msgnotify.cpp

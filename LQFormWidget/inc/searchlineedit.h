@@ -31,9 +31,9 @@ protected:
     virtual void focusInEvent(QFocusEvent * event);
     virtual void focusOutEvent(QFocusEvent * event);
 
-private slots:
+private Q_SLOTS:
     void slotSendSearchContent();
-signals:
+Q_SIGNALS:
     void signalSearchContent(const QString &test);
 
 private:

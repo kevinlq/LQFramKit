@@ -1,3 +1,4 @@
 INCLUDEPATH +=\
     $$PWD/inc \
-    $$PWD/inc/drawprogressbar
+    $$PWD/inc/drawprogressbar   \
+    $$PWD/inc/msgNitify

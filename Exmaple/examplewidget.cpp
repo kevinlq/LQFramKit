@@ -27,6 +27,7 @@
 #include "demo_drawprogressbar.h"       //导航进度条
 #include "demo_ruler.h"                 //尺子
 #include "demo_ipaddresswidget.h"       //IP地址输入框
+#include "demo_msgnotify.h"             //消息弹窗提醒
 
 /*辅助工具测试demo*/
 #include "demo_perfmon.h"               //性能监测
@@ -293,4 +294,13 @@ void ExampleWidget::on_pushButton_22_clicked()
 
     QTimer::singleShot (20000,ipAddress,SLOT(deleteLater()));
     ui->textEdit->append ("IP地址输入框已经启动，20秒之后将关闭");
+}
+
+void ExampleWidget::on_pushButton_23_clicked()
+{
+    Demo_MsgNotify *notify = new Demo_MsgNotify("消息弹窗demo");
+    notify->show();
+
+    QTimer::singleShot(10000,notify,SLOT(deleteLater()));
+    ui->textEdit->append("消息弹窗已经启动，10秒后将关闭");
 }
