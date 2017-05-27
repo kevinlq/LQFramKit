@@ -222,3 +222,4 @@ DISABLE_LIBRARY_FEATURES
 * V 0.0.1.0 添加了导航进度条控件以及demo;
 * V 0.0.1.1 添加了尺子工具及其demo;
 * V 0.0.1.2 添加了IP地址输入框空间极其demo;
+* V 0.0.1.3 添加了消息弹窗控件以及demo;
