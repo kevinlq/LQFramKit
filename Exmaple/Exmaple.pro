@@ -37,6 +37,7 @@ win32:{
     -lLQAuxiliaryTools\
     -lLQChart
 }
+
 DEPENDPATH += ../bin
 
 # import dll file

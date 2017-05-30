@@ -90,6 +90,18 @@ DISABLE_LIBRARY_FEATURES
 
 ![多彩进度条](/screen/ColorProgress.png)
 
+
+#### 8. 速度仪表3
+> 来源于网络，修改了部分bug以及添加一些接口
+
+* 动态效果
+
+![](/screen/speedwatch.gif)
+动态效果录制的不好，丢帧好多
+
+* 静态图
+![](/screen/speedwatch2.png)
+
 ### 界面显示类测试
 
 ####  1. 自定义搜索框
@@ -223,3 +235,4 @@ DISABLE_LIBRARY_FEATURES
 * V 0.0.1.1 添加了尺子工具及其demo;
 * V 0.0.1.2 添加了IP地址输入框空间极其demo;
 * V 0.0.1.3 添加了消息弹窗控件以及demo;
+* V 0.0.1.4 添加了速度仪表3极其demo；

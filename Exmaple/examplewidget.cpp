@@ -15,6 +15,7 @@
 #include "demo_airspeedwidget.h"
 #include "demo_roundprogressbar.h"      //圆形进度条
 #include "demo_colorprogressbar.h"      //多彩进入条
+#include "demo_speedwatch.h"            //速度仪表3
 
 /*显示界面类测试demo*/
 #include "demo_lineedit.h"              //个性化搜索框
@@ -303,4 +304,14 @@ void ExampleWidget::on_pushButton_23_clicked()
 
     QTimer::singleShot(10000,notify,SLOT(deleteLater()));
     ui->textEdit->append("消息弹窗已经启动，10秒后将关闭");
+}
+
+void ExampleWidget::on_pushButton_24_clicked()
+{
+    Demo_SpeedWatch *speed = new Demo_SpeedWatch("速度仪表3demo");
+    speed->setWindowModality (Qt::ApplicationModal);
+    speed->show ();
+
+    QTimer::singleShot (10000,speed,SLOT(deleteLater()));
+    ui->textEdit->append ("速度仪表3已经启动，10秒后将关闭");
 }
