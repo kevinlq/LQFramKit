@@ -94,11 +94,6 @@ DISABLE_LIBRARY_FEATURES
 #### 8. 速度仪表3
 > 来源于网络，修改了部分bug以及添加一些接口
 
-* 动态效果
-
-![](/screen/speedwatch.gif)
-动态效果录制的不好，丢帧好多
-
 * 静态图
 ![](/screen/speedwatch2.png)
 
