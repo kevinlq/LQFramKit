@@ -12,7 +12,8 @@ HEADERS += \
     $$PWD/inc/drawprogressbar/drawprogressbar.h \
     $$PWD/inc/ipaddresswidget.h \
     $$PWD/inc/msgNotify/notifymanager.h \
-    $$PWD/inc/msgNotify/notify.h
+    $$PWD/inc/msgNotify/notify.h \
+    $$PWD/inc/navlistview.h
 
 SOURCES += \
     $$PWD/src/lqformwidget.cpp \
@@ -27,4 +28,5 @@ SOURCES += \
     $$PWD/src/drawprogressbar/drawprogressbar.cpp \
     $$PWD/src/ipaddresswidget.cpp \
     $$PWD/src/msgNotify/notify.cpp \
-    $$PWD/src/msgNotify/notifymanager.cpp
+    $$PWD/src/msgNotify/notifymanager.cpp \
+    $$PWD/src/navlistview.cpp

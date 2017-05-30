@@ -29,6 +29,7 @@
 #include "demo_ruler.h"                 //尺子
 #include "demo_ipaddresswidget.h"       //IP地址输入框
 #include "demo_msgnotify.h"             //消息弹窗提醒
+#include "demo_navlistview.h"           //树状导航
 
 /*辅助工具测试demo*/
 #include "demo_perfmon.h"               //性能监测
@@ -314,4 +315,14 @@ void ExampleWidget::on_pushButton_24_clicked()
 
     QTimer::singleShot (10000,speed,SLOT(deleteLater()));
     ui->textEdit->append ("速度仪表3已经启动，10秒后将关闭");
+}
+
+void ExampleWidget::on_pushButton_25_clicked()
+{
+    Demo_NavListView *nav = new Demo_NavListView("树状导航");
+    nav->setWindowModality (Qt::ApplicationModal);
+    nav->show ();
+
+    QTimer::singleShot (10000,nav,SLOT(deleteLater()));
+    ui->textEdit->append ("树状导航界面已经启动，10秒后将关闭");
 }

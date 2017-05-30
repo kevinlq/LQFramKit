@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<layout>
+                <Node label="主界面" info="helo"></Node>
+                <Node label="系统设置" collapse="0">
+                        <Node label="防区信息" info="1024"></Node>
+                        <Node label="位置调整" info="test22"></Node>
+                        <Node label="地图编辑"></Node>
+		</Node>
+                <Node label="警情查询" collapse="0">
+                        <Node label="记录查询"></Node>
+                        <Node label="图像查询"></Node>
+                        <Node label="视频查询"></Node>
+                        <Node label="数据回放"></Node>
+		</Node>
+                <Node label="信息管理" collapse="0">
+                        <Node label="学生管理"></Node>
+                        <Node label="教师管理"></Node>
+                        <Node label="成绩管理"></Node>
+		</Node>
+                <Node label="帮助文档">
+		</Node>
+                <Node label="关于">
+		</Node>
+	</layout>
+</root>

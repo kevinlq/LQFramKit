@@ -20,7 +20,8 @@ FORMS += \
     $$PWD/demo_ruler.ui \
     $$PWD/demo_ipaddresswidget.ui \
     $$PWD/demo_msgnotify.ui \
-    $$PWD/demo_speedwatch.ui
+    $$PWD/demo_speedwatch.ui \
+    $$PWD/demo_navlistview.ui
 
 HEADERS += \
     $$PWD/demo_qgauge.h \
@@ -44,7 +45,8 @@ HEADERS += \
     $$PWD/demo_ruler.h \
     $$PWD/demo_ipaddresswidget.h \
     $$PWD/demo_msgnotify.h \
-    $$PWD/demo_speedwatch.h
+    $$PWD/demo_speedwatch.h \
+    $$PWD/demo_navlistview.h
 
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
@@ -68,4 +70,5 @@ SOURCES += \
     $$PWD/demo_ruler.cpp \
     $$PWD/demo_ipaddresswidget.cpp \
     $$PWD/demo_msgnotify.cpp \
-    $$PWD/demo_speedwatch.cpp
+    $$PWD/demo_speedwatch.cpp \
+    $$PWD/demo_navlistview.cpp
