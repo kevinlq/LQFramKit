@@ -30,6 +30,7 @@
 #include "demo_ipaddresswidget.h"       //IP地址输入框
 #include "demo_msgnotify.h"             //消息弹窗提醒
 #include "demo_navlistview.h"           //树状导航
+#include "demo_tabwidget.h"             //tab窗口
 
 /*辅助工具测试demo*/
 #include "demo_perfmon.h"               //性能监测
@@ -57,7 +58,7 @@ void ExampleWidget::slotTestSearchLineEdit(const QString &text)
 
 void ExampleWidget::init()
 {
-//    this->setWindowFlags(Qt::FramelessWindowHint);
+    //    this->setWindowFlags(Qt::FramelessWindowHint);
     this->setFocusPolicy(Qt::ClickFocus);
     this->setWindowTitle("控件测试集合");
 
@@ -325,4 +326,14 @@ void ExampleWidget::on_pushButton_25_clicked()
 
     QTimer::singleShot (10000,nav,SLOT(deleteLater()));
     ui->textEdit->append ("树状导航界面已经启动，10秒后将关闭");
+}
+
+void ExampleWidget::on_pushButton_26_clicked()
+{
+    Demo_tabwidget *tab = new Demo_tabwidget("tab窗体demo");
+    tab->setWindowModality (Qt::ApplicationModal);
+    tab->show ();
+
+    QTimer::singleShot (10000,tab,SLOT(deleteLater()));
+    ui->textEdit->append ("tab窗体已经运行，10秒后将关闭");
 }

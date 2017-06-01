@@ -199,6 +199,10 @@ DISABLE_LIBRARY_FEATURES
 
 ![](/screen/navlistview.png)
 
+#### 11. tabWidget
+![tabWidget](/screen/tabwidget.png)
+
+
 ### 辅助工具类测试
 >辅助工具类包含了常见的一些小工具，比如二维码生成、验证码生成、进制转换、数据通信(串口(232,485)、网络、CAN等)
  
@@ -237,3 +241,4 @@ DISABLE_LIBRARY_FEATURES
 * V 0.0.1.3 添加了消息弹窗控件以及demo;
 * V 0.0.1.4 添加了速度仪表3及其demo；
 * V 0.0.1.5 添加树状导航及其demo；
+* V 0.0.1.6 添加tabWidget窗体;
