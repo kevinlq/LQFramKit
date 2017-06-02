@@ -13,8 +13,39 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout"/>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="MyTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>主页</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="">
+      <attribute name="title">
+       <string>系统设置</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>关于系统</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>mytabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

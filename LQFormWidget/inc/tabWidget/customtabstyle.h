@@ -4,9 +4,9 @@
 #include <QPainter>
 #include <QProxyStyle>
 
-#include "../lqformwidget_global.h"
+//#include "../lqformwidget_global.h"
 
-class LQFORMWIDGETSHARED_EXPORT CustomTabStyle : public QProxyStyle
+class  CustomTabStyle : public QProxyStyle
 {
     Q_OBJECT
 public:

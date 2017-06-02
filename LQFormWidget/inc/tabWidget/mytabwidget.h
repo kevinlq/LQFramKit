@@ -2,8 +2,9 @@
 #define MYTABWIDGET_H
 
 #include <QTabWidget>
+#include "../lqformwidget_global.h"
 
-class MyTabWidget : public QTabWidget
+class LQFORMWIDGETSHARED_EXPORT MyTabWidget : public QTabWidget
 {
     Q_OBJECT
 public:
