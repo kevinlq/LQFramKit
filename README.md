@@ -10,7 +10,8 @@
 QQ      :2313828706  
 Oschina :http://git.oschina.net/kevinlq0912   
 GitHub  :https://github.com/kevinlq  
-**若觉得对您有用,欢迎Star和Fork** 
+
+<font color=#0099FF size=5 face="黑体">若觉得对您有用,欢迎Star和Fork</font>
 
 ## 环境说明
 
