@@ -1,4 +1,4 @@
-﻿#include "examplewidget.h"
+#include "examplewidget.h"
 #include "ui_examplewidget.h"
 
 #include <QTimer>
@@ -31,6 +31,7 @@
 #include "demo_msgnotify.h"             //消息弹窗提醒
 #include "demo_navlistview.h"           //树状导航
 #include "demo_tabwidget.h"             //tab窗口
+#include "demo_tolerancebar.h"          //
 
 /*辅助工具测试demo*/
 #include "demo_perfmon.h"               //性能监测
@@ -49,6 +50,11 @@ ExampleWidget::ExampleWidget(QWidget *parent) :
 ExampleWidget::~ExampleWidget()
 {
     delete ui;
+}
+
+void ExampleWidget::slotToleranceBarValue(const int &value)
+{
+    ui->textEdit->append (QString::number (value));
 }
 
 void ExampleWidget::slotTestSearchLineEdit(const QString &text)
@@ -336,4 +342,17 @@ void ExampleWidget::on_pushButton_26_clicked()
 
     QTimer::singleShot (10000,tab,SLOT(deleteLater()));
     ui->textEdit->append ("tab窗体已经运行，10秒后将关闭");
+}
+
+void ExampleWidget::on_pushButton_27_clicked()
+{
+    Demo_ToleranceBar *bar = new Demo_ToleranceBar("Tolerance Bar demo");
+    bar->setWindowModality (Qt::ApplicationModal);
+    bar->show ();
+
+    QTimer::singleShot (10000,bar,SLOT(deleteLater()));
+    ui->textEdit->append ("Tolerance Bar 已经运行，10秒后关闭");
+
+    connect (bar,SIGNAL(signalValueChange(int)),
+             this,SLOT(slotToleranceBarValue(int)));
 }

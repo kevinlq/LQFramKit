@@ -15,7 +15,8 @@ HEADERS += \
     $$PWD/inc/msgNotify/notify.h \
     $$PWD/inc/navlistview.h \
     $$PWD/inc/tabWidget/customtabstyle.h \
-    $$PWD/inc/tabWidget/mytabwidget.h
+    $$PWD/inc/tabWidget/mytabwidget.h \
+    $$PWD/inc/tolerancebar.h
 
 SOURCES += \
     $$PWD/src/lqformwidget.cpp \
@@ -33,4 +34,5 @@ SOURCES += \
     $$PWD/src/msgNotify/notifymanager.cpp \
     $$PWD/src/navlistview.cpp \
     $$PWD/src/tabWidget/customtabstyle.cpp \
-    $$PWD/src/tabWidget/mytabwidget.cpp
+    $$PWD/src/tabWidget/mytabwidget.cpp \
+    $$PWD/src/tolerancebar.cpp

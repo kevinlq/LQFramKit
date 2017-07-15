@@ -202,6 +202,11 @@ DISABLE_LIBRARY_FEATURES
 #### 11. tabWidget
 ![tabWidget](/screen/tabwidget.png)
 
+#### 12. toleranceBar
+- 来源于网络，自己修改了一些接口添加了相关注释
+
+![toleranceBar](/screen/toleranceBar.png);
+
 
 ### 辅助工具类测试
 >辅助工具类包含了常见的一些小工具，比如二维码生成、验证码生成、进制转换、数据通信(串口(232,485)、网络、CAN等)
@@ -242,3 +247,4 @@ DISABLE_LIBRARY_FEATURES
 * V 0.0.1.4 添加了速度仪表3及其demo；
 * V 0.0.1.5 添加树状导航及其demo；
 * V 0.0.1.6 添加tabWidget窗体;
+* V 0.0.1.7 添加了toleranceBar及其demo；

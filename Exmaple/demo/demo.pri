@@ -22,7 +22,8 @@ FORMS += \
     $$PWD/demo_msgnotify.ui \
     $$PWD/demo_speedwatch.ui \
     $$PWD/demo_navlistview.ui \
-    $$PWD/demo_tabwidget.ui
+    $$PWD/demo_tabwidget.ui \
+    $$PWD/demo_tolerancebar.ui
 
 HEADERS += \
     $$PWD/demo_qgauge.h \
@@ -48,7 +49,8 @@ HEADERS += \
     $$PWD/demo_msgnotify.h \
     $$PWD/demo_speedwatch.h \
     $$PWD/demo_navlistview.h \
-    $$PWD/demo_tabwidget.h
+    $$PWD/demo_tabwidget.h \
+    $$PWD/demo_tolerancebar.h
 
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
@@ -74,4 +76,5 @@ SOURCES += \
     $$PWD/demo_msgnotify.cpp \
     $$PWD/demo_speedwatch.cpp \
     $$PWD/demo_navlistview.cpp \
-    $$PWD/demo_tabwidget.cpp
+    $$PWD/demo_tabwidget.cpp \
+    $$PWD/demo_tolerancebar.cpp
