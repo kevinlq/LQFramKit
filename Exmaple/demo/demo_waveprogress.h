@@ -15,6 +15,9 @@ public:
     explicit Demo_WaveProgress(const QString &title,QWidget *parent = 0);
     ~Demo_WaveProgress();
 
+private slots:
+    void on_comboBox_activated(int index);
+
 private:
     Ui::Demo_WaveProgress *ui;
 };

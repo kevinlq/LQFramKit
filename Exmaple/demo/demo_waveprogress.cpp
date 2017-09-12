@@ -20,3 +20,10 @@ Demo_WaveProgress::~Demo_WaveProgress()
 {
     delete ui;
 }
+
+void Demo_WaveProgress::on_comboBox_activated(int index)
+{
+    if (1 == index){
+        ui->widget->setWaveText ("帅");
+    }
+}
