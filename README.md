@@ -101,6 +101,8 @@ DISABLE_LIBRARY_FEATURES
 #### 9. 波形进度条
 >来源于qt论坛，核心算法是liudianwu-Qt侠提供的思路
 
+[来源地址](http://www.qtcn.org/bbs/read-htm-tid-63591-page-e.html#a)
+
 ![](/screen/wavePro.gif)
 
 ### 界面显示类测试
