@@ -16,6 +16,7 @@
 #include "demo_roundprogressbar.h"      //圆形进度条
 #include "demo_colorprogressbar.h"      //多彩进入条
 #include "demo_speedwatch.h"            //速度仪表3
+#include "demo_waveprogress.h"          //浪波进度条
 
 /*显示界面类测试demo*/
 #include "demo_lineedit.h"              //个性化搜索框
@@ -355,4 +356,14 @@ void ExampleWidget::on_pushButton_27_clicked()
 
     connect (bar,SIGNAL(signalValueChange(int)),
              this,SLOT(slotToleranceBarValue(int)));
+}
+
+void ExampleWidget::on_pushButton_28_clicked()
+{
+    Demo_WaveProgress *wave = new Demo_WaveProgress("wave demo");
+    wave->setWindowModality (Qt::ApplicationModal);
+    wave->show ();
+
+    QTimer::singleShot (10000,wave,SLOT(deleteLater()));
+    ui->textEdit->append ("波浪进度条已经运行，10秒后将关闭!");
 }

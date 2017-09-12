@@ -98,6 +98,11 @@ DISABLE_LIBRARY_FEATURES
 
 ![](/screen/speedwatch2.png)
 
+#### 9. 波形进度条
+>来源于qt论坛，核心算法是liudianwu-Qt侠提供的思路
+
+![](/screen/wavePro.gif)
+
 ### 界面显示类测试
 
 ####  1. 自定义搜索框
@@ -248,3 +253,4 @@ DISABLE_LIBRARY_FEATURES
 * V 0.0.1.5 添加树状导航及其demo；
 * V 0.0.1.6 添加tabWidget窗体;
 * V 0.0.1.7 添加了toleranceBar及其demo；
+* V 0.0.1.8 添加了波形进度条及其demo;

@@ -23,7 +23,8 @@ FORMS += \
     $$PWD/demo_speedwatch.ui \
     $$PWD/demo_navlistview.ui \
     $$PWD/demo_tabwidget.ui \
-    $$PWD/demo_tolerancebar.ui
+    $$PWD/demo_tolerancebar.ui \
+    $$PWD/demo_waveprogress.ui
 
 HEADERS += \
     $$PWD/demo_qgauge.h \
@@ -50,7 +51,8 @@ HEADERS += \
     $$PWD/demo_speedwatch.h \
     $$PWD/demo_navlistview.h \
     $$PWD/demo_tabwidget.h \
-    $$PWD/demo_tolerancebar.h
+    $$PWD/demo_tolerancebar.h \
+    $$PWD/demo_waveprogress.h
 
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
@@ -77,4 +79,5 @@ SOURCES += \
     $$PWD/demo_speedwatch.cpp \
     $$PWD/demo_navlistview.cpp \
     $$PWD/demo_tabwidget.cpp \
-    $$PWD/demo_tolerancebar.cpp
+    $$PWD/demo_tolerancebar.cpp \
+    $$PWD/demo_waveprogress.cpp
