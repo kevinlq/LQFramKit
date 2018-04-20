@@ -1,0 +1,54 @@
+QWidget#widget_title{
+	border: 1px solid rgb(50, 50, 50);
+    background: rgb(80, 80, 80);
+}
+QWidget#widget_button{
+	background: rgb(68, 69, 73);
+}
+QLabel#white_label{
+	color:#FFFFFF;
+}
+QPushButton#white_button,QToolButton#white_button{
+	color:#FFFFFF;
+}
+
+/*MessageBox style*/
+QWidget#msgBox{
+    border-radius:3px;
+    border:1px solid lightgray;
+}
+QWidget#widgetTitle{
+    background: rgb(68, 69, 73, 84);
+    font: 11px;
+    font-family:"MYingHei_C-Medium";
+    height: 20px;
+}
+QWidget#widgetButton{
+    background: rgb(238, 224, 229);
+    font: 10px;
+    font-family:" MYingHei_C-Medium";
+    height: 32px;
+}
+QPushButton#btnClose{
+    /*border-image: url(:/images/btn_close_nor.ico);*/
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+QPushButton#btnClose:hover{
+    background-color:red;
+}
+QPushButton#btnOk, QPushButton#btnCancel{
+    font-family: "MYingHei_C-Medium";
+    border:1px solid rgb(79, 173, 216);
+    border-radius: 2px;
+    width: 60px;
+    height: 22px;
+}
+QPushButton#btnOk:hover, QPushButton#btnCancel:hover{
+    background-color: rgb(190, 231, 253);
+}
+QLabel#labelContent{
+    font: 18px;
+    font-family: "MYingHei_C-Medium";
+}
