@@ -37,6 +37,7 @@ win32:{
     -lLQAuxiliaryTools\
     -lLQChart
 }
+
 DEPENDPATH += ../bin
 
 # import dll file
@@ -49,6 +50,7 @@ include(../LQChart/lqchart_inc.pri)
 include($$PWD/demo/demo.pri)
 INCLUDEPATH +=$$PWD/demo
 
+
 FORMS += \
     examplewidget.ui
 
@@ -57,3 +59,4 @@ HEADERS += \
 
 RESOURCES += \
     ExampleImage.qrc
+

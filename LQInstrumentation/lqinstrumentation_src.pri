@@ -9,7 +9,9 @@ HEADERS += \
     $$PWD/inc/speedgaugewidget.h \
     $$PWD/inc/airspeedgaugewidget.h \
     $$PWD/inc/QRoundProgressBar.h \
-    $$PWD/inc/colorprogressbar.h
+    $$PWD/inc/colorprogressbar.h \
+    $$PWD/inc/myspeedwatch.h \
+    $$PWD/inc/lwaveupprogress.h
 
 SOURCES += \
 #    $$PWD/src/lqinstrumentation.cpp \
@@ -23,4 +25,6 @@ SOURCES += \
     $$PWD/src/speedgaugewidget.cpp \
     $$PWD/src/airspeedgaugewidget.cpp \
     $$PWD/src/QRoundProgressBar.cpp \
-    $$PWD/src/colorprogressbar.cpp
+    $$PWD/src/colorprogressbar.cpp \
+    $$PWD/src/myspeedwatch.cpp \
+    $$PWD/src/lwaveupprogress.cpp

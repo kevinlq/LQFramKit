@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Demo_NavListView</class>
+ <widget class="QWidget" name="Demo_NavListView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>743</width>
+    <height>562</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="NavListView" name="listView1"/>
+   </item>
+   <item>
+    <widget class="NavListView" name="listView2"/>
+   </item>
+   <item>
+    <widget class="NavListView" name="listView3"/>
+   </item>
+   <item>
+    <widget class="NavListView" name="listView4"/>
+   </item>
+   <item>
+    <widget class="NavListView" name="listView5"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NavListView</class>
+   <extends>QListView</extends>
+   <header location="global">navlistview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

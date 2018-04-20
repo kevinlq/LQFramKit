@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 #对常见的仪器仪表进行封装(比如仪表盘……)
-QT       -= gui
+QT  += gui
+QT  +=core
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

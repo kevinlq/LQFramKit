@@ -29,7 +29,7 @@ MsgBoxBase::MsgBoxBase(QWidget *parent) :
 //错误消息提示框
 void MsgBoxBase::showMessageError(const QString &msg)
 {
-    m_lableWinTitle->setText(QString::fromLocal8Bit("错误"));
+    m_lableWinTitle->setText(QString("错误"));
     m_labelContent->setText(msg);
     m_pbnCancel->setVisible(false);     //取消按钮不可见
     this->exec();
