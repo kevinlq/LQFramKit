@@ -1,10 +1,6 @@
 #ifndef QZXING_H
 #define QZXING_H
 
-//#include "QZXing_global.h"
-
-//添加我自己定义的库名称
-#include "lqauxiliarytools_global.h"
 
 #include <QObject>
 #include <QImage>
@@ -24,12 +20,7 @@
   *
   * Regarding DecoderFormat, by default all of those are enabled (except DataMatrix will is still not supported)
   */
-class
-        #ifndef DISABLE_LIBRARY_FEATURES
-        LQAUXILIARYTOOLSSHARED_EXPORT
-        #endif
-
-        QZXing : public QObject{
+class  QZXing : public QObject{
 
     Q_OBJECT
     Q_ENUMS(DecoderFormat)

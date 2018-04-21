@@ -1,11 +1,17 @@
+#include "LQToolsIncLib.h"
+
 #include "cruler.h"
 
-#include <qt_windows.h>
 #include <QPainter>
 #include <QDebug>
 #include <QLinearGradient>
 #include <QMouseEvent>
 #include <QApplication>
+
+#ifdef Q_OS_WIN
+//#pragma comment(lib, "coredll.lib")
+#include <qt_windows.h>
+#endif
 
 CRuler::CRuler(QWidget *parent) :
     QWidget(parent)
@@ -139,3 +145,5 @@ void CRuler::mouseReleaseEvent(QMouseEvent *e)
 
     m_pos = QPoint();
 }
+
+#include "moc_cruler.cpp"

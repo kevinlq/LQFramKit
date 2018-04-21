@@ -1,10 +1,18 @@
-﻿#include "LQimagehandler.h"
+﻿#include "lqtools_global.h"
+#include "LQimagehandler.h"
 
-#include <QApplication>
-#include <QDesktopWidget>
+#include <QPainter>
+#include <QPaintEvent>
+#include <QWheelEvent>
+#include <QResizeEvent>
+
 #include <QMatrix>
 #include <QPoint>
 #include <QCursor>
+
+#include <QApplication>
+#include <QDesktopWidget>
+
 #include <QDebug>
 
 
@@ -251,3 +259,5 @@ void LQImageHandler::mouseMoveEvent(QMouseEvent *event)
 
 } // namespace ImageBrowser
 
+
+#include "moc_LQimagehandler.cpp"

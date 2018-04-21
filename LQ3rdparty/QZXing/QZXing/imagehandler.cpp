@@ -1,4 +1,7 @@
-#include "imagehandler.h"
+#include "StdMain.h"
+
+#include "inc/imagehandler.h"
+
 #include <QGraphicsObject>
 #include <QImage>
 #include <QPainter>
@@ -42,3 +45,5 @@ void ImageHandler::save(QObject *imageObj, const QString &path,
     QImage img = extractQImage(imageObj, offsetX, offsetY, width, height);
     img.save(path);
 }
+
+#include "moc_imagehandler.cpp"

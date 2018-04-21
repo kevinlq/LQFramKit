@@ -1,3 +1,4 @@
+#include "StdMain.h"
 #include "cmysplashscreen.h"
 
 #include <QTime>
@@ -64,3 +65,4 @@ void CMySplashScreen::generateAscendRandomNumber()
     qSort(numbersList.begin(),numbersList.end());
 }
 
+#include "moc_cmysplashscreen.cpp"

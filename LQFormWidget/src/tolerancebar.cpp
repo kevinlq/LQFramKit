@@ -1,3 +1,4 @@
+#include "StdMain.h"
 #include "tolerancebar.h"
 
 #include <QPainter>
@@ -137,3 +138,5 @@ void ToleranceBar::mouseReleaseEvent(QMouseEvent *qevent)
 
     d->b_pressed = false;
 }
+
+#include "moc_tolerancebar.cpp"

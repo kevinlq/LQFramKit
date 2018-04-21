@@ -4,7 +4,7 @@
 #include <QObject>
 #include <QImage>
 
-class ImageHandler : public QObject
+class QZXINGSHARED_EXPORT ImageHandler : public QObject
 {
     Q_OBJECT
 public:

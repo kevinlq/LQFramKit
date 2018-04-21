@@ -1,7 +1,7 @@
-﻿#include "demo_splashscreen.h"
-#include "ui_demo_splashscreen.h"
+﻿#include "LQFormWidgetIncLib.h"
 
-#include "cmysplashscreen.h"
+#include "demo_splashscreen.h"
+#include "ui_demo_splashscreen.h"
 
 #include <QApplication>
 #include <QDesktopWidget>

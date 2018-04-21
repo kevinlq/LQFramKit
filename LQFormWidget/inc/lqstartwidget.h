@@ -2,17 +2,12 @@
 #define LQSTARTWIDGET_H
 
 #include <QWidget>
-#include "lqformwidget_global.h"
 
 class QGridLayout;
 class QLabel;
 class QTimer;
 
-class
-#ifndef DISABLE_LIBRARY_FEATURES
-   LQFORMWIDGETSHARED_EXPORT
-#endif
-        LQStartWidget : public QWidget
+class LQFORMWIDGETSHARED_EXPORT LQStartWidget : public QWidget
 {
     Q_OBJECT
 public:

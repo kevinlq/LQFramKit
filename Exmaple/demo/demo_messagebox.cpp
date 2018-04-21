@@ -1,7 +1,9 @@
+#include "LQFormWidgetIncLib.h"
+
 #include "demo_messagebox.h"
 #include "ui_demo_messagebox.h"
 
-#include "msgboxbase.h"
+
 
 Demo_MessageBox::Demo_MessageBox(const QString &title,
                                  QWidget *parent) :

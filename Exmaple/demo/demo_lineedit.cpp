@@ -1,4 +1,6 @@
-﻿#include "demo_lineedit.h"
+﻿#include "LQFormWidgetIncLib.h"
+
+#include "demo_lineedit.h"
 #include "ui_demo_lineedit.h"
 
 Demo_lineEdit::Demo_lineEdit(const QString &title, QWidget *parent) :

@@ -4,9 +4,7 @@
 #include <QWidget>
 #include <QTextOption>
 
-#include "lqauxiliarytools_global.h"
-
-class LQAUXILIARYTOOLSSHARED_EXPORT CRuler : public QWidget
+class LQTOOLSSHARED_EXPORT CRuler : public QWidget
 {
     Q_OBJECT
 public:

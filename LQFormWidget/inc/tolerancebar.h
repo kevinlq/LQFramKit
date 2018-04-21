@@ -3,7 +3,6 @@
 
 #include <QWidget>
 
-#include "lqformwidget_global.h"
 
 struct TolerDataPrivate;
 

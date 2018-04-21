@@ -1,4 +1,5 @@
-﻿#include "demo_imagebrowser.h"
+﻿#include "../LQTools/inc/LQToolsIncLib.h"
+#include "demo_imagebrowser.h"
 #include "ui_demo_imagebrowser.h"
 
 #include <QFileDialog>

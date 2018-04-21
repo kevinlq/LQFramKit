@@ -1,12 +1,13 @@
-#include "QZXing.h"
+#include "StdMain.h"
+
+#include "inc/QZXing.h"
 
 #include <zxing/common/GlobalHistogramBinarizer.h>
 #include <zxing/Binarizer.h>
 #include <zxing/BinaryBitmap.h>
 #include <zxing/MultiFormatReader.h>
 #include <zxing/DecodeHints.h>
-#include "CameraImageWrapper.h"
-#include "imagehandler.h"
+
 #include <QTime>
 
 using namespace zxing;
@@ -179,6 +180,6 @@ uint QZXing::getEnabledFormats() const
     return enabledDecoders;
 }
 
-
+//#include "moc_qzxing.cpp"
 
 

@@ -8,9 +8,8 @@ class QTimer;
 
 #define MAX_CHANNEL 255
 
-#include "lqauxiliarytools_global.h"
 
-class LQAUXILIARYTOOLSSHARED_EXPORT PerfMon : public QWidget
+class LQTOOLSSHARED_EXPORT PerfMon : public QWidget
 {
     Q_OBJECT
 public:

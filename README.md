@@ -1,6 +1,5 @@
 # Qt整理的基础控件说明
 
-[MENU]
 
 ## 前序
 >个人整理Qt开发中常用的基础控件，加以整合以便在后期的项目中直接使用。基础控件中包含了网络收集来的控件和自己编写的控件，来自网络的控件都标明了出处。
@@ -27,7 +26,10 @@ OS:windows7 64b
 ![工程框架说明](/doc/project_frame.png)
 
 ## 如何编译本工程
-* 打开本项目源码，打开工程文件`LQFramKit.pro`,去掉影子编译选项，直接点击编译并运行即可，最终生成的可执行文件以及对应的库文件都在`bin`文件中，具体可以编译完成后查看。
+* 打开本项目源码，打开工程文件`LQFramKit.pro`,按照下图所示进行编译配置即可：
+
+![编译配置](/screen/build_setting.png)
+
 
 ## 使用本工程
 
@@ -89,8 +91,6 @@ DISABLE_LIBRARY_FEATURES
 >多彩进度条继承在QWidget,采用QPainter进行了绘制实现的。
 
 ![多彩进度条](/screen/ColorProgress.png)
-<<<<<<< HEAD
-=======
 
 
 #### 8. 速度仪表3
@@ -106,7 +106,7 @@ DISABLE_LIBRARY_FEATURES
 [来源地址](http://www.qtcn.org/bbs/read-htm-tid-63591-page-e.html#a)
 
 ![](/screen/wavePro.gif)
->>>>>>> fac9f1e68c985ed49c442ef264562ffa854a4752
+
 
 ### 界面显示类测试
 
@@ -127,8 +127,7 @@ DISABLE_LIBRARY_FEATURES
 >自定义启动界面继承自`QSplashScreen`来实现了的，添加了进度条以便显示启动进度，预留出对应的时间接口，可以控制显示的的时间，这个时间根据具体的程序加载时间进行传递。
 
 ![自定义启动界面](/screen/Splashscreen.png)
-<<<<<<< HEAD
-=======
+
 
 #### 4. 超炫启动界面
 >继承自QWidget,在paintEvent事件中进行不断旋转背景图片实现，具体其他效果可以替换其他不同的图片而实现
@@ -145,8 +144,6 @@ DISABLE_LIBRARY_FEATURES
 >自定义消息框继承自QDialog,通过布局实现了一个简单的消息框，所以的样式由样式表进行控制。效果如下所示:
 
 ![自定义消息框](/screen/messagebox.png)
-<<<<<<< HEAD
-=======
 
 #### 6. 导航进度条
 > 导航进度条继承QWidget,通过QPainter进行绘制。
@@ -222,7 +219,6 @@ DISABLE_LIBRARY_FEATURES
 
 ![toleranceBar](/screen/toleranceBar.png);
 
->>>>>>> fac9f1e68c985ed49c442ef264562ffa854a4752
 
 ### 辅助工具类测试
 >辅助工具类包含了常见的一些小工具，比如二维码生成、验证码生成、进制转换、数据通信(串口(232,485)、网络、CAN等)
@@ -238,11 +234,11 @@ DISABLE_LIBRARY_FEATURES
 
 ![二维码识别](/screen/qzxing.png)
 
-<<<<<<< HEAD
+
 ![性能监测](/screen/perfmon.png)
-=======
+
 测试时使用自己支付宝付款码进行了测试
->>>>>>> fac9f1e68c985ed49c442ef264562ffa854a4752
+
 
 ### 图表控件类测试
 >图表控件类包含了常见的图表，比如各种统计图(条形图、扇形图、折线图、饼图等等)
@@ -269,3 +265,4 @@ DISABLE_LIBRARY_FEATURES
 * V 0.0.1.6 添加tabWidget窗体;
 * V 0.0.1.7 添加了toleranceBar及其demo；
 * V 0.0.1.8 添加了波形进度条及其demo;
+* V 0.0.1.9 调整工程结构，解决Qt 5.4以后编译错误;

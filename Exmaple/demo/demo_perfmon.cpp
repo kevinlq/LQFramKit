@@ -1,9 +1,10 @@
+#include "../LQTools/inc/LQToolsIncLib.h"
+
 #include "demo_perfmon.h"
 #include "ui_demo_perfmon.h"
 
 #include <QTimer>
 
-#include "perfmon.h"
 
 #define CHANNEL_COUNT 2
 

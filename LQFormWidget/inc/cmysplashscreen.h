@@ -7,7 +7,6 @@
 #include <QList>
 #include <QtGlobal>
 
-#include "lqformwidget_global.h"
 
 class LQFORMWIDGETSHARED_EXPORT CMySplashScreen: public QSplashScreen
 {

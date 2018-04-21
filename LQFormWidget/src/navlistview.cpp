@@ -1,3 +1,5 @@
+#include "StdMain.h"
+
 #include "navlistview.h"
 
 #include <QPainter>
@@ -494,3 +496,5 @@ void NavListView::setColorText(QColor colorTextNormal, QColor colorTextSelected,
 	this->colorTextSelected = colorTextSelected;
 	this->colorTextHover = colorTextHover;
 }
+
+#include "moc_navlistview.cpp"

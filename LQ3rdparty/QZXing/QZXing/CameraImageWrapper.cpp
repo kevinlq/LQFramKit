@@ -1,4 +1,7 @@
-#include "CameraImageWrapper.h"
+#include "StdMain.h"
+
+#include "inc/CameraImageWrapper.h"
+
 #include <QColor>
 #include <QApplication>
 #include <QDesktopWidget>
@@ -144,7 +147,7 @@ ArrayRef<char> CameraImageWrapper::getMatrix() const
         ArrayRef<char> tmpRow;
         tmpRow = getRow(y, ArrayRef<char>(width));
 #if __cplusplus > 199711L
-        memcpy(m, tmpRow->values()..data(), width);
+        memcpy(m, tmpRow->values().data(), width);
 #else
 		memcpy(m, &tmpRow->values()[0], width);
 #endif

@@ -1,3 +1,4 @@
+#include "StdMain.h"
 #include "ipaddresswidget.h"
 
 #include <QSpinBox>
@@ -141,3 +142,5 @@ void IpAddressWidget::init()
 
     setLayout (m_pHMainLayout);
 }
+
+#include "moc_ipaddresswidget.cpp"

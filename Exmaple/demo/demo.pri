@@ -26,34 +26,6 @@ FORMS += \
     $$PWD/demo_tolerancebar.ui \
     $$PWD/demo_waveprogress.ui
 
-HEADERS += \
-    $$PWD/demo_qgauge.h \
-    $$PWD/demo_qmeter.h \
-    $$PWD/demo_compasswidget.h \
-    $$PWD/demo_lineedit.h \
-    $$PWD/demo_attitudemeter.h \
-    $$PWD/demo_perfmon.h \
-    $$PWD/demo_speedgauge.h \
-    $$PWD/demo_airspeedwidget.h \
-    $$PWD/demo_imagebrowser.h \
-    $$PWD/demo_roundprogressbar.h \
-    $$PWD/demo_colorprogressbar.h \
-    $$PWD/demo_customcombox.h \
-    $$PWD/demo_splashscreen.h \
-    $$PWD/demo_messagebox.h \
-    $$PWD/demo_rightdownmessagebox.h \
-    $$PWD/demo_zxing.h \
-    $$PWD/demo_startwidget.h \
-    $$PWD/demo_drawprogressbar.h \
-    $$PWD/demo_ruler.h \
-    $$PWD/demo_ipaddresswidget.h \
-    $$PWD/demo_msgnotify.h \
-    $$PWD/demo_speedwatch.h \
-    $$PWD/demo_navlistview.h \
-    $$PWD/demo_tabwidget.h \
-    $$PWD/demo_tolerancebar.h \
-    $$PWD/demo_waveprogress.h
-
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
     $$PWD/demo_qmeter.cpp \
@@ -81,3 +53,32 @@ SOURCES += \
     $$PWD/demo_tabwidget.cpp \
     $$PWD/demo_tolerancebar.cpp \
     $$PWD/demo_waveprogress.cpp
+
+
+HEADERS += \
+    $$PWD/demo_qgauge.h \
+    $$PWD/demo_qmeter.h \
+    $$PWD/demo_compasswidget.h \
+    $$PWD/demo_lineedit.h \
+    $$PWD/demo_attitudemeter.h \
+    $$PWD/demo_perfmon.h \
+    $$PWD/demo_speedgauge.h \
+    $$PWD/demo_airspeedwidget.h \
+    $$PWD/demo_imagebrowser.h \
+    $$PWD/demo_roundprogressbar.h \
+    $$PWD/demo_colorprogressbar.h \
+    $$PWD/demo_customcombox.h \
+    $$PWD/demo_splashscreen.h \
+    $$PWD/demo_messagebox.h \
+    $$PWD/demo_rightdownmessagebox.h \
+    $$PWD/demo_zxing.h \
+    $$PWD/demo_startwidget.h \
+    $$PWD/demo_drawprogressbar.h \
+    $$PWD/demo_ruler.h \
+    $$PWD/demo_ipaddresswidget.h \
+    $$PWD/demo_msgnotify.h \
+    $$PWD/demo_speedwatch.h \
+    $$PWD/demo_navlistview.h \
+    $$PWD/demo_tabwidget.h \
+    $$PWD/demo_tolerancebar.h \
+    $$PWD/demo_waveprogress.h

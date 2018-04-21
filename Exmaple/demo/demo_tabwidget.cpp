@@ -1,3 +1,5 @@
+#include "LQFormWidgetIncLib.h"
+
 #include "demo_tabwidget.h"
 #include "ui_demo_tabwidget.h"
 

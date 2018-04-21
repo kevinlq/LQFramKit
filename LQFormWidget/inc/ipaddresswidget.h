@@ -7,7 +7,6 @@ class QSpinBox;
 class QLabel;
 class QHBoxLayout;
 
-#include "lqformwidget_global.h"
 
 class LQFORMWIDGETSHARED_EXPORT IpAddressWidget : public QWidget
 {

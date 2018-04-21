@@ -1,0 +1,6 @@
+INCLUDEPATH += $$PWD/LQ3rdparty
+INCLUDEPATH +=$$PWD/../LQ3rdparty/QZXing
+INCLUDEPATH +=$$PWD/../LQ3rdparty/QZXing/QZXing
+INCLUDEPATH +=$$PWD/../LQ3rdparty/QZXing/QZXing/zxing
+
+DIR_DEPEND_QZXING_DEST = $$PWD/LQ3rdparty/QZXing/Lib/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}

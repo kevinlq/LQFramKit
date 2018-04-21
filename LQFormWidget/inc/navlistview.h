@@ -24,11 +24,10 @@
 #include <QListView>
 #include <vector>
 
-#include "./lqformwidget_global.h"
 
 class NavListView;
 
-class NavDelegate : public QStyledItemDelegate
+class LQFORMWIDGETSHARED_EXPORT NavDelegate : public QStyledItemDelegate
 {
 	Q_OBJECT
 public:

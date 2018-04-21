@@ -10,6 +10,7 @@
 ** If you have any questions , please contact me
 **
 ****************************************************************************/
+#include "StdMain.h"
 #include "lqstartwidget.h"
 
 #include <QGridLayout>
@@ -174,3 +175,4 @@ void LQStartWidget::slotCountShow()
     }
 }
 
+#include "moc_lqstartwidget.cpp"

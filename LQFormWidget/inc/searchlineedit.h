@@ -15,7 +15,6 @@ class QToolButton;
 class QHBoxLayout;
 class QWidget;
 
-#include "lqformwidget_global.h"
 
 class LQFORMWIDGETSHARED_EXPORT SearchLineEdit : public QLineEdit
 {

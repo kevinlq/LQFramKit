@@ -3,11 +3,13 @@
 
 #include <QImage>
 #include <QString>
-#include <zxing/zxing/LuminanceSource.h>
+
+//#include "zxing/LuminanceSource.h"
+#include "zxing/zxing/LuminanceSource.h"
 
 using namespace zxing;
 
-class CameraImageWrapper : public LuminanceSource
+class QZXINGSHARED_EXPORT CameraImageWrapper : public LuminanceSource
 {
 public:
     CameraImageWrapper();

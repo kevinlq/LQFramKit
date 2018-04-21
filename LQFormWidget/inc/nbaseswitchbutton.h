@@ -12,7 +12,6 @@
 #include <QColor>
 #include <QPainter>
 
-#include "lqformwidget_global.h"
 
 /**
  * @brief The NBaseSwitchButton class switch button

@@ -1,4 +1,7 @@
+#include "LQToolsIncLib.h"
+
 #include "demo_ruler.h"
+
 #include "ui_demo_ruler.h"
 
 #include <QAction>

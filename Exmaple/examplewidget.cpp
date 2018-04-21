@@ -23,7 +23,8 @@
 #include "demo_customcombox.h"          //自定义ComBox
 #include "demo_splashscreen.h"          //启动界面
 #include "demo_startwidget.h"           //个性化启动界面
-#include "nbaseswitchbutton.h"          //switch切换开关
+#include "LQFormWidgetIncLib.h"
+//#include "nbaseswitchbutton.h"          //switch切换开关
 #include "demo_messagebox.h"            //自定义消息框
 #include "demo_rightdownmessagebox.h"   //右下角消息弹窗
 #include "demo_drawprogressbar.h"       //导航进度条

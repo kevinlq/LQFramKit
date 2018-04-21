@@ -1,7 +1,8 @@
+#include "LQFormWidgetIncLib.h"
+
 #include "demo_startwidget.h"
 #include "ui_demo_startwidget.h"
 
-#include "lqstartwidget.h"
 
 Demo_StartWidget::Demo_StartWidget(const QString &title,QWidget *parent) :
     QDialog(parent),

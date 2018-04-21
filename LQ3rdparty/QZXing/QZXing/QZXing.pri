@@ -2,9 +2,8 @@
 INCLUDEPATH  += $$PWD \
                 $$PWD/zxing
 
-
-HEADERS += $$PWD/QZXing_global.h \
-HEADERS += $$PWD/QZXing_global.h \
+HEADERS +=\
+    $$PWD/QZXing_global.h \
     $$PWD/CameraImageWrapper.h \
     $$PWD/imagehandler.h \
     $$PWD/QZXing.h \
@@ -118,7 +117,8 @@ HEADERS += $$PWD/QZXing_global.h \
     $$PWD/zxing/bigint/BigIntegerAlgorithms.hh \
     $$PWD/zxing/bigint/BigInteger.hh
 
-SOURCES += $$PWD/CameraImageWrapper.cpp \
+SOURCES +=\
+    $$PWD/CameraImageWrapper.cpp \
     $$PWD/qzxing.cpp \
     $$PWD/imagehandler.cpp \
     $$PWD/zxing/zxing/ResultIO.cpp \
@@ -222,34 +222,13 @@ SOURCES += $$PWD/CameraImageWrapper.cpp \
     $$PWD/zxing/bigint/BigIntegerAlgorithms.cc \
     $$PWD/zxing/bigint/BigInteger.cc
 
-symbian {
-    TARGET.UID3 = 0xE618743C
-    TARGET.EPOCALLOWDLLDATA = 1
 
-    #TARGET.CAPABILITY = All -TCB -AllFiles -DRM
-    TARGET.CAPABILITY += NetworkServices \
-        ReadUserData \
-        WriteUserData \
-        LocalServices \
-        UserEnvironment \
-        Location
-}
 
-unix:!symbian {
-    maemo5 {
-        target.path = /opt/usr/lib
-    } else {
-        target.path = /usr/lib
-    }
-
-    DEFINES += NOFMAXL
-    INSTALLS += target
-}
 
 win32-msvc*{
 
-    INCLUDEPATH += $$PWD/zxing/win32/zxing \
-	            $$PWD/zxing/win32/zxing/msvc
+    INCLUDEPATH +=$$PWD/zxing/win32/zxing \
+                  $$PWD/zxing/win32/zxing/msvc
     HEADERS += $$PWD/zxing/win32/zxing/msvc/stdint.h \
                 $$PWD/zxing/win32/zxing/iconv.h
 

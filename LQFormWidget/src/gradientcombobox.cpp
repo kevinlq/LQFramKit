@@ -1,4 +1,5 @@
-﻿#include "gradientcombobox.h"
+﻿#include "StdMain.h"
+#include "gradientcombobox.h"
 
 #include <QListWidget>
 #include <QLabel>
@@ -340,3 +341,5 @@ void GradientComboBox::onActivated(int index)
     d_ptr->gradientItemList->setCurrentRow(index);
     update();
 }
+
+#include "moc_gradientcombobox.cpp"

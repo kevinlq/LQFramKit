@@ -1,7 +1,8 @@
+#include "LQFormWidgetIncLib.h"
+
 #include "demo_navlistview.h"
 #include "ui_demo_navlistview.h"
 
-#include "navlistview.h"
 
 Demo_NavListView::Demo_NavListView(const QString &title, QWidget *parent) :
     QWidget(parent),

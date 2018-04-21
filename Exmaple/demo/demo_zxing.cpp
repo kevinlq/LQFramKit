@@ -1,7 +1,7 @@
+#include "QZXing/inc/QZxingIncLib.h"
+
 #include "demo_zxing.h"
 #include "ui_demo_zxing.h"
-
-#include "../LQAuxiliaryTools/3rdparty/QZXing/QZXing.h"
 
 #include <QFileDialog>
 

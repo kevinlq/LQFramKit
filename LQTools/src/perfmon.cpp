@@ -10,6 +10,8 @@
 ** If you have any questions , please contact me
 **
 ****************************************************************************/
+#include "lqtools_global.h"
+
 #include "perfmon.h"
 
 #include <QMenu>
@@ -435,3 +437,5 @@ void PerfMon::LoadChannelMenu()
     }
 
 }
+
+#include "moc_perfmon.cpp"

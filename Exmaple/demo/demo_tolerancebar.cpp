@@ -1,3 +1,5 @@
+#include "LQFormWidgetIncLib.h"
+
 #include "demo_tolerancebar.h"
 #include "ui_demo_tolerancebar.h"
 

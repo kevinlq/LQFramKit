@@ -1,10 +1,11 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
+    LQ3rdparty \
     LQInstrumentation \
     LQFormWidget \
     LQChart \
-    LQAuxiliaryTools    \
+    LQTools    \
     Exmaple
 
 CONFIG  +=ordered

@@ -3,15 +3,9 @@
 
 #include <QWidget>
 #include <QPixmap>
-#include <QPainter>
-#include <QPaintEvent>
-#include <QWheelEvent>
-#include <QResizeEvent>
-
-#include "lqauxiliarytools_global.h"
 
 
-class LQAUXILIARYTOOLSSHARED_EXPORT LQImageHandler : public QWidget
+class LQTOOLSSHARED_EXPORT LQImageHandler : public QWidget
 {
     Q_OBJECT
 public:

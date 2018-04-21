@@ -1,3 +1,5 @@
+#include "LQFormWidgetIncLib.h"
+
 #include "demo_ipaddresswidget.h"
 #include "ui_demo_ipaddresswidget.h"
 

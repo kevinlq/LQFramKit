@@ -1,3 +1,5 @@
+#include "StdMain.h"
+
 #include "nbaseswitchbutton.h"
 #include <QMouseEvent>
 
@@ -192,3 +194,5 @@ void NBaseSwitchButton::drawPressSlide(QPainter *painter)
     painter->setPen(QColor(173, 173, 173, 160));
     painter->drawEllipse(rrect);
 }
+
+#include "moc_nbaseswitchbutton.cpp"

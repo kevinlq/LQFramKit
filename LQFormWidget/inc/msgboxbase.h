@@ -16,7 +16,6 @@ class QPushButton;
 class QLabel;
 class QWidget;
 
-#include "lqformwidget_global.h"
 
 class LQFORMWIDGETSHARED_EXPORT MsgBoxBase : public QDialog
 {

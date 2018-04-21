@@ -6,6 +6,9 @@ Email:kevinlq0912@163.com
 QQ:936563422
 Description:自定义实现一个消息框
 **************************************************/
+
+#include "StdMain.h"
+
 #include "msgboxbase.h"
 #include <QVBoxLayout>
 #include <QHBoxLayout>
@@ -207,3 +210,5 @@ void MsgBoxBase::mouseMoveEvent(QMouseEvent *e)
         e->accept();
     }
 }
+
+#include "moc_msgboxbase.cpp"

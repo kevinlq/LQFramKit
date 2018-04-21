@@ -7,6 +7,9 @@ QQ:936563422
 Version:V1.0
 Description:自定义搜索框的实现
 **************************************************/
+
+#include "StdMain.h"
+
 #include "searchlineedit.h"
 
 #include <QLineEdit>
@@ -107,4 +110,5 @@ void SearchLineEdit::slotSendSearchContent()
     emit signalSearchContent(str);
 }
 
+#include "moc_searchlineedit.cpp"
 

@@ -2,7 +2,6 @@
 #define GRADIENTCOMBOBOX_H
 
 #include <QComboBox>
-#include "lqformwidget_global.h"
 
 class QListWidgetItem;
 class GradientComboBoxPrivate;
