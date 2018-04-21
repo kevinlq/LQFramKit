@@ -6,7 +6,7 @@
 include($$PWD/../LQGlobal.pri)
 include($$PWD/../LQ_LibForAdditions.pri)
 
-QT       += gui core
+QT       += gui core widgets xml sql network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

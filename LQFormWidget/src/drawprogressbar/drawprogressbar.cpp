@@ -43,7 +43,7 @@ void DrawProgressBar::init()
     strlist << QStringLiteral("创建订单") << QStringLiteral("审核订单") << QStringLiteral("生产")
             << QStringLiteral("配送") << QStringLiteral("签收");
 
-    QRect myrect = rect();
+//    QRect myrect = rect();
     //qDebug()<<"rect size = "<<myrect;
 
     str_list2 << QStringLiteral("已发货") << QStringLiteral("运输中")
