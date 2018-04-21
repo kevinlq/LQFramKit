@@ -30,6 +30,10 @@ OS:windows7 64b
 
 ![编译配置](/screen/build_setting.png)
 
+建议按照上述配置，添加宏定义`CONFIG+=MinGW`
+
+具体针对不同平台编译宏定义不同，可以参考我这篇文章[](http://kevinlq.com/2017/09/18/Qt-black-technology/)
+
 
 ## 使用本工程
 
@@ -37,10 +41,6 @@ OS:windows7 64b
 
 >测试用例中针对不同的控件进行了说明，也有对应的demo作为展示
 
-若不想生成动态库，则编译时在对应pro文件中添加宏定义
-```
-DISABLE_LIBRARY_FEATURES
-```
 
 ### 仪表相关控件测试
 
@@ -133,7 +133,6 @@ DISABLE_LIBRARY_FEATURES
 >继承自QWidget,在paintEvent事件中进行不断旋转背景图片实现，具体其他效果可以替换其他不同的图片而实现
 
 ![超炫启动界面](/screen/start.png)
->>>>>>> fac9f1e68c985ed49c442ef264562ffa854a4752
 
 #### 4. 自定义switch切换按钮
 >switch切换按钮继承自QWidget,利用QPainter进行绘制而实现，以前弄过一个继承自QPushButton,然后使用逻辑变量控制，当按下button时显示不同的图片，这样太依赖于美工，没有具体样式的图片，按钮演示无法修改，目前使用重绘比较灵活，缺点是性能有缺失，毕竟重绘效率不高。
@@ -265,4 +264,27 @@ DISABLE_LIBRARY_FEATURES
 * V 0.0.1.6 添加tabWidget窗体;
 * V 0.0.1.7 添加了toleranceBar及其demo；
 * V 0.0.1.8 添加了波形进度条及其demo;
-* V 0.0.1.9 调整工程结构，解决Qt 5.4以后编译错误;
+* V 0.0.1.9 调整工程结构，解决Qt 5.4以后编译错误(2018年4月21日);
+
+
+## fix bug
+
+**2018年4月21日19**
+
+### 在Qt5.4之后编译时会出现某些库中的方法无法找到问题，比如下面的错误：
+
+![](/screen/bugs/build_error_tools.png)
+
+原因是该方法控件引入了 `W32` API ,导致后面Qt版本编译时找不到，Qt5.4之前的版本没有该问题。
+
+**解决方案**
+
+```
+添加对应的W32库文件即可.
+win32:{
+    LIBS+=-L -lGdi32
+}
+```
+
+### xxx
+**2018年4月21日19**
