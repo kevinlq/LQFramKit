@@ -1,4 +1,5 @@
-﻿#include "demo_speedgauge.h"
+﻿#include "LQInstrumenttationIncLib.h"
+#include "demo_speedgauge.h"
 #include "ui_demo_speedgauge.h"
 
 Demo_SpeedGauge::Demo_SpeedGauge(const QString &title, QWidget *parent) :

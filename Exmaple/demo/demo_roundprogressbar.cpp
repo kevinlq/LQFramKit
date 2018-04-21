@@ -1,4 +1,6 @@
-﻿#include "demo_roundprogressbar.h"
+﻿#include "LQInstrumenttationIncLib.h"
+
+#include "demo_roundprogressbar.h"
 #include "ui_demo_roundprogressbar.h"
 
 Demo_RoundProgressBar::Demo_RoundProgressBar(const QString &title,

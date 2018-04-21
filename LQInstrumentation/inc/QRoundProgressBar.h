@@ -21,7 +21,6 @@
 
 #include <QWidget>
 
-#include "lqinstrumentation_global.h"
 
 /**
  * @brief The QRoundProgressBar class represents a circular progress bar and maintains its API

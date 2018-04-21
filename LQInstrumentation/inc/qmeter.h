@@ -11,8 +11,6 @@
 #include <QWidget>
 #include <QPropertyAnimation>
 
-#include "lqinstrumentation_global.h"
-
 class QColor;
 
 

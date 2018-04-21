@@ -1,4 +1,6 @@
-﻿#include "demo_colorprogressbar.h"
+﻿#include "LQInstrumenttationIncLib.h"
+
+#include "demo_colorprogressbar.h"
 #include "ui_demo_colorprogressbar.h"
 
 Demo_ColorProgressBar::Demo_ColorProgressBar(const QString &title,

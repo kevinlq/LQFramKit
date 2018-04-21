@@ -3,7 +3,6 @@
 
 #include <QWidget>
 
-#include "lqinstrumentation_global.h"
 
 class QcGaugeWidget;
 class QcNeedleItem;

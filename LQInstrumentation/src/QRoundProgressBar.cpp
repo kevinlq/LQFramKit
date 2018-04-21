@@ -16,10 +16,9 @@
  *
  */
 
+#include "StdMain.h"
 
 #include "QRoundProgressBar.h"
-
-#include <QtGui/QPainter>
 
 
 QRoundProgressBar::QRoundProgressBar(QWidget *parent) :
@@ -372,3 +371,4 @@ void QRoundProgressBar::rebuildDataBrushIfNeeded()
 
 
 
+#include "moc_QRoundProgressBar.cpp"

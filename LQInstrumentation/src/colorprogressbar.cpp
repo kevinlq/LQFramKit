@@ -1,6 +1,8 @@
-﻿#include "colorprogressbar.h"
-#include <QPainter>
-#include <QDebug>
+﻿#include "StdMain.h"
+
+#include "colorprogressbar.h"
+
+
 /**
   *多彩进度条的实现
 */
@@ -187,3 +189,5 @@ void ColorProgressBar::drawText(QPainter &p, const QRectF &textRect)
     p.drawText(textRect, Qt::AlignCenter, valueStr);
     p.restore();
 }
+
+#include "moc_colorprogressbar.cpp"

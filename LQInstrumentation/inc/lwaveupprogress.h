@@ -3,8 +3,6 @@
 
 #include <QWidget>
 
-#include "lqinstrumentation_global.h"
-
 
 typedef enum PercentStyle{
     percentStyleRect = 0,       //矩形

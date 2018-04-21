@@ -5,6 +5,7 @@
 #-------------------------------------------------
 include($$PWD/../LQGlobal.pri)
 include($$PWD/../LQ_LibForAdditions.pri)
+
 QT       += gui core
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -17,10 +18,14 @@ DEFINES +=DEBUG_OUT
 
 
 include($$PWD/demo/demo.pri)
+
 INCLUDEPATH +=$$PWD/../LQTools/inc
 INCLUDEPATH +=$$PWD/../LQInstrumentation/inc
 INCLUDEPATH +=$$PWD/../LQFormWidget/inc
 INCLUDEPATH +=$$PWD/../LQFormWidget/inc/tabWidget
+INCLUDEPATH +=$$PWD/../LQFormWidget/inc/drawprogressbar
+INCLUDEPATH +=$$PWD/../LQFormWidget/inc/messageWidget
+INCLUDEPATH +=$$PWD/../LQFormWidget/inc/msgNotify
 INCLUDEPATH +=$$PWD/../LQChart/inc
 INCLUDEPATH +=$$PWD/demo
 
@@ -45,7 +50,7 @@ HEADERS += \
     examplewidget.h
 
 RESOURCES += \
-    ExampleImage.qrc
+    ../LQRes/ExampleImage.qrc
 
 LIBS += -L$${DIR_DEPEND_DEST} -lLQTools$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DEST} -lLQChart$${FILE_POSTFIX}

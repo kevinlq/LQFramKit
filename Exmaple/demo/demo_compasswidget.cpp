@@ -1,4 +1,5 @@
-﻿#include "demo_compasswidget.h"
+﻿#include "LQInstrumenttationIncLib.h"
+#include "demo_compasswidget.h"
 #include "ui_demo_compasswidget.h"
 
 Demo_compassWidget::Demo_compassWidget(const QString &title, QWidget *parent) :

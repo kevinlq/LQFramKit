@@ -71,10 +71,10 @@ void ExampleWidget::init()
     this->setWindowTitle("控件测试集合");
 
     //加载控件样式
-    QFile file(":/image/css/style_demo.css");
-    file.open(QFile::ReadOnly);
-    QString qss = QString(file.readAll());
-    setStyleSheet(qss);
+//    QFile file(":/image/css/style_demo.css");
+//    file.open(QFile::ReadOnly);
+//    QString qss = QString(file.readAll());
+//    setStyleSheet(qss);
 
     ui->tabWidget->setCurrentIndex(0);
 

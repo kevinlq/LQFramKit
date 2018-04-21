@@ -2,7 +2,6 @@
 #define MYSPEEDWATCH_H
 
 #include <QWidget>
-#include "./lqinstrumentation_global.h"
 
 class LQINSTRUMENTATIONSHARED_EXPORT mySpeedWatch: public QWidget
 {

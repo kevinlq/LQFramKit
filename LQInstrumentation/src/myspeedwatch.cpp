@@ -9,10 +9,11 @@
 ** If you have any questions , please contact me
 **
 ****************************************************************************/
+#include "StdMain.h"
+
 #include "myspeedwatch.h"
 
-#include <QPainter>
-#include <QtMath>
+
 
 mySpeedWatch::mySpeedWatch(QWidget *parent): QWidget(parent)
 {
@@ -293,3 +294,5 @@ void mySpeedWatch::setNumericIndicatorEnabled(bool enable)
     m_numericIndicatorEnabled = enable;
     update();
 }
+
+#include "moc_myspeedwatch.cpp"

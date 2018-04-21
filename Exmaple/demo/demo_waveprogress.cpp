@@ -1,3 +1,5 @@
+#include "LQInstrumenttationIncLib.h"
+
 #include "demo_waveprogress.h"
 #include "ui_demo_waveprogress.h"
 

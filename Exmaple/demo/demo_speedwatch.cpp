@@ -1,3 +1,5 @@
+#include "LQInstrumenttationIncLib.h"
+
 #include "demo_speedwatch.h"
 #include "ui_demo_speedwatch.h"
 

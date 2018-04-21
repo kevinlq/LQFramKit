@@ -1,4 +1,5 @@
-﻿#include "demo_attitudemeter.h"
+﻿#include "LQInstrumenttationIncLib.h"
+#include "demo_attitudemeter.h"
 #include "ui_demo_attitudemeter.h"
 
 Demo_AttitudeMeter::Demo_AttitudeMeter(const QString &title, QWidget *parent) :

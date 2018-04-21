@@ -1,4 +1,6 @@
-﻿#include "demo_qmeter.h"
+﻿#include "LQInstrumenttationIncLib.h"
+
+#include "demo_qmeter.h"
 #include "ui_demo_qmeter.h"
 
 Demo_qmeter::Demo_qmeter(const QString &title, QWidget *parent) :

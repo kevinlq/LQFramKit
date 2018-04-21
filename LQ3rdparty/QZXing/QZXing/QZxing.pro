@@ -6,6 +6,7 @@ TARGET = QZxing$${FILE_POSTFIX}
 DEFINES +=QZXING_LIBRARY
 
 INCLUDEPATH  += $$PWD
+INCLUDEPATH  += $$PWD/inc
 INCLUDEPATH  += $$PWD/zxing
 INCLUDEPATH  += $$PWD/zxing/zxing
 INCLUDEPATH  += $$PWD/zxing/bigint
@@ -232,7 +233,7 @@ HEADERS +=\
     $$PWD/zxing/bigint/BigInteger.hh \
     $$PWD/inc/CameraImageWrapper.h \
     $$PWD/inc/QZXing.h \
-    $$PWD/inc/imagehandler.h \
+    $$PWD/inc/imagehandler.h
 
 
 win32-msvc*{

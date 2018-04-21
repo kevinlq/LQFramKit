@@ -3,7 +3,6 @@
 
 #include <QWidget>
 
-#include "lqinstrumentation_global.h"
 
 #include "qcgaugewidget.h"
 

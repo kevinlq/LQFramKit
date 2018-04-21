@@ -1,8 +1,7 @@
+#include "StdMain.h"
+
 #include "lwaveupprogress.h"
 
-#include <QPainter>
-#include <QTimer>
-#include <qmath.h>
 
 typedef struct LWavePrivateData{
     P_STYLE percentStyle;
@@ -206,3 +205,5 @@ void LWaveUpProgress::slotValueChange(int value)
 
     update ();
 }
+
+#include "moc_lwaveupprogress.cpp"

@@ -12,7 +12,19 @@ TEMPLATE = lib
 
 DEFINES += LQCHART_LIBRARY
 
-include ($$PWD/lqchart_src.pri)
+#include ($$PWD/lqchart_src.pri)
 
 INCLUDEPATH +=$$PWD/inc
+
+
+SOURCES += \
+    $$PWD/src/lqchart.cpp
+
+HEADERS += \
+    StdMain.h \
+    inc/LQChartInc.h \
+    inc/LQChartIncLib.h \
+    $$PWD/inc/lqchart_global.h \
+    $$PWD/inc/lqchart.h
+
 

@@ -3,13 +3,9 @@
  *   http://www.qt-italia.net
  */
 
-#include <QColor>
-#include <QtGlobal>
-#include <QtGui>
-#include <QPolygon>
-#include <math.h>
+#include "StdMain.h"
 #include "qmeter.h"
-#include <QPainter>
+
 
 
 #define PI 3.1415926535

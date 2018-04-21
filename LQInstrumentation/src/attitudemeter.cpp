@@ -1,4 +1,6 @@
-﻿#include "attitudemeter.h"
+﻿#include "StdMain.h"
+
+#include "attitudemeter.h"
 
 #include <QVBoxLayout>
 
@@ -48,3 +50,5 @@ void AttitudeMeter::init()
     setLayout(m_pMainLayout);
 }
 
+
+#include "moc_attitudemeter.cpp"

@@ -3,11 +3,9 @@
  *   http://www.qt-italia.net
  */
 
+#include "StdMain.h"
+
 #include "qgauge.h"
-#include <QtGlobal>
-#include <QtGui>
-#include <QPainter>
-#include <QFont>
 
 QGauge::QGauge(QWidget *parent)
     : QWidget(parent)

@@ -1,4 +1,6 @@
-﻿#include "demo_airspeedwidget.h"
+﻿#include "LQInstrumenttationIncLib.h"
+
+#include "demo_airspeedwidget.h"
 #include "ui_demo_airspeedwidget.h"
 
 Demo_AirSpeedWidget::Demo_AirSpeedWidget(const QString &title,

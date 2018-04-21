@@ -1,4 +1,6 @@
-﻿#include "compasswidget.h"
+﻿#include "StdMain.h"
+
+#include "compasswidget.h"
 
 #include <QVBoxLayout>
 
@@ -71,3 +73,4 @@ void CompassWidget::init()
     m_pMainLayout->addWidget(m_pCompassGauge);
 }
 
+#include "moc_compasswidget.cpp"

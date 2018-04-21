@@ -1,4 +1,6 @@
-﻿#include "airspeedgaugewidget.h"
+﻿#include "StdMain.h"
+
+#include "airspeedgaugewidget.h"
 
 #include "qcgaugewidget.h"
 
@@ -42,3 +44,5 @@ void AirSpeedGaugeWidget::init()
     setLayout(m_pMainLayout);
 }
 
+
+#include "moc_airspeedgaugewidget.cpp"

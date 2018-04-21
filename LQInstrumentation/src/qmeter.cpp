@@ -3,12 +3,10 @@
  *   http://www.qt-italia.net
  */
 
- 
-#include <QtGlobal>
-#include <QtGui>
+ #include "StdMain.h"
+
 #include "qmeter.h"
-#include <QPainter>
-#include <QFont>
+
 
 QMeter::QMeter(QWidget *parent)
     : QWidget(parent)
@@ -273,3 +271,5 @@ void QMeter::setEnableWarningWindow(bool enable)
     update();
 }
 
+
+#include "moc_qmeter.cpp"

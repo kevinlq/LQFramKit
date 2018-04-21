@@ -1,4 +1,6 @@
-﻿#include "speedgaugewidget.h"
+﻿#include "StdMain.h"
+
+#include "speedgaugewidget.h"
 
 #include "qcgaugewidget.h"
 
@@ -54,3 +56,5 @@ void SpeedGaugeWidget::init()
 
     setLayout(m_pMainLayout);
 }
+
+#include "moc_speedgaugewidget.cpp"
