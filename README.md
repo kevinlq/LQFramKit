@@ -32,8 +32,11 @@ OS:windows7 64b
 
 建议按照上述配置，添加宏定义`CONFIG+=MinGW`
 
-具体针对不同平台编译宏定义不同，可以参考我这篇文章[](http://kevinlq.com/2017/09/18/Qt-black-technology/)
+具体针对不同平台编译宏定义不同，可以参考我这篇文章[http://kevinlq.com/2017/09/18/Qt-black-technology/](http://kevinlq.com/2017/09/18/Qt-black-technology/)
 
+## 可执行文件下载地址
+
+[]()
 
 ## 使用本工程
 
