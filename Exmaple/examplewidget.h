@@ -3,6 +3,8 @@
 
 #include <QWidget>
 
+class CreateProjectFileForm;
+
 namespace Ui {
 class ExampleWidget;
 }
@@ -77,15 +79,20 @@ private slots:
 
     void on_pushButton_28_clicked();
 
+    void on_pushButton_29_clicked();
+
 protected:
     virtual void closeEvent(QCloseEvent *event);
 
 private:
-    Ui::ExampleWidget *ui;
-
     void init();
 
     void initConnect();
+
+private:
+    Ui::ExampleWidget *ui;
+
+    CreateProjectFileForm   *m_pCreatePro;
 };
 
 #endif // EXAMPLEWIDGET_H

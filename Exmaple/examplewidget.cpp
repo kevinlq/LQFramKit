@@ -40,6 +40,8 @@
 #include "demo_imagebrowser.h"          //图片旋转缩放
 #include "demo_zxing.h"                 //二维码测试
 
+#include "CreateProjectFileForm.h"      //生成工程模板
+
 ExampleWidget::ExampleWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ExampleWidget)
@@ -52,6 +54,12 @@ ExampleWidget::ExampleWidget(QWidget *parent) :
 ExampleWidget::~ExampleWidget()
 {
     delete ui;
+
+    if ( m_pCreatePro != NULL )
+    {
+        delete m_pCreatePro;
+        m_pCreatePro = NULL;
+    }
 }
 
 void ExampleWidget::slotToleranceBarValue(const int &value)
@@ -79,6 +87,8 @@ void ExampleWidget::init()
     ui->tabWidget->setCurrentIndex(0);
 
     initConnect ();
+
+    m_pCreatePro = Q_NULLPTR;
 }
 
 void ExampleWidget::initConnect()
@@ -367,4 +377,14 @@ void ExampleWidget::on_pushButton_28_clicked()
 
     QTimer::singleShot (10000,wave,SLOT(deleteLater()));
     ui->textEdit->append ("波浪进度条已经运行，10秒后将关闭!");
+}
+
+void ExampleWidget::on_pushButton_29_clicked()
+{
+    if ( m_pCreatePro == Q_NULLPTR)
+    {
+        m_pCreatePro = new CreateProjectFileForm;
+    }
+
+    m_pCreatePro->show ();
 }
