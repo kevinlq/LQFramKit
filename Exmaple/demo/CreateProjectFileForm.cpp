@@ -144,7 +144,7 @@ QString CreateProjectFileForm::getProFileContext(const QString &strProName)
 
     strContext.append (QString("\t../%1/%2Inc.h \\\r\n").arg (strProName).arg (strProName));
     strContext.append (QString("\t../%1/%2IncLib.h \\\r\n").arg (strProName).arg (strProName));
-    strContext.append (QString("\t../%1_Export.h\r\n").arg (strProName));
+    strContext.append (QString("\t../%1/%2_Export.h\r\n").arg (strProName).arg (strProName));
     strContext.append ("\r\n");
 
     return strContext;
@@ -170,7 +170,7 @@ QString CreateProjectFileForm::getExportContext()
 {
     QString strContext = getCommonHeadText ( QString("%1_Export").arg (m_strProName));
     strContext.append ("\r\n");
-    strContext.append ("#if defined(MIV_XXX_LIBRARY)\r\n");
+    strContext.append (QString("#if defined(%1_LIBRARY)\r\n").arg (m_strProName.toUpper ()));
     strContext.append ( QString("#  define %1_Export XXX_DECL_EXPORT\r\n").arg (m_strProName));
     strContext.append ("#else\r\n");
     strContext.append (QString("#  define %1_Export XXX_DECL_IMPORT\r\n").arg (m_strProName));
@@ -196,8 +196,8 @@ QString CreateProjectFileForm::getIncLibContext()
 {
     QString strContext = getCommonHeadText ( QString("%1_incLib").arg (m_strProName));
     strContext.append ("\r\n");
-    strContext.append ( QString("#include \"%1_Inc.h\"\r\n").arg (m_strProName));
-    strContext.append ( QString("#include \"%1_Lib.h\"\r\n").arg (m_strProName));
+    strContext.append ( QString("#include \"%1Inc.h\"\r\n").arg (m_strProName));
+    strContext.append ( QString("#include \"%1Lib.h\"\r\n").arg (m_strProName));
     strContext.append ("\r\n");
     strContext.append (getCommonEndText(QString("%1_IncLib").arg (m_strProName)));
 
