@@ -129,6 +129,9 @@ QString CreateProjectFileForm::getProFileContext(const QString &strProName)
     strContext.append ( QString("TARGET\t =%1{FILE_POSTFIX}\r\n").arg (strProName));
     strContext.append ("\r\n\r\n");
 
+    strContext.append (QString("INCLUDEPATH\t +=$$PWD/../"));
+    strContext.append ("\r\n\r\n");
+
     strContext.append ("SOURCES\t +=\\\r\n");
     strContext.append ("\tGlobal/GlobalVar.cpp \\");
     strContext.append ("\r\n\r\n");
@@ -141,7 +144,7 @@ QString CreateProjectFileForm::getProFileContext(const QString &strProName)
 
     strContext.append (QString("\t../%1/%2Inc.h \\\r\n").arg (strProName).arg (strProName));
     strContext.append (QString("\t../%1/%2IncLib.h \\\r\n").arg (strProName).arg (strProName));
-    strContext.append (QString("\t%1_Export.h\r\n").arg (strProName));
+    strContext.append (QString("\t../%1_Export.h\r\n").arg (strProName));
     strContext.append ("\r\n");
 
     return strContext;
@@ -214,7 +217,7 @@ void CreateProjectFileForm::on_pbnCreate_clicked()
         return;
     }
 
-    m_FileMap.insert ( QString("%1/StdMain.h").arg (strFolderName),getStdMainContext());
+    m_FileMap.insert (QString("%1/StdMain.h").arg (strFolderName),getStdMainContext());
     m_FileMap.insert (QString("%1/%2.pro").arg (strFolderName).arg (strProName),getProFileContext(strProName));
     m_FileMap.insert (QString("%1/Global/GlobalDef.h").arg (strFolderName),getCommonContext ("GlobalDef"));
     m_FileMap.insert (QString("%1/Global/GlobalStruct.h").arg (strFolderName),getCommonContext ("GlobalStruct"));
@@ -223,13 +226,13 @@ void CreateProjectFileForm::on_pbnCreate_clicked()
     m_FileMap.insert (QString("%1/Global/GlobalInclude.h").arg (strFolderName),getGlobalIncludeContext ());
 
     //include 文件
-    m_FileMap.insert (QString("%1/%2/%3_Export.h").arg (strFolderName).arg (strFolderName).arg (strProName),
+    m_FileMap.insert (QString("%1/%2/%3Export.h").arg (strFolderName).arg (strFolderName).arg (strProName),
                       getExportContext());
-    m_FileMap.insert (QString("%1/%2/%3_Inc.h").arg (strFolderName).arg (strFolderName).arg (strProName),
+    m_FileMap.insert (QString("%1/%2/%3Inc.h").arg (strFolderName).arg (strFolderName).arg (strProName),
                       getIncContext());
-    m_FileMap.insert (QString("%1/%2/%3_IncLib.h").arg (strFolderName).arg (strFolderName).arg (strProName),
+    m_FileMap.insert (QString("%1/%2/%3IncLib.h").arg (strFolderName).arg (strFolderName).arg (strProName),
                       getIncLibContext ());
-    m_FileMap.insert (QString("%1/%2/%3_Lib.h").arg (strFolderName).arg (strFolderName).arg (strProName),
+    m_FileMap.insert (QString("%1/%2/%3Lib.h").arg (strFolderName).arg (strFolderName).arg (strProName),
                       getCommonContext( QString("%1Lib").arg (strProName)));
 
     //创建文件以及写入内容
