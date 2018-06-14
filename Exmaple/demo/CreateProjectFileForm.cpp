@@ -126,7 +126,7 @@ QString CreateProjectFileForm::getProFileContext(const QString &strProName)
     strContext.append ("QT\t +=core\r\n\r\n");
     strContext.append ("TEMPLATE\t =lib\r\n");
     strContext.append ( QString("DEFINES\t +=%1_LIBRARY\r\n").arg (strProName.toUpper ()));
-    strContext.append ( QString("TARGET\t =%1{FILE_POSTFIX}\r\n").arg (strProName));
+    strContext.append ( QString("TARGET\t =%1$${FILE_POSTFIX}\r\n").arg (strProName));
     strContext.append ("\r\n\r\n");
 
     strContext.append (QString("INCLUDEPATH\t +=$$PWD/../"));
@@ -226,7 +226,7 @@ void CreateProjectFileForm::on_pbnCreate_clicked()
     m_FileMap.insert (QString("%1/Global/GlobalInclude.h").arg (strFolderName),getGlobalIncludeContext ());
 
     //include 文件
-    m_FileMap.insert (QString("%1/%2/%3Export.h").arg (strFolderName).arg (strFolderName).arg (strProName),
+    m_FileMap.insert (QString("%1/%2/%3_Export.h").arg (strFolderName).arg (strFolderName).arg (strProName),
                       getExportContext());
     m_FileMap.insert (QString("%1/%2/%3Inc.h").arg (strFolderName).arg (strFolderName).arg (strProName),
                       getIncContext());
