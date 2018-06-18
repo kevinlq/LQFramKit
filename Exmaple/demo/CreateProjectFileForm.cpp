@@ -142,9 +142,9 @@ QString CreateProjectFileForm::getProFileContext(const QString &strProName)
     strContext.append ("\tGlobal/GlobalInclude.h \\\r\n");
     strContext.append ("\tGlobal/GlobalDef.h \\\r\n");
 
+    strContext.append (QString("\t../%1/%2_Export.h \\\r\n").arg (strProName).arg (strProName));
     strContext.append (QString("\t../%1/%2Inc.h \\\r\n").arg (strProName).arg (strProName));
-    strContext.append (QString("\t../%1/%2IncLib.h \\\r\n").arg (strProName).arg (strProName));
-    strContext.append (QString("\t../%1/%2_Export.h\r\n").arg (strProName).arg (strProName));
+    strContext.append (QString("\t../%1/%2IncLib.h\r\n").arg (strProName).arg (strProName));
     strContext.append ("\r\n");
 
     return strContext;
