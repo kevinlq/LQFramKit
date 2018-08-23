@@ -50,18 +50,16 @@ win32:{
 }
 else:linux:{
     CONFIG(GCC, GCC|GCC32|GCC64):{
-            DIR_PLATFORM = Linux32
             DIR_COMPILER = GCC32
     }
     else:CONFIG(GCC32, GCC|GCC32|GCC64):{
-            DIR_PLATFORM = Linux32
             DIR_COMPILER = GCC32
     }
     else:CONFIG(GCC64, GCC|GCC32|GCC64):{
-            DIR_PLATFORM = Linux64
             DIR_COMPILER = GCC64
     }
 
+    DIR_PLATFORM = Linux
     FILE_LIB_PREFIX = lib
     FILE_LIB_EXT = .a
     FILE_DLL_PREFIX = lib

@@ -28,8 +28,13 @@
 #include "demo_messagebox.h"            //自定义消息框
 #include "demo_rightdownmessagebox.h"   //右下角消息弹窗
 #include "demo_drawprogressbar.h"       //导航进度条
+
+#ifdef Q_OS_WIN
 #include "demo_ruler.h"                 //尺子
+#endif
+
 #include "demo_ipaddresswidget.h"       //IP地址输入框
+
 #include "demo_msgnotify.h"             //消息弹窗提醒
 #include "demo_navlistview.h"           //树状导航
 #include "demo_tabwidget.h"             //tab窗口
@@ -179,12 +184,14 @@ void ExampleWidget::on_pushButton_8_clicked()
 
 void ExampleWidget::on_pushButton_9_clicked()
 {
+#ifndef Q_OS_WIN
     Demo_ImageBrowser *image = new Demo_ImageBrowser("图片旋转缩放demo");
     image->setWindowModality(Qt::ApplicationModal);
     image->show();
 
     QTimer::singleShot(20000,image,SLOT(deleteLater()));
     ui->textEdit->append("图片旋转缩放已经启动，20秒之后将关闭!");
+#endif
 }
 
 void ExampleWidget::on_pushButton_10_clicked()
@@ -300,12 +307,14 @@ void ExampleWidget::on_pushButton_20_clicked()
 
 void ExampleWidget::on_pushButton_21_clicked()
 {
+#ifdef Q_OS_WIN
     Demo_Ruler *ruler = new Demo_Ruler("尺子demo");
     ruler->setWindowModality (Qt::ApplicationModal);
     ruler->show ();
 
     QTimer::singleShot (15000,ruler,SLOT(deleteLater()));
     ui->textEdit->append ("尺子界面已经启动，15秒之后将关闭!");
+#endif
 }
 
 void ExampleWidget::on_pushButton_22_clicked()

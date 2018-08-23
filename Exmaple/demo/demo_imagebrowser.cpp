@@ -1,9 +1,12 @@
 ﻿#include "../LQTools/inc/LQToolsIncLib.h"
+
 #include "demo_imagebrowser.h"
+
 #include "ui_demo_imagebrowser.h"
 
-#include <QFileDialog>
+#include "LQimagehandler.h"
 
+#include <QFileDialog>
 
 
 Demo_ImageBrowser::Demo_ImageBrowser(const QString &title,
@@ -14,6 +17,10 @@ Demo_ImageBrowser::Demo_ImageBrowser(const QString &title,
     ui->setupUi(this);
 
     this->setWindowTitle(title);
+
+    m_pImageHandler = new LQImageHandler;
+
+    ui->verticalLayout->addWidget(m_pImageHandler);
 
     connect(ui->openButton, SIGNAL(clicked(bool)),
             this, SLOT(openButtonClicked()));
@@ -27,7 +34,7 @@ Demo_ImageBrowser::Demo_ImageBrowser(const QString &title,
             this, SLOT(clockwise90ButtonClicked()));
     connect(ui->anticlockwiseButton, SIGNAL(clicked(bool)),
             this, SLOT(anticlockwise90ButtonClicked()));
-    connect(ui->imageHandler, SIGNAL(percentageChanged(double)),
+    connect(m_pImageHandler, SIGNAL(percentageChanged(double)),
             this, SLOT(slotPercentageChanged(double)));
 }
 
@@ -38,7 +45,7 @@ Demo_ImageBrowser::~Demo_ImageBrowser()
 
 void Demo_ImageBrowser::setPixmap(const QPixmap &pixmap)
 {
-    ui->imageHandler->setPixmap(pixmap);
+    m_pImageHandler->setPixmap(pixmap);
 }
 
 void Demo_ImageBrowser::resizeEvent(QResizeEvent *event)
@@ -64,34 +71,34 @@ void Demo_ImageBrowser::originalSizeButtonClicked(bool checked)
 {
     if( checked )
     {
-        ui->imageHandler->showOriginalSize();
+        m_pImageHandler->showOriginalSize();
         ui->originalSizeButton->setText(tr("suitable size"));
     }
     else
     {
-        ui->imageHandler->showSuitableSize();
+        m_pImageHandler->showSuitableSize();
         ui->originalSizeButton->setText(tr("original size"));
     }
 }
 
 void Demo_ImageBrowser::zoomInButtonClicked()
 {
-    ui->imageHandler->zoomIn();
+    m_pImageHandler->zoomIn();
 }
 
 void Demo_ImageBrowser::zoomOutButtonClicked()
 {
-    ui->imageHandler->zoomOut();
+    m_pImageHandler->zoomOut();
 }
 
 void Demo_ImageBrowser::clockwise90ButtonClicked()
 {
-    ui->imageHandler->clockwise90();
+    m_pImageHandler->clockwise90();
 }
 
 void Demo_ImageBrowser::anticlockwise90ButtonClicked()
 {
-    ui->imageHandler->anticlockwise90();
+    m_pImageHandler->anticlockwise90();
 }
 
 void Demo_ImageBrowser::slotPercentageChanged(double percentage)

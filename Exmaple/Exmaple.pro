@@ -19,6 +19,7 @@ DEFINES +=DEBUG_OUT
 
 include($$PWD/demo/demo.pri)
 
+INCLUDEPATH +=$$PWD/../LQ3rdparty/QZXing/QZXing
 INCLUDEPATH +=$$PWD/../LQTools/inc
 INCLUDEPATH +=$$PWD/../LQInstrumentation/inc
 INCLUDEPATH +=$$PWD/../LQFormWidget/inc
@@ -56,4 +57,4 @@ LIBS += -L$${DIR_DEPEND_DEST} -lLQTools$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DEST} -lLQChart$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DEST} -lLQFormWidget$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DEST} -lLQInstrumentation$${FILE_POSTFIX}
-LIBS += -L$${DIR_DEPEND_QZXING_DEST} -lQZxing$${FILE_POSTFIX}
+LIBS += -L$${DIR_DEPEND_QZXING_DEST} -lQZXing$${FILE_POSTFIX}

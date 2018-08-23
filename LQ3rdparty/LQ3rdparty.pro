@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS	+=\
-    $$PWD/QZXing/QZxing
+    $$PWD/QZXing/QZXing/QZXing.pro
 
 
 CONFIG	+=ordered

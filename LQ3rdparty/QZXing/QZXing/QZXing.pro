@@ -2,7 +2,7 @@ include($$PWD/LQ3rdparty.pri)
 QT	   = core gui widgets
 
 TEMPLATE = lib
-TARGET = QZxing$${FILE_POSTFIX}
+TARGET = QZXing$${FILE_POSTFIX}
 DEFINES +=QZXING_LIBRARY
 
 INCLUDEPATH  += $$PWD

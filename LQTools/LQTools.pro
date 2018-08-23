@@ -20,16 +20,24 @@ INCLUDEPATH +=$$PWD/inc
 
 SOURCES += \
     src/perfmon.cpp \
-    src/LQimagehandler.cpp \
+    src/LQimagehandler.cpp
+
+
+win32:{
+    SOURCES +=\
     src/cruler.cpp
+
+    HEADERS +=\
+    inc/cruler.h
+}
 
 HEADERS += \
     inc/LQToolsIncLib.h \
     inc/LQToolsInc.h \
     inc/lqtools_global.h \
     inc/perfmon.h \
-    inc/LQimagehandler.h \
-    inc/cruler.h
+    inc/LQimagehandler.h
+
 
 win32:{
     LIBS+=-L .. -lGdi32

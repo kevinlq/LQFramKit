@@ -17,7 +17,6 @@ FORMS += \
     $$PWD/demo_zxing.ui \
     $$PWD/demo_startwidget.ui \
     $$PWD/demo_drawprogressbar.ui \
-    $$PWD/demo_ruler.ui \
     $$PWD/demo_ipaddresswidget.ui \
     $$PWD/demo_msgnotify.ui \
     $$PWD/demo_speedwatch.ui \
@@ -26,6 +25,17 @@ FORMS += \
     $$PWD/demo_tolerancebar.ui \
     $$PWD/demo_waveprogress.ui \
     $$PWD/CreateProjectFileForm.ui
+
+win32:{
+    FORMS += \
+    $$PWD/demo_ruler.ui
+
+    SOURCES +=\
+    $$PWD/demo_ruler.cpp
+
+    HEADERS +=\
+    $$PWD/demo_ruler.h
+}
 
 SOURCES += \
     $$PWD/demo_qgauge.cpp \
@@ -46,7 +56,6 @@ SOURCES += \
     $$PWD/demo_zxing.cpp \
     $$PWD/demo_startwidget.cpp \
     $$PWD/demo_drawprogressbar.cpp \
-    $$PWD/demo_ruler.cpp \
     $$PWD/demo_ipaddresswidget.cpp \
     $$PWD/demo_msgnotify.cpp \
     $$PWD/demo_speedwatch.cpp \
@@ -76,7 +85,6 @@ HEADERS += \
     $$PWD/demo_zxing.h \
     $$PWD/demo_startwidget.h \
     $$PWD/demo_drawprogressbar.h \
-    $$PWD/demo_ruler.h \
     $$PWD/demo_ipaddresswidget.h \
     $$PWD/demo_msgnotify.h \
     $$PWD/demo_speedwatch.h \

@@ -3,6 +3,8 @@
 
 #include <QDialog>
 
+class LQImageHandler;
+
 namespace Ui {
 class Demo_ImageBrowser;
 }
@@ -40,6 +42,8 @@ private:
     Ui::Demo_ImageBrowser *ui;
 
     QPixmap m_pixmap;
+
+    LQImageHandler *m_pImageHandler;
 };
 
 #endif // DEMO_IMAGEBROWSER_H

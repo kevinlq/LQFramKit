@@ -236,7 +236,8 @@ void CreateProjectFileForm::on_pbnCreate_clicked()
                       getCommonContext( QString("%1Lib").arg (strProName)));
 
     //创建文件以及写入内容
-    for (auto it = m_FileMap.begin (); it != m_FileMap.end (); it++)
+    QMap<QString,QString>::const_iterator it;
+    for (it = m_FileMap.begin (); it != m_FileMap.end (); it++)
     {
         bResult = createFile(it.key (),it.value ());
         if ( !bResult )
