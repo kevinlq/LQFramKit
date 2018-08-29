@@ -47,7 +47,7 @@ public:
 private:
   BitMatrixParser(const BitMatrixParser&);
   BitMatrixParser& operator =(const BitMatrixParser&);
-  
+
 };
 
 }

@@ -58,3 +58,7 @@ LIBS += -L$${DIR_DEPEND_DEST} -lLQChart$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DEST} -lLQFormWidget$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DEST} -lLQInstrumentation$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_QZXING_DEST} -lQZXing$${FILE_POSTFIX}
+
+linux:{
+    LIBS +=-liconv
+}
