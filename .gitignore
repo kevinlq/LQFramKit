@@ -1,6 +1,7 @@
 #pro.user
 LQFramKit.pro.user
 bin/*
+Bin/*
 build_/*
 tempFiles/*
 *.Debug
@@ -13,4 +14,5 @@ tempFiles/*
 *.lib
 *.dll
 *.a
+*.so
 *.exe
