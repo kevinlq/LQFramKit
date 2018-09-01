@@ -15,14 +15,14 @@ GitHub  :https://github.com/kevinlq
 ## 环境说明
 
 >本人测试环境  
-Qt:5.4.2 Mingw  
+Qt:5.4.2 Mingw   5.11
 OS:windows7 64b  
 其他环境测试完成后一并标注    
 
 ```
 新增linux下编译
 
-Qt: 5.5.1
+Qt: 5.5.1 Qt5.11
 OS: ubuntu 16.04
 ```
 
@@ -33,11 +33,15 @@ OS: ubuntu 16.04
 ![工程框架说明](/doc/project_frame.png)
 
 ## 如何编译本工程
+
+
 * 打开本项目源码，打开工程文件`LQFramKit.pro`,按照下图所示进行编译配置即可：
 
 ![编译配置](/screen/build_setting.png)
 
 建议按照上述配置，添加宏定义`CONFIG+=MinGW`
+
+`以下以 windows 平台为例`,其他平台以我博客为主进行配置
 
 具体针对不同平台编译宏定义不同，可以参考我这篇文章[http://kevinlq.com/2017/09/18/Qt-black-technology/](http://kevinlq.com/2017/09/18/Qt-black-technology/)
 
