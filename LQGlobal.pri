@@ -35,10 +35,6 @@ else:mac:{
 	FILE_LIB_EXT = .a
 	FILE_DLL_PREFIX = lib
 	FILE_DLL_EXT = .so
-
-	# 始终编译成静态库
-	CONFIG += staticlib
-	CONFIG += USE_LIBRARY_ABN
 }
 else:linux:{
 	CONFIG(GCC, GCC|GCC32|GCC64):{
