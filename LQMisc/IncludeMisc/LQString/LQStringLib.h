@@ -1,0 +1,4 @@
+#ifndef LQSTRINGLIB_H
+#define LQSTRINGLIB_H
+
+#endif //LQSTRINGLIB_H
