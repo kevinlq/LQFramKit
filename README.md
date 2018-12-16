@@ -50,7 +50,7 @@ OS: ubuntu 16.04
 https://download.csdn.net/download/u013704336/10854235
 
 
-![demo](/screen/homeWidget.png)
+[demo](/screen/homeWidget.png)
 
 
 ## 如何使用
