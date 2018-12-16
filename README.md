@@ -57,7 +57,7 @@ https://download.csdn.net/download/u013704336/10854235
 
 因为 `demo` 较多，所以单独写到另外一个说明文档了..
 
-[demo使用说明](https://github.com/kevinlq/LQFramKit/README_Demo.md)
+[demo使用说明](https://github.com/kevinlq/LQFramKit/blob/master/README_Demo.md)
 
 
 ## 版本更新记录
