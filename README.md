@@ -48,7 +48,8 @@ OS: ubuntu 16.04
 ## 可执行文件下载地址
 
 ```
-链接：https://pan.baidu.com/s/1aSqrDG_CuM7nl0i1rvM26w 密码：rcht
+https://download.csdn.net/download/u013704336/10854235
+
 ```
 
 ## 使用本工程
