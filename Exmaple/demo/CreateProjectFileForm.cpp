@@ -133,8 +133,9 @@ QString CreateProjectFileForm::getProFileContext(const QString &strProName)
     strContext.append ("\r\n\r\n");
 
     strContext.append ("SOURCES\t +=\\\r\n");
-    strContext.append ("\tGlobal/GlobalVar.cpp \\");
+    strContext.append ("\tGlobal/GlobalVar.cpp");
     strContext.append ("\r\n\r\n");
+
     strContext.append ("HEADERS\t +=\\\r\n");
     strContext.append ("\tStdMain.h \\\r\n");
     strContext.append ("\tGlobal/GlobalVar.h \\\r\n");
@@ -171,9 +172,9 @@ QString CreateProjectFileForm::getExportContext()
     QString strContext = getCommonHeadText ( QString("%1_Export").arg (m_strProName));
     strContext.append ("\r\n");
     strContext.append (QString("#if defined(%1_LIBRARY)\r\n").arg (m_strProName.toUpper ()));
-    strContext.append ( QString("#  define %1_Export XXX_DECL_EXPORT\r\n").arg (m_strProName));
+    strContext.append ( QString("#  define %1_EXPORT XXX_DECL_EXPORT\r\n").arg (m_strProName.toUpper ()));
     strContext.append ("#else\r\n");
-    strContext.append (QString("#  define %1_Export XXX_DECL_IMPORT\r\n").arg (m_strProName));
+    strContext.append (QString("#  define %1_EXPORT XXX_DECL_IMPORT\r\n").arg (m_strProName.toUpper ()));
     strContext.append ("#endif\r\n\r\n");
 
     strContext.append (getCommonEndText(QString("%1_Export").arg (m_strProName)));
