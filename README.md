@@ -1,13 +1,14 @@
-# QGitHubReport
+# LQFramKit
 
 [中文/Chinese](README_zh.md)
 
 > c++ Qt5 implementation of some controls.
 
 ## Results
-|Rank| Time|speed |
-|--|--|--|
-|0 | 20190111|![29.0163%](http://progressed.io/bar/29)|
+|Rank| Time|content|speed |
+|--|--|--|--|
+|0 | 20170411|LQFramKit base |![95.0163%](http://progressed.io/bar/95)|
+|1 | 20170601|Car dashboard |![100.00%](http://progressed.io/bar/100)|
 
 
 ## Getting Started 
@@ -18,8 +19,8 @@ Qt 5
 
 ### How to build
 > build environment
-Qt:5.4.2 Mingw   5.11
-OS:windows7 64b  
+Qt:5.4.2 Mingw   5.11  
+OS:windows7 64b    
 
 ```
 Qt: 5.5.1 Qt5.11

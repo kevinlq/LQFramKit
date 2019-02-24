@@ -5,9 +5,10 @@
 > 使用C++ Qt5封装的一些控件，以便后期项目中直接使用。这些控件有些是来自于网络有些属于个人封装，代码中都有出处
 
 ## 结果
-|Rank| Time|speed |
-|--|--|--|
-|0 | 20190111|![29.0163%](http://progressed.io/bar/29)|
+|Rank| Time|content|speed |
+|--|--|--|--|
+|0 | 20170411|LQFramKit基础结构 |![95.0163%](http://progressed.io/bar/95)|
+|1 | 20170601| 汽车仪表盘|![100.00%](http://progressed.io/bar/100)|
 
 
 ## 使用指南
