@@ -1,51 +1,44 @@
-# Qt整理的基础控件说明
+# QGitHubReport
+
+[中文/Chinese](README_zh.md)
+
+> c++ Qt5 implementation of some controls.
+
+## Results
+|Rank| Time|speed |
+|--|--|--|
+|0 | 20190111|![29.0163%](http://progressed.io/bar/29)|
 
 
-## 前序
->个人整理Qt开发中常用的基础控件，加以整合以便在后期的项目中直接使用。基础控件中包含了网络收集来的控件和自己编写的控件，来自网络的控件都标明了出处。
-若有冒犯请及时联系我，予以删除。
+## Getting Started 
 
->Email  :kevinlq0912@163.com  
-QQ      :2313828706  
-Oschina :http://git.oschina.net/kevinlq0912   
-GitHub  :https://github.com/kevinlq  
+### Prerequisites
 
-#### <i class="fa fa-eye"></i> 若觉得对您有用,欢迎Star和Fork
+Qt 5
 
-## 环境说明
-
->本人测试环境  
+### How to build
+> build environment
 Qt:5.4.2 Mingw   5.11
 OS:windows7 64b  
-其他环境测试完成后一并标注    
 
 ```
-新增linux下编译
-
 Qt: 5.5.1 Qt5.11
 OS: ubuntu 16.04
 ```
 
-## 工程说明
+### build and run
 
-本工程将各个控件进行了分类，每类控件都各自封装成对应的库，可以方便调用，各个控件的头文件和源文件分别存放，方便了后期直接调用dll以及头文件，工程大致框架如下所示:
+* open the project source code, open the project file `LQFramKit. Pro`, according to the compiler configuration can be shown below:
 
-![工程框架说明](/doc/project_frame.png)
+![build setting](/screen/build_setting.png)
 
-## 如何编译本工程
+Suggestions according to the above configuration, add macro definition `CONFIG + = MinGW`
 
+`windows` platform:
 
-* 打开本项目源码，打开工程文件`LQFramKit.pro`,按照下图所示进行编译配置即可：
+Specific for different platforms to compile macro definition is different, you can refer to this article [http://kevinlq.com/2017/09/18/Qt-black-technology/](http://kevinlq.com/2017/09/18/Qt-black-technology/)
 
-![编译配置](/screen/build_setting.png)
-
-建议按照上述配置，添加宏定义`CONFIG+=MinGW`
-
-`以下以 windows 平台为例`,其他平台以我博客为主进行配置
-
-具体针对不同平台编译宏定义不同，可以参考我这篇文章[http://kevinlq.com/2017/09/18/Qt-black-technology/](http://kevinlq.com/2017/09/18/Qt-black-technology/)
-
-## 可执行文件下载地址
+## exec software download address
 
 https://download.csdn.net/download/u013704336/10854235
 
@@ -53,80 +46,51 @@ https://download.csdn.net/download/u013704336/10854235
 [demo](/screen/homeWidget.png)
 
 
-## 如何使用
+## Contributing
 
-因为 `demo` 较多，所以单独写到另外一个说明文档了..
-
-[demo使用说明](https://github.com/kevinlq/LQFramKit/blob/master/README_Demo.md)
+Please read [CONTRIBUTING.md](#) for details on our code of conduct, and the process for submitting pull requests to us.
 
 
-## 版本更新记录
-* V 0.0.0.0 构建了控件整体框架，完善了一些表达；
-* V 0.0.0.1 添加了汽车仪表盘控件，有2中风格，具体效果在自带的demo中可以运行看到；
-* V 0.0.0.2 添加了自定义搜索框、性能监控、姿势仪表控件；
-* V 0.0.0.3 添加了2个速度仪表控件;
-* V 0.0.0.4 添加了圆形进度条控件，并编写对应的demo进行演示;
-* V 0.0.0.5 添加了启动界面，修复了资源文件添加的bug,多个工程中如果添加的资源文件名称相同，出现了无法调用问题，比如都新建了一个image的资源文件，调用过程中发现一直提醒找不到该文件。   
-在网上找到了一篇文章：http://www.cnblogs.com/lzjsky/archive/2012/08/20/2647471.html  分析了比较详细，说明了资源文件的前因后果。
-* V 0.0.0.6 添加了switch切换按钮，并进行了测试；
-* V 0.0.0.7 添加了自定义消息框界面，编写相关demo测试;
-* V 0.0.0.8 添加了二维码检测功能空间(后面计划添加二维码生成功能空间)；
-* V 0.0.0.9 添加超酷启动界面控件demo;
-* V 0.0.1.0 添加了导航进度条控件以及demo;
-* V 0.0.1.1 添加了尺子工具及其demo;
-* V 0.0.1.2 添加了IP地址输入框空间及其demo;
-* V 0.0.1.3 添加了消息弹窗控件以及demo;
-* V 0.0.1.4 添加了速度仪表3及其demo；
-* V 0.0.1.5 添加树状导航及其demo；
-* V 0.0.1.6 添加tabWidget窗体;
-* V 0.0.1.7 添加了toleranceBar及其demo；
-* V 0.0.1.8 添加了波形进度条及其demo;
-* V 0.0.1.9 调整工程结构，解决Qt 5.4以后编译错误(2018年4月21日);
-* V 0.0.2.0 添加工程模板生成工具(2018年5月6日);
-* V 0.0.2.1 在linux下编译通过，解决一些编译问题(2018年8月24日);
+## Release History
 
+* V 0.0.0.0 builds the overall framework of the control, perfecting some expressions;
+* V 0.0.0.1 Added the car dashboard control, there are 2 styles, the specific effect can be seen in the built-in demo;
+* V 0.0.0.2 added custom search box, performance monitoring, posture meter control;
+* V 0.0.0.3 added 2 speed meter controls;
+* V 0.0.0.4 added a circular progress bar control and wrote the corresponding demo for demonstration;
+* V 0.0.0.5 added the startup interface, fixed the bug of resource file addition. If the name of the added resource file is the same in multiple projects, there is a problem that cannot be called. For example, a new image resource file is created, and it is found during the call. Always reminded that the file could not be found.
+An article was found online: http://www.cnblogs.com/lzjsky/archive/2012/08/20/2647471.html The analysis is more detailed and explains the cause and effect of the resource file.
+* V 0.0.0.6 added the switch switch button and tested it;
+* V 0.0.0.7 added a custom message box interface, writing related demo tests;
+* V 0.0.0.8 added the QR code detection function space (planned to add the QR code generation function space later);
+* V 0.0.0.9 add cool startup interface control demo;
+* V 0.0.1.0 added navigation progress bar control and demo;
+* V 0.0.1.1 added the ruler tool and its demo;
+* V 0.0.1.2 added IP address input box space and its demo;
+* V 0.0.1.3 added message pop-up window control and demo;
+* V 0.0.1.4 added speed meter 3 and its demo;
+* V 0.0.1.5 Add tree navigation and its demo;
+* V 0.0.1.6 Add a tabWidget form;
+* V 0.0.1.7 added toleranceBar and its demo;
+* V 0.0.1.8 added waveform progress bar and its demo;
+* V 0.0.1.9 Adjust the engineering structure to solve the compilation error after Qt 5.4 (April 21, 2018);
+* V 0.0.2.0 Add project template generation tool (May 6, 2018);
+* V 0.0.2.1 Compile under linux to solve some compilation problems (August 24, 2018);
 
 ## fix bug
 
-**2018年4月21日**
 
-### 在Qt5.4之后编译时会出现某些库中的方法无法找到问题，比如下面的错误：
+## Authors
 
-![](/screen/bugs/build_error_tools.png)
+- **kevinlq**  - [kevinlq](http://kevinlq.com/)
+- **GitHub**  - [kevinlq](https://github.com/kevinlq)https://github.com/kevinlq 
+- **Email:** kevinlq0912@163.com
+- **QQ:** 2313828706
 
-原因是该方法控件引入了 `W32` API ,导致后面Qt版本编译时找不到，Qt5.4之前的版本没有该问题。
+To see more contributors to this project, please read [contributors](#)
 
-**解决方案**
+## License
 
-```
-添加对应的W32库文件即可.
-win32:{
-    LIBS+=-L -lGdi32
-}
-```
+For this project `Apache License 2.0`  agreement, please click [LICENSE](LICENSE) for more details.
 
-### xxx
-**2018年4月21日**
-
-### 在linux 下编译不过问题解决
-
-以前一直在 `windows`下进行编译，最近有盆友说是在 `linux`下无法编译通过，所以特此尝试了下，问题总算处理了.
-
-在使用UI提升后，居然无法找到对应自定义控件的头文件，很是让然头疼.
-
-`QRoundProgressBar`类提升后，总是在找`qroundprogressbar.h`头文件，因为 linux 对大小写很敏感，所以肯定编译不过，以前在 `windows`下没有任何问题.
-
-**解决方案**
-
-```
-尝试清理重新编译还是不行，只能全部取消窗口部件提升，再重新提升即可解决！
-
-2018年08月23日18:14:07
-```
-
-![linux下运行截图](/screen/linux/Screenshot_2018-08-23.png)
-
-
-## FAQ
-
-
+## Acknowledgments
