@@ -48,7 +48,7 @@ OS: ubuntu 16.04
 https://download.csdn.net/download/u013704336/10854235
 
 
-[demo](/screen/homeWidget.png)
+![demo](/screen/homeWidget.png)
 
 
 
@@ -88,7 +88,7 @@ https://download.csdn.net/download/u013704336/10854235
 
 ### 在Qt5.4之后编译时会出现某些库中的方法无法找到问题，比如下面的错误：
 
-![](/screen/bugs/build_error_tools.png)
+![build_setting](/screen/bugs/build_error_tools.png)
 
 原因是该方法控件引入了 `W32` API ,导致后面Qt版本编译时找不到，Qt5.4之前的版本没有该问题。
 
