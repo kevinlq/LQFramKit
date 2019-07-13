@@ -44,7 +44,7 @@ Specific for different platforms to compile macro definition is different, you c
 https://download.csdn.net/download/u013704336/10854235
 
 
-[demo](/screen/homeWidget.png)
+![demo](/screen/homeWidget.png)
 
 
 ## Contributing
@@ -88,6 +88,11 @@ An article was found online: http://www.cnblogs.com/lzjsky/archive/2012/08/20/26
 - **Email:** kevinlq0912@163.com
 - **QQ:** 2313828706
 
+#### <i class="fa fa-eye"></i> If you find it useful to you, welcome to Star and Fork, you can follow the public number:
+
+![thanks](/screen/qrcode_for_devstone.png)
+
+
 To see more contributors to this project, please read [contributors](#)
 
 ## License
@@ -95,3 +100,8 @@ To see more contributors to this project, please read [contributors](#)
 For this project `Apache License 2.0`  agreement, please click [LICENSE](LICENSE) for more details.
 
 ## Acknowledgments
+
+
+If you feel that the content I share is good, you can ask the author to have a cup of coffee.
+
+![thanks](/screen/myCode.png)

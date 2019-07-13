@@ -131,7 +131,9 @@ win32:{
 - **Email:** kevinlq0912@163.com
 - **QQ:** 2313828706
 
-#### <i class="fa fa-eye"></i> 若觉得对您有用,欢迎Star和Fork
+#### <i class="fa fa-eye"></i> 若觉得对您有用,欢迎Star和Fork,可以关注公众号:
+
+![thanks](/screen/qrcode_for_devstone.png)
 
 
 查看更多关于这个项目的贡献者，请阅读 [contributors](#)
@@ -142,3 +144,7 @@ win32:{
 这个项目 `Apache License 2.0` 协议， 请点击 [LICENSE](LICENSE) 了解更多细节
 
 ## 致谢
+
+如果觉得分享的内容不错，可以请作者喝杯咖啡
+
+![thanks](/screen/myCode.png)
