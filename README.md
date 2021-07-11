@@ -1,3 +1,43 @@
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/kevinlq/LQFramKit">
+    <img src="screen/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">LQFramKit</h3>
+
+  <p align="center">
+    LQFramKit
+    <br />
+    <a href="https://github.com/kevinlq/LQFramKit"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/kevinlq/LQFramKit">View Demo</a>
+    ·
+    <a href="https://github.com/kevinlq/LQFramKit/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/kevinlq/LQFramKit/issues">Request Feature</a>
+  </p>
+</p>
+
 # LQFramKit
 
 [中文/Chinese](README_zh.md)
@@ -105,3 +145,21 @@ For this project `Apache License 2.0`  agreement, please click [LICENSE](LICENSE
 If you feel that the content I share is good, you can ask the author to have a cup of coffee.
 
 ![thanks](/screen/myCode.png)
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/kevinlq/LQFramKit.svg?style=for-the-badge
+[contributors-url]: https://github.com/kevinlq/LQFramKit/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/kevinlq/LQFramKit.svg?style=for-the-badge
+[forks-url]: https://github.com/kevinlq/LQFramKit/network/members
+[stars-shield]: https://img.shields.io/github/stars/kevinlq/LQFramKit.svg?style=for-the-badge
+[stars-url]: https://github.com/kevinlq/LQFramKit/stargazers
+[issues-shield]: https://img.shields.io/github/issues/kevinlq/LQFramKit.svg?style=for-the-badge
+[issues-url]: https://github.com/kevinlq/LQFramKit/issues
+[license-shield]: https://img.shields.io/github/license/kevinlq/LQFramKit.svg?style=for-the-badge
+[license-url]: https://github.com/kevinlq/LQFramKit/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/kevinlq
+
