@@ -44,6 +44,15 @@
 
 > 使用C++ Qt5封装的一些控件，以便后期项目中直接使用。这些控件有些是来自于网络有些属于个人封装，代码中都有出处
 
+**获取更多信息可以关注微信公众号：devstone**
+
+<div align=center>
+<img src="https://gitee.com/devstone/imageBed/raw/master/code/qrcode_for_devstone.png" width=20% height=20%/>
+
+<div align=left>
+
+
+
 ## 结果
 |Rank| Time|content|speed |
 |--|--|--|--|

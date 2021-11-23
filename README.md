@@ -44,6 +44,14 @@
 
 > c++ Qt5 implementation of some controls.
 
+**For more information, please follow the WeChat official account：devstone**
+
+<div align=center>
+<img src="https://gitee.com/devstone/imageBed/raw/master/code/qrcode_for_devstone.png" width=20% height=20%/>
+
+<div align=left>
+
+
 ## Results
 |Rank| Time|content|speed |
 |--|--|--|--|
