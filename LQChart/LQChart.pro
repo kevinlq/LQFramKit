@@ -18,13 +18,17 @@ INCLUDEPATH +=$$PWD/inc
 
 
 SOURCES += \
-    $$PWD/src/lqchart.cpp
+    $$PWD/src/lqchart.cpp \
+    src/CustomeTableView.cpp
 
 HEADERS += \
     StdMain.h \
     inc/LQChartInc.h \
     inc/LQChartIncLib.h \
     $$PWD/inc/lqchart_global.h \
-    $$PWD/inc/lqchart.h
+    $$PWD/inc/lqchart.h \
+    $$PWD/inc/CustomeTableView.h
+
+QT += widgets
 
 

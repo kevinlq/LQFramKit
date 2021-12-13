@@ -47,6 +47,10 @@
 
 #include "CreateProjectFileForm.h"      //生成工程模板
 
+
+/*图表界面测试demo*/
+#include "LQChartIncLib.h"
+
 ExampleWidget::ExampleWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ExampleWidget)
@@ -397,3 +401,17 @@ void ExampleWidget::on_pushButton_29_clicked()
 
     m_pCreatePro->show ();
 }
+
+// tableview 自定义checkbox
+void ExampleWidget::on_pushButton_30_clicked()
+{
+    CustomeTableView *tab = new CustomeTableView(this);
+    tab->setWindowTitle("tableView 自定义CheckBox QAbstractTableModel");
+    tab->setWindowModality (Qt::ApplicationModal);
+    tab->setMinimumSize(480,320);
+    tab->show ();
+
+    QTimer::singleShot (30000,tab,SLOT(deleteLater()));
+    ui->textEdit->append ("tab窗体已经运行，30秒后将关闭");
+}
+
